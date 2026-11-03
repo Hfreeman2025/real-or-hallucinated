@@ -1,0 +1,496 @@
+{
+  "version": 1,
+  "authorship": "AI-authored questions derived from the 70 source-verified claims. Reference statements are editorial corrections, never supplied to generation.",
+  "questions": [
+    {
+      "id": "r-01",
+      "claimId": "r-01",
+      "question": "How quickly is the Moon moving away from Earth each year?",
+      "reference": "The Moon is slowly moving away from Earth, by about an inch a year.",
+      "patterns": []
+    },
+    {
+      "id": "r-02",
+      "claimId": "r-02",
+      "question": "How does Saturn’s average density compare with water?",
+      "reference": "Saturn has a lower average density than water.",
+      "patterns": []
+    },
+    {
+      "id": "r-03",
+      "claimId": "r-03",
+      "question": "Which planet in the Solar System has the shortest day?",
+      "reference": "Jupiter has the shortest day of any planet in our solar system.",
+      "patterns": []
+    },
+    {
+      "id": "r-04",
+      "claimId": "r-04",
+      "question": "On Venus, which is longer: one axial rotation or one orbit around the Sun?",
+      "reference": "Venus takes longer to spin once on its axis than to orbit the Sun.",
+      "patterns": []
+    },
+    {
+      "id": "r-05",
+      "claimId": "r-05",
+      "question": "How was Neptune’s position predicted before it was observed?",
+      "reference": "Neptune was located using mathematical predictions, rather than a routine sky survey.",
+      "patterns": []
+    },
+    {
+      "id": "r-06",
+      "claimId": "r-06",
+      "question": "What unusual sunrise can an observer see from some places on Mercury?",
+      "reference": "From some places on Mercury, the morning Sun appears to rise, set, and rise again.",
+      "patterns": []
+    },
+    {
+      "id": "r-07",
+      "claimId": "r-07",
+      "question": "Does the Sun rotate faster at its equator or at its poles?",
+      "reference": "The Sun rotates faster at its equator than at its poles.",
+      "patterns": []
+    },
+    {
+      "id": "r-08",
+      "claimId": "r-08",
+      "question": "Are corals animals or plants?",
+      "reference": "Corals are animals, even though they attach themselves to the ocean floor.",
+      "patterns": []
+    },
+    {
+      "id": "r-09",
+      "claimId": "r-09",
+      "question": "What material forms a stony coral polyp’s hard skeleton?",
+      "reference": "A coral polyp builds a hard outer skeleton of limestone.",
+      "patterns": []
+    },
+    {
+      "id": "r-10",
+      "claimId": "r-10",
+      "question": "What microscopic organisms live inside the tissues of many corals?",
+      "reference": "Many corals have microscopic algae living inside their tissues.",
+      "patterns": []
+    },
+    {
+      "id": "r-11",
+      "claimId": "r-11",
+      "question": "What is the average depth of the ocean in kilometres?",
+      "reference": "The average depth of the ocean is about 3.7 kilometres.",
+      "patterns": []
+    },
+    {
+      "id": "r-12",
+      "claimId": "r-12",
+      "question": "In which ocean is the Challenger Deep?",
+      "reference": "The Challenger Deep is in the western Pacific Ocean.",
+      "patterns": []
+    },
+    {
+      "id": "r-13",
+      "claimId": "r-13",
+      "question": "Below approximately what ocean depth is there rarely significant sunlight?",
+      "reference": "Very little sunlight reaches deeper than 200 metres into the ocean.",
+      "patterns": []
+    },
+    {
+      "id": "r-14",
+      "claimId": "r-14",
+      "question": "What is the depth range of the ocean’s twilight zone?",
+      "reference": "The ocean’s twilight zone lies roughly 200 to 1,000 metres below the surface.",
+      "patterns": []
+    },
+    {
+      "id": "r-15",
+      "claimId": "r-15",
+      "question": "Does pumped-storage hydropower generate more or less electricity than it uses for pumping?",
+      "reference": "Pumped-storage hydropower normally uses more electricity to pump water uphill than it generates on the way down.",
+      "patterns": []
+    },
+    {
+      "id": "r-16",
+      "claimId": "r-16",
+      "question": "In what year did the first US hydroelectric plant to sell electricity open?",
+      "reference": "The first US hydroelectric power plant to sell electricity opened in 1882.",
+      "patterns": []
+    },
+    {
+      "id": "r-17",
+      "claimId": "r-17",
+      "question": "In which year did wind overtake hydropower in annual US renewable electricity generation?",
+      "reference": "Wind overtook hydropower as the largest source of annual US renewable electricity generation in 2019.",
+      "patterns": []
+    },
+    {
+      "id": "r-18",
+      "claimId": "r-18",
+      "question": "What did people use river-powered paddle wheels for thousands of years ago?",
+      "reference": "People used hydropower to grind grain thousands of years before modern electricity generation.",
+      "patterns": []
+    },
+    {
+      "id": "r-19",
+      "claimId": "r-19",
+      "question": "What does a photovoltaic cell convert sunlight directly into?",
+      "reference": "A solar photovoltaic cell converts sunlight directly into electricity.",
+      "patterns": []
+    },
+    {
+      "id": "r-20",
+      "claimId": "r-20",
+      "question": "During the day, does air above land or above water heat faster?",
+      "reference": "During the day, air above land heats up faster than air above water.",
+      "patterns": []
+    },
+    {
+      "id": "r-21",
+      "claimId": "r-21",
+      "question": "What do the two Greek roots of the word geothermal mean?",
+      "reference": "The word geothermal combines Greek words meaning earth and heat.",
+      "patterns": []
+    },
+    {
+      "id": "r-22",
+      "claimId": "r-22",
+      "question": "In which year was the Statue of Liberty’s current torch installed?",
+      "reference": "The Statue of Liberty’s current torch was installed in 1986.",
+      "patterns": []
+    },
+    {
+      "id": "r-23",
+      "claimId": "r-23",
+      "question": "How many windows and rays are in the Statue of Liberty’s crown?",
+      "reference": "The Statue of Liberty’s crown has 25 windows and seven rays.",
+      "patterns": []
+    },
+    {
+      "id": "r-24",
+      "claimId": "r-24",
+      "question": "What is at the Statue of Liberty’s feet?",
+      "reference": "There are chains and a broken shackle at the Statue of Liberty’s feet.",
+      "patterns": []
+    },
+    {
+      "id": "r-25",
+      "claimId": "r-25",
+      "question": "What date is on the Statue of Liberty’s tablet?",
+      "reference": "The Statue of Liberty’s tablet shows 4 July 1776 in Roman numerals.",
+      "patterns": []
+    },
+    {
+      "id": "r-26",
+      "claimId": "r-26",
+      "question": "In which year was the metre redefined using the speed of light?",
+      "reference": "The metre was redefined in terms of the speed of light in 1983.",
+      "patterns": []
+    },
+    {
+      "id": "r-27",
+      "claimId": "r-27",
+      "question": "How many caesium microwave oscillations define one SI second?",
+      "reference": "An atomic second counts 9,192,631,770 microwave oscillations associated with caesium atoms.",
+      "patterns": []
+    },
+    {
+      "id": "r-28",
+      "claimId": "r-28",
+      "question": "Did minutes and seconds originate in astronomy or mechanical clockmaking?",
+      "reference": "Minutes and seconds first arose in astronomy, rather than in clockmaking.",
+      "patterns": []
+    },
+    {
+      "id": "r-29",
+      "claimId": "r-29",
+      "question": "In ancient Egyptian summer, were daytime hours longer or shorter than nighttime hours?",
+      "reference": "Ancient Egyptian daytime hours were longer in summer than nighttime hours.",
+      "patterns": []
+    },
+    {
+      "id": "r-30",
+      "claimId": "r-30",
+      "question": "Does NOAA report atmospheric carbon dioxide as a dry-air or a wet-air mole fraction?",
+      "reference": "NOAA expresses atmospheric carbon dioxide as a mole fraction in dry air.",
+      "patterns": []
+    },
+    {
+      "id": "r-31",
+      "claimId": "r-31",
+      "question": "What pre-industrial carbon dioxide reference value does NOAA use, in parts per million?",
+      "reference": "NOAA uses 280 parts per million as a representative pre-industrial carbon dioxide level.",
+      "patterns": []
+    },
+    {
+      "id": "r-32",
+      "claimId": "r-32",
+      "question": "What mainly drives the seasonal cycle of atmospheric carbon dioxide?",
+      "reference": "Land ecosystems’ photosynthesis and respiration drive most of the seasonal carbon dioxide cycle.",
+      "patterns": []
+    },
+    {
+      "id": "r-33",
+      "claimId": "r-33",
+      "question": "What is the exact defined speed of light in a vacuum, in metres per second?",
+      "reference": "The defined speed of light in a vacuum is exactly 299,792,458 metres per second.",
+      "patterns": []
+    },
+    {
+      "id": "r-34",
+      "claimId": "r-34",
+      "question": "How long does sunlight take to reach Neptune?",
+      "reference": "Sunlight takes about four hours to reach Neptune.",
+      "patterns": []
+    },
+    {
+      "id": "r-35",
+      "claimId": "r-35",
+      "question": "How thick is the Statue of Liberty’s copper sheeting?",
+      "reference": "The Statue of Liberty’s copper skin is only about as thick as two pennies.",
+      "patterns": []
+    },
+    {
+      "id": "h-01",
+      "claimId": "h-01",
+      "question": "Approximately how many Earth days does the Moon take to orbit Earth?",
+      "reference": "The Moon completes one orbit around Earth in about 27 Earth days.",
+      "patterns": []
+    },
+    {
+      "id": "h-02",
+      "claimId": "h-02",
+      "question": "Do all parts of Saturn’s rings orbit at the same speed?",
+      "reference": "Every part of Saturn’s ring system orbits the planet at different speeds.",
+      "patterns": []
+    },
+    {
+      "id": "h-03",
+      "claimId": "h-03",
+      "question": "Approximately how many hours does Jupiter take to rotate once?",
+      "reference": "Jupiter needs about 9.9 hours to rotate once on its axis.",
+      "patterns": []
+    },
+    {
+      "id": "h-04",
+      "claimId": "h-04",
+      "question": "How many Earth days are in a year on Mercury?",
+      "reference": "A year on Mercury lasts 88 Earth days.",
+      "patterns": []
+    },
+    {
+      "id": "h-05",
+      "claimId": "h-05",
+      "question": "On Venus, does the Sun rise in the east or the west?",
+      "reference": "On Venus, the Sun rises in the west, opposite to Earth.",
+      "patterns": []
+    },
+    {
+      "id": "h-06",
+      "claimId": "h-06",
+      "question": "How long does sunlight take to reach Neptune?",
+      "reference": "Sunlight reaches Neptune about four hours after leaving the Sun.",
+      "patterns": []
+    },
+    {
+      "id": "h-07",
+      "claimId": "h-07",
+      "question": "Does the Sun rotate faster at its equator or at its poles?",
+      "reference": "The Sun takes 25 days at the equator; 36 at the poles.",
+      "patterns": []
+    },
+    {
+      "id": "h-08",
+      "claimId": "h-08",
+      "question": "What material forms a stony coral polyp’s hard skeleton?",
+      "reference": "The hard outer skeleton of a stony coral polyp is made of calcium carbonate.",
+      "patterns": []
+    },
+    {
+      "id": "h-09",
+      "claimId": "h-09",
+      "question": "Is a coral colony one large animal or many small animals?",
+      "reference": "Coral colonies are colonies of hundreds to thousands of polyps.",
+      "patterns": []
+    },
+    {
+      "id": "h-10",
+      "claimId": "h-10",
+      "question": "How do algae living inside corals benefit from the relationship?",
+      "reference": "The algae living inside corals receive protection and resources for photosynthesis from the relationship.",
+      "patterns": []
+    },
+    {
+      "id": "h-11",
+      "claimId": "h-11",
+      "question": "What is the average depth of the ocean in kilometres?",
+      "reference": "The ocean’s average depth is about 3.7 kilometres.",
+      "patterns": []
+    },
+    {
+      "id": "h-12",
+      "claimId": "h-12",
+      "question": "In which ocean is the Challenger Deep?",
+      "reference": "The Challenger Deep sits beneath the western Pacific Ocean.",
+      "patterns": []
+    },
+    {
+      "id": "h-13",
+      "claimId": "h-13",
+      "question": "In which year did HMS Challenger first sound the Mariana Trench?",
+      "reference": "The crew of HMS Challenger first sounded the Mariana Trench in 1875.",
+      "patterns": []
+    },
+    {
+      "id": "h-14",
+      "claimId": "h-14",
+      "question": "At approximately what depth does the ocean’s twilight zone begin?",
+      "reference": "The ocean’s twilight zone begins at a depth of about 200 metres.",
+      "patterns": []
+    },
+    {
+      "id": "h-15",
+      "claimId": "h-15",
+      "question": "Does sunlight normally reach four kilometres below the ocean surface?",
+      "reference": "Sunlight does not penetrate the aphotic zone below 1,000 metres in the ocean.",
+      "patterns": []
+    },
+    {
+      "id": "h-16",
+      "claimId": "h-16",
+      "question": "Does pumped-storage hydropower generate more or less electricity than it uses for pumping?",
+      "reference": "Pumped-storage hydropower uses more electricity for pumping than it generates.",
+      "patterns": []
+    },
+    {
+      "id": "h-17",
+      "claimId": "h-17",
+      "question": "In what year did the first US hydroelectric plant to sell electricity open?",
+      "reference": "The first US hydroelectric power plant to sell electricity opened in 1882.",
+      "patterns": []
+    },
+    {
+      "id": "h-18",
+      "claimId": "h-18",
+      "question": "In which year did wind overtake hydropower in annual US renewable electricity generation?",
+      "reference": "Hydropower remained the largest annual US renewable electricity source until wind overtook it in 2019.",
+      "patterns": []
+    },
+    {
+      "id": "h-19",
+      "claimId": "h-19",
+      "question": "Does a photovoltaic cell have to boil water before generating electricity?",
+      "reference": "A photovoltaic cell converts sunlight directly to make electricity.",
+      "patterns": []
+    },
+    {
+      "id": "h-20",
+      "claimId": "h-20",
+      "question": "During the day, does air above land or above water heat faster?",
+      "reference": "In the daily wind cycle, air over land heats faster than air over water during the day.",
+      "patterns": []
+    },
+    {
+      "id": "h-21",
+      "claimId": "h-21",
+      "question": "What do the two Greek roots of the word geothermal mean?",
+      "reference": "The word geothermal comes from Greek words meaning earth and heat.",
+      "patterns": []
+    },
+    {
+      "id": "h-22",
+      "claimId": "h-22",
+      "question": "In which year was the Statue of Liberty’s current torch installed?",
+      "reference": "The Statue of Liberty’s current torch was installed in 1986.",
+      "patterns": []
+    },
+    {
+      "id": "h-23",
+      "claimId": "h-23",
+      "question": "How many rays are on the Statue of Liberty’s crown?",
+      "reference": "The Statue of Liberty’s crown has seven rays.",
+      "patterns": []
+    },
+    {
+      "id": "h-24",
+      "claimId": "h-24",
+      "question": "Which direction does the Statue of Liberty face?",
+      "reference": "The Statue of Liberty faces southeast across New York Harbor.",
+      "patterns": []
+    },
+    {
+      "id": "h-25",
+      "claimId": "h-25",
+      "question": "What date is on the Statue of Liberty’s tablet?",
+      "reference": "The date on the Statue of Liberty’s tablet is 4 July 1776.",
+      "patterns": []
+    },
+    {
+      "id": "h-26",
+      "claimId": "h-26",
+      "question": "Is the metre currently defined by a metal bar or by the speed of light?",
+      "reference": "The metre is defined using light travelling in a vacuum.",
+      "patterns": []
+    },
+    {
+      "id": "h-27",
+      "claimId": "h-27",
+      "question": "How many caesium microwave oscillations define one SI second?",
+      "reference": "The SI second counts exactly 9,192,631,770 microwave oscillations of caesium.",
+      "patterns": []
+    },
+    {
+      "id": "h-28",
+      "claimId": "h-28",
+      "question": "Did minutes and seconds originate in astronomy or mechanical clockmaking?",
+      "reference": "Minutes and seconds originated in astronomy.",
+      "patterns": []
+    },
+    {
+      "id": "h-29",
+      "claimId": "h-29",
+      "question": "How many hours of daylight and how many hours of darkness did ancient Egyptians use?",
+      "reference": "Ancient Egyptians divided daylight into twelve parts and nighttime into twelve parts.",
+      "patterns": []
+    },
+    {
+      "id": "h-30",
+      "claimId": "h-30",
+      "question": "Does NOAA’s atmospheric carbon dioxide mole fraction include or exclude water vapour?",
+      "reference": "NOAA’s carbon dioxide mole fraction excludes water vapour in the total air measurement.",
+      "patterns": []
+    },
+    {
+      "id": "h-31",
+      "claimId": "h-31",
+      "question": "What pre-industrial carbon dioxide reference value does NOAA use, in parts per million?",
+      "reference": "NOAA’s pre-industrial carbon dioxide reference is 280 parts per million.",
+      "patterns": []
+    },
+    {
+      "id": "h-32",
+      "claimId": "h-32",
+      "question": "Which days are included in NOAA’s weekly carbon dioxide average?",
+      "reference": "NOAA defines its weekly carbon dioxide average using Sunday to Saturday.",
+      "patterns": []
+    },
+    {
+      "id": "h-33",
+      "claimId": "h-33",
+      "question": "What is the exact defined speed of light in a vacuum, in metres per second?",
+      "reference": "The defined speed of light in a vacuum is exactly 299,792,458 metres per second.",
+      "patterns": []
+    },
+    {
+      "id": "h-34",
+      "claimId": "h-34",
+      "question": "How many Earth years does one season on Neptune last?",
+      "reference": "A season on Neptune lasts for over forty Earth years.",
+      "patterns": []
+    },
+    {
+      "id": "h-35",
+      "claimId": "h-35",
+      "question": "How thick is the Statue of Liberty’s copper sheeting?",
+      "reference": "The Statue of Liberty’s copper sheeting is about 3/32 of an inch thick.",
+      "patterns": []
+    }
+  ]
+}

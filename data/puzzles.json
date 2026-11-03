@@ -1,0 +1,2052 @@
+{
+  "version": 2,
+  "startDate": "2026-10-19",
+  "cycleNote": "14 handcrafted editions, rotating every 14 days. Dates use Europe/London. Archive dates may repeat editions.",
+  "authorship": "Claims and deliberate fabrications were written by an AI during this build. All verdicts are grounded in fetched primary-source quotes. No live model is used in the game.",
+  "puzzles": [
+    {
+      "id": "edition-01",
+      "title": "A reasonable doubt",
+      "claims": [
+        {
+          "id": "r-27",
+          "text": "An atomic second counts 9,192,631,770 microwave oscillations associated with caesium atoms.",
+          "topic": "Technology",
+          "real": true,
+          "source": {
+            "publisher": "NIST",
+            "title": "Second: Introduction",
+            "url": "https://www.nist.gov/si-redefinition/second"
+          },
+          "evidence": {
+            "quote": "Atomic clocks count 9,192,631,770 of those microwave oscillations",
+            "explanation": "That precise frequency anchors the current definition. A plausible-looking digit is still worth checking.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "ca5434cbcc19cd7e303bd784b9e5998433577d01d170ed9b724a932ccd3677c8",
+            "context": {
+              "before": "The second is currently defined using cesium atoms, which absorb and emit microwave radiation with a specific frequency. ",
+              "match": "Atomic clocks count 9,192,631,770 of those microwave oscillations",
+              "after": ", and we call the elapsed time interval a second. Today, commercially available cesium clocks keep time to within 1/3,000,000 of a second per year. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-13",
+          "text": "The crew of HMS Challenger first sounded the Mariana Trench in 1905.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How deep is the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/oceandepth.html"
+          },
+          "evidence": {
+            "quote": "first sounded the depths of the trench in 1875.",
+            "explanation": "The year was shifted by thirty years. NOAA records 1875.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+            "context": {
+              "before": "Challenger Deep is approximately 10,935 meters (35,876 feet) deep . It is named after the HMS Challenger , whose crew ",
+              "match": "first sounded the depths of the trench in 1875.",
+              "after": " More Information Volumes of the Earth's Oceans (NOAA National Centers for Environmental Information) Get Social Social Last updated: 09/23/26 Author: NOAA How to cite this article Contact Us Provide Feedback Contact Us Report an error Social Science. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "1905",
+              "replacement": "1875",
+              "kind": "date",
+              "tell": "A shifted date",
+              "reason": "The original sounding was in 1875. The claim adds thirty years."
+            }
+          }
+        },
+        {
+          "id": "r-32",
+          "text": "Land ecosystems’ photosynthesis and respiration drive most of the seasonal carbon dioxide cycle.",
+          "topic": "Climate",
+          "real": true,
+          "source": {
+            "publisher": "NOAA Global Monitoring Laboratory",
+            "title": "Trends in atmospheric carbon dioxide",
+            "url": "https://gml.noaa.gov/ccgg/trends/weekly.html"
+          },
+          "evidence": {
+            "quote": "mostly caused by photosynthesis and respiration of ecosystems on land",
+            "explanation": "This describes seasonal variation, not the cause of the long-term rise.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "609d4c120717add2191d444e74b35cff0fcd57c65ed433839a85d53bdef451e8",
+            "context": {
+              "before": "[Etheridge et al., 1996] . Although the time resolution of old air locked in ice cores is not enough to preserve seasonal cycles, there is no doubt that the seasonal cycle, which is ",
+              "match": "mostly caused by photosynthesis and respiration of ecosystems on land",
+              "after": ", was similar to what we observe today. Therefore, for the comparison with pre-industrial times the Mauna Loa weekly data have been first deseasonalized by subtracting the observed average seasonal cycle, and then subtracting 280 ppm. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-09",
+          "text": "Coral colonies are single large animals, rather than groups of tiny individuals.",
+          "topic": "Nature",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "Are corals animals or plants?",
+            "url": "https://oceanservice.noaa.gov/facts/coral.html"
+          },
+          "evidence": {
+            "quote": "made up of hundreds to thousands of tiny coral creatures called polyps.",
+            "explanation": "NOAA describes hundreds to thousands of individual polyps, rather than one oversized animal.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+            "context": {
+              "before": "Corals have tiny, tentacle-like arms that they use to capture their food from the water and sweep into their inscrutable mouths. Most structures that we call \"coral\" are, in fact, ",
+              "match": "made up of hundreds to thousands of tiny coral creatures called polyps.",
+              "after": " Each soft-bodied polyp—most no thicker than a nickel—secretes a hard outer skeleton of limestone (calcium carbonate) that attaches either to rock or the dead skeletons of other polyps. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "single large animals, rather than groups of tiny individuals",
+              "replacement": "colonies of hundreds to thousands of polyps",
+              "kind": "definition",
+              "tell": "A mistaken unit of description",
+              "reason": "The colony is a group. The individual animals are the tiny polyps."
+            }
+          }
+        },
+        {
+          "id": "r-25",
+          "text": "The Statue of Liberty’s tablet shows 4 July 1776 in Roman numerals.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "Reads in Roman numerals \"July 4, 1776\"",
+            "explanation": "The inscription marks American independence, rather than the statue’s dedication.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. The Tablet : ",
+              "match": "Reads in Roman numerals \"July 4, 1776\"",
+              "after": " -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: The current torch was a replacement of the original and installed in 1986. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-02",
+      "title": "Against intuition",
+      "claims": [
+        {
+          "id": "h-06",
+          "text": "Sunlight reaches Neptune about forty-three minutes after leaving the Sun.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Neptune Facts",
+            "url": "https://science.nasa.gov/neptune/facts/"
+          },
+          "evidence": {
+            "quote": "it takes sunlight 4 hours to travel from the Sun to Neptune.",
+            "explanation": "Forty-three minutes belongs to Jupiter’s distance. NASA gives about four hours for Neptune.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "12e9cbe618bb5c633d4fa09fd6a0364727d2c3e402b026e549e1d69529bb085d",
+            "context": {
+              "before": "One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, ",
+              "match": "it takes sunlight 4 hours to travel from the Sun to Neptune.",
+              "after": " Orbit and Rotation One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "forty-three minutes",
+              "replacement": "four hours",
+              "kind": "attribution",
+              "tell": "A fact assigned to the wrong planet",
+              "reason": "The 43-minute figure describes Jupiter. Neptune is about four light-hours away."
+            }
+          }
+        },
+        {
+          "id": "h-03",
+          "text": "Jupiter needs about twenty-four hours to rotate once on its axis.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Jupiter Facts",
+            "url": "https://science.nasa.gov/jupiter/facts/"
+          },
+          "evidence": {
+            "quote": "One day on Jupiter takes 9.9 hours",
+            "explanation": "The Earth-like number was invented. Jupiter rotates in roughly 9.9 hours.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "af552e8515200306ce22a2dece29076c72ad6f8582a0ed22ae5982f2836c9e96",
+            "context": {
+              "before": "Orbit and Rotation Jupiter has the shortest day in the solar system. ",
+              "match": "One day on Jupiter takes 9.9 hours",
+              "after": " (the time it takes for Jupiter to rotate or spin around once), and Jupiter makes a complete orbit around the Sun (a year in Jovian time) in about 12 Earth years (4,333 Earth days). Its equator is tilted with respect to its orbital path around the Sun by just 3 degrees. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "twenty-four hours",
+              "replacement": "9.9 hours",
+              "kind": "number",
+              "tell": "A familiar number borrowed",
+              "reason": "The Earth-like number is misplaced. Jupiter rotates much faster."
+            }
+          }
+        },
+        {
+          "id": "r-19",
+          "text": "A solar photovoltaic cell converts sunlight directly into electricity.",
+          "topic": "Technology",
+          "real": true,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Solar explained",
+            "url": "https://www.eia.gov/energyexplained/solar/"
+          },
+          "evidence": {
+            "quote": "convert sunlight directly into electricity.",
+            "explanation": "Photovoltaic and solar thermal are different technologies. The former does not need a steam turbine.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "1d760aea6bfea2330a04988c2bcefa0da35e81b414087eadc071332d553b8659",
+            "context": {
+              "before": "Today, we use many different technologies to capture and convert solar energy into useful energy for various purposes. We use solar thermal energy systems to heat: Water for homes, buildings, or swimming pools Air inside homes, greenhouses, and other buildings Fluids in solar thermal power plants Solar photovoltaic systems Solar photovoltaic (PV) devices, or solar cells , ",
+              "match": "convert sunlight directly into electricity.",
+              "after": " Small PV cells can power calculators, watches, and other small electronic devices. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-05",
+          "text": "On Venus, the Sun rises in the east, just as it does on Earth.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Venus Facts",
+            "url": "https://science.nasa.gov/venus/facts/"
+          },
+          "evidence": {
+            "quote": "the Sun would rise in the west and set in the east",
+            "explanation": "The direction was reversed. Venus’s backward rotation makes the Sun rise in the west.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "d33a3990bd6775f0cc9a9b5afb65e207ab69ef4fee617d7ebef0ff61d9acb6e1",
+            "context": {
+              "before": "For another, because of the planet's extremely slow rotation, sunrise to sunset would take 117 Earth days. And by the way, ",
+              "match": "the Sun would rise in the west and set in the east",
+              "after": ", because Venus spins backward compared to Earth. While you’re waiting, don’t expect any seasonal relief from the unrelenting temperatures. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "in the east",
+              "replacement": "in the west",
+              "kind": "comparison",
+              "tell": "A reversed direction",
+              "reason": "Venus rotates backward relative to Earth; the sunrise direction is reversed."
+            }
+          }
+        },
+        {
+          "id": "r-18",
+          "text": "People used hydropower to grind grain thousands of years before modern electricity generation.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Hydropower explained",
+            "url": "https://www.eia.gov/energyexplained/hydropower/"
+          },
+          "evidence": {
+            "quote": "Thousands of years ago, people used hydropower to turn paddle wheels on rivers to grind grain.",
+            "explanation": "Water power has a much longer history than hydroelectric power.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+            "context": {
+              "before": "Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until 2019 when wind generation surpassed hydropower, it was the largest source of total annual U.S. renewable electricity generation. ",
+              "match": "Thousands of years ago, people used hydropower to turn paddle wheels on rivers to grind grain.",
+              "after": " Before steam power and electricity were available in the United States, grain and lumber mills were powered directly with hydropower. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-03",
+      "title": "Small print, big difference",
+      "claims": [
+        {
+          "id": "r-15",
+          "text": "Pumped-storage hydropower normally uses more electricity to pump water uphill than it generates on the way down.",
+          "topic": "Energy",
+          "real": true,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Hydropower explained",
+            "url": "https://www.eia.gov/energyexplained/hydropower/"
+          },
+          "evidence": {
+            "quote": "generally use more electricity to pump water to the upper water storage reservoirs than they produce",
+            "explanation": "It stores energy; it does not create a net surplus. Timing is what makes the storage useful.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+            "context": {
+              "before": "They release the stored water to generate electricity during peak electricity demand periods when wholesale electricity prices are relatively high. Pumped-storage hydroelectric systems ",
+              "match": "generally use more electricity to pump water to the upper water storage reservoirs than they produce",
+              "after": " with the stored water. Therefore, pumped-storage facilities have net negative electricity generation balances. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-02",
+          "text": "Saturn has a lower average density than water.",
+          "topic": "Space",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Saturn Facts",
+            "url": "https://science.nasa.gov/saturn/facts/"
+          },
+          "evidence": {
+            "quote": "Saturn is the only planet in our solar system with an average density that is less than water.",
+            "explanation": "The enormous size is a distraction: density is mass per unit volume.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "1043fb085c9afc6ad43b8f2685bdedf1b66b03b72807346f9dd84b6c6bd0e8d2",
+            "context": {
+              "before": "It is enveloped by liquid metallic hydrogen inside a layer of liquid hydrogen –similar to Jupiter's core but considerably smaller. It's hard to imagine, but ",
+              "match": "Saturn is the only planet in our solar system with an average density that is less than water.",
+              "after": " The giant gas planet could float in a bathtub if such a colossal thing existed. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-04",
+          "text": "Venus takes longer to spin once on its axis than to orbit the Sun.",
+          "topic": "Space",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Venus Facts",
+            "url": "https://science.nasa.gov/venus/facts/"
+          },
+          "evidence": {
+            "quote": "243 Earth days long — longer even than a Venus year",
+            "explanation": "This is a rotation, not a sunrise-to-sunrise solar day. NASA gives 243 Earth days for the spin and 225 for the orbit.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "d33a3990bd6775f0cc9a9b5afb65e207ab69ef4fee617d7ebef0ff61d9acb6e1",
+            "context": {
+              "before": "Orbit and Rotation Spending a day on Venus would be quite a disorienting experience — that is, if your spacecraft or spacesuit could protect you from the extreme heat and crushing air pressure. For one thing, your “day” would be ",
+              "match": "243 Earth days long — longer even than a Venus year",
+              "after": " (one trip around the Sun), which takes only 225 Earth days. For another, because of the planet's extremely slow rotation, sunrise to sunset would take 117 Earth days. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-22",
+          "text": "The Statue of Liberty’s current torch was installed in 1986.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "The current torch was a replacement of the original and installed in 1986.",
+            "explanation": "The statue is older than the torch it carries today.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "The Tablet : Reads in Roman numerals \"July 4, 1776\" -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: ",
+              "match": "The current torch was a replacement of the original and installed in 1986.",
+              "after": " At that time, the original torch was moved to the pedestal lobby and in 2018, it was relocated to the \"Torch Gallery\" in the Statue of Liberty Museum. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-29",
+          "text": "Ancient Egyptians divided daylight into ten hours and darkness into fourteen.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "NIST",
+            "title": "Second: Introduction",
+            "url": "https://www.nist.gov/si-redefinition/second"
+          },
+          "evidence": {
+            "quote": "Ancient Egyptians then divided day and night into 12 parts each",
+            "explanation": "The split was invented. Both daylight and darkness were divided into twelve parts.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "ca5434cbcc19cd7e303bd784b9e5998433577d01d170ed9b724a932ccd3677c8",
+            "context": {
+              "before": "Hanacek/NIST Humans first broke up time into day and night. ",
+              "match": "Ancient Egyptians then divided day and night into 12 parts each",
+              "after": ", with daytime hours longer than nighttime hours during the summer. Ancient Greeks later proposed splitting the day into 24 equal hours. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "ten hours and darkness into fourteen",
+              "replacement": "twelve hours each",
+              "kind": "number",
+              "tell": "An invented split",
+              "reason": "Both daylight and darkness were split into twelve parts. Their lengths could differ."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-04",
+      "title": "A world of almosts",
+      "claims": [
+        {
+          "id": "h-27",
+          "text": "The SI second counts exactly nine billion microwave oscillations of caesium.",
+          "topic": "Technology",
+          "real": false,
+          "source": {
+            "publisher": "NIST",
+            "title": "Second: Introduction",
+            "url": "https://www.nist.gov/si-redefinition/second"
+          },
+          "evidence": {
+            "quote": "Atomic clocks count 9,192,631,770 of those microwave oscillations",
+            "explanation": "A rounded number was presented as an exact definition. The specified count is 9,192,631,770.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "ca5434cbcc19cd7e303bd784b9e5998433577d01d170ed9b724a932ccd3677c8",
+            "context": {
+              "before": "The second is currently defined using cesium atoms, which absorb and emit microwave radiation with a specific frequency. ",
+              "match": "Atomic clocks count 9,192,631,770 of those microwave oscillations",
+              "after": ", and we call the elapsed time interval a second. Today, commercially available cesium clocks keep time to within 1/3,000,000 of a second per year. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "exactly nine billion",
+              "replacement": "exactly 9,192,631,770",
+              "kind": "number",
+              "tell": "An approximation presented as exact",
+              "reason": "A rounded number cannot replace the exact oscillation count in an SI definition."
+            }
+          }
+        },
+        {
+          "id": "h-16",
+          "text": "Pumped-storage hydropower generates about twenty per cent more electricity than it uses for pumping.",
+          "topic": "Energy",
+          "real": false,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Hydropower explained",
+            "url": "https://www.eia.gov/energyexplained/hydropower/"
+          },
+          "evidence": {
+            "quote": "pumped-storage facilities have net negative electricity generation balances.",
+            "explanation": "The claimed surplus is invented. Pumped storage consumes more electricity than it later generates.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+            "context": {
+              "before": "Pumped-storage hydroelectric systems generally use more electricity to pump water to the upper water storage reservoirs than they produce with the stored water. Therefore, ",
+              "match": "pumped-storage facilities have net negative electricity generation balances.",
+              "after": " Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until 2019 when wind generation surpassed hydropower, it was the largest source of total annual U.S. renewable electricity generation. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "generates about twenty per cent more electricity than it uses for pumping",
+              "replacement": "uses more electricity for pumping than it generates",
+              "kind": "comparison",
+              "tell": "Storage confused with net generation",
+              "reason": "Pumped storage shifts energy in time and loses some. The 20% surplus is invented."
+            }
+          }
+        },
+        {
+          "id": "h-08",
+          "text": "The hard outer skeleton of a stony coral polyp is made of silica.",
+          "topic": "Nature",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "Are corals animals or plants?",
+            "url": "https://oceanservice.noaa.gov/facts/coral.html"
+          },
+          "evidence": {
+            "quote": "secretes a hard outer skeleton of limestone (calcium carbonate)",
+            "explanation": "The material was substituted. Stony coral skeletons are calcium carbonate, not silica.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+            "context": {
+              "before": "Most structures that we call \"coral\" are, in fact, made up of hundreds to thousands of tiny coral creatures called polyps. Each soft-bodied polyp—most no thicker than a nickel—",
+              "match": "secretes a hard outer skeleton of limestone (calcium carbonate)",
+              "after": " that attaches either to rock or the dead skeletons of other polyps. In the case of stony or hard corals , these polyp conglomerates grow, die, and endlessly repeat the cycle over time, slowly laying the limestone foundation for coral reefs and giving shape to the familiar corals that reside there. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "silica",
+              "replacement": "calcium carbonate",
+              "kind": "material",
+              "tell": "A substituted material",
+              "reason": "Stony corals secrete limestone, which is calcium carbonate, not silica."
+            }
+          }
+        },
+        {
+          "id": "h-22",
+          "text": "The Statue of Liberty’s current torch was installed in 1936.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "The current torch was a replacement of the original and installed in 1986.",
+            "explanation": "The date was moved back fifty years. The current torch was installed in 1986.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "The Tablet : Reads in Roman numerals \"July 4, 1776\" -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: ",
+              "match": "The current torch was a replacement of the original and installed in 1986.",
+              "after": " At that time, the original torch was moved to the pedestal lobby and in 2018, it was relocated to the \"Torch Gallery\" in the Statue of Liberty Museum. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "1936",
+              "replacement": "1986",
+              "kind": "date",
+              "tell": "A shifted date",
+              "reason": "The replacement torch was installed in 1986, fifty years later than claimed."
+            }
+          }
+        },
+        {
+          "id": "r-01",
+          "text": "The Moon is slowly moving away from Earth, by about an inch a year.",
+          "topic": "Space",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Moon Facts",
+            "url": "https://science.nasa.gov/moon/facts/"
+          },
+          "evidence": {
+            "quote": "getting about an inch farther away each year.",
+            "explanation": "Our familiar companion is not staying quite so close. NASA describes a gradual outward drift.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "c3bd416b576ff11180466514e671b8cf54aafe2c4663468dc7c07b6227fa9360",
+            "context": {
+              "before": "That means 30 Earth-sized planets could fit in between Earth and the Moon. The Moon is slowly moving away from Earth, ",
+              "match": "getting about an inch farther away each year.",
+              "after": " NASA/Moore Boeck Orbit and Rotation The Moon is rotating at the same rate that it revolves around Earth (called synchronous rotation ), so the same hemisphere faces Earth all the time. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-05",
+      "title": "The familiar, reconsidered",
+      "claims": [
+        {
+          "id": "r-14",
+          "text": "The ocean’s twilight zone lies roughly 200 to 1,000 metres below the surface.",
+          "topic": "Nature",
+          "real": true,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How far does light travel in the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/light_travel.html"
+          },
+          "evidence": {
+            "quote": "The zone between 200 meters and 1,000 meters is usually referred to as the “ twilight ” zone",
+            "explanation": "NOAA calls it the dysphotic zone. Scientific and everyday names can describe the same layer.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+            "context": {
+              "before": "Only a small amount of light penetrates beyond this depth. ",
+              "match": "The zone between 200 meters and 1,000 meters is usually referred to as the “ twilight ” zone",
+              "after": ", but is officially the dysphotic zone. In this zone, the intensity of light rapidly dissipates as depth increases. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-21",
+          "text": "The word geothermal comes from Greek words meaning sun and movement.",
+          "topic": "Energy",
+          "real": false,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Geothermal explained",
+            "url": "https://www.eia.gov/energyexplained/geothermal/"
+          },
+          "evidence": {
+            "quote": "The name comes from the Greek words geo (earth) and therme (heat).",
+            "explanation": "The etymology was invented. The roots mean earth and heat.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "f347ab23abfec9f80409f7653c6853b0e99e77d85830f7ed294851171ff6aa5d",
+            "context": {
+              "before": "Geothermal energy is heat found inside the earth. ",
+              "match": "The name comes from the Greek words geo (earth) and therme (heat).",
+              "after": " Geothermal energy is a renewable energy source because the earth constantly produces this heat. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "sun and movement",
+              "replacement": "earth and heat",
+              "kind": "definition",
+              "tell": "An invented etymology",
+              "reason": "The roots are geo (earth) and therme (heat). Both meanings were substituted."
+            }
+          }
+        },
+        {
+          "id": "r-34",
+          "text": "Sunlight takes about four hours to reach Neptune.",
+          "topic": "Space",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Neptune Facts",
+            "url": "https://science.nasa.gov/neptune/facts/"
+          },
+          "evidence": {
+            "quote": "it takes sunlight 4 hours to travel from the Sun to Neptune.",
+            "explanation": "The distance is enormous, even at the speed of light.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "12e9cbe618bb5c633d4fa09fd6a0364727d2c3e402b026e549e1d69529bb085d",
+            "context": {
+              "before": "One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, ",
+              "match": "it takes sunlight 4 hours to travel from the Sun to Neptune.",
+              "after": " Orbit and Rotation One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-18",
+          "text": "Hydropower remained the largest annual US renewable electricity source through 2025.",
+          "topic": "Energy",
+          "real": false,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Hydropower explained",
+            "url": "https://www.eia.gov/energyexplained/hydropower/"
+          },
+          "evidence": {
+            "quote": "2019 when wind generation surpassed hydropower",
+            "explanation": "The cutoff was altered. The EIA says wind overtook hydropower in 2019.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+            "context": {
+              "before": "Therefore, pumped-storage facilities have net negative electricity generation balances. Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until ",
+              "match": "2019 when wind generation surpassed hydropower",
+              "after": ", it was the largest source of total annual U.S. renewable electricity generation. Thousands of years ago, people used hydropower to turn paddle wheels on rivers to grind grain. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "through 2025",
+              "replacement": "until wind overtook it in 2019",
+              "kind": "date",
+              "tell": "An outdated ranking extended",
+              "reason": "Wind surpassed hydropower in annual US renewable electricity generation in 2019."
+            }
+          }
+        },
+        {
+          "id": "r-26",
+          "text": "The metre was redefined in terms of the speed of light in 1983.",
+          "topic": "Technology",
+          "real": true,
+          "source": {
+            "publisher": "NIST",
+            "title": "Meter: The Past",
+            "url": "https://www.nist.gov/si-redefinition/meter"
+          },
+          "evidence": {
+            "quote": "the meter was redefined by international agreement in 1983",
+            "explanation": "Modern length measurement is tied to a constant of nature, rather than a physical bar.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "e0eb3dfd6e49ee36843111310e5f92839d60db7771d5913f3c1d14af2fe51a5a",
+            "context": {
+              "before": "This value, while not determined with the low uncertainty level claimed a few months later by the Boulder group, was entirely consistent with their result. Building upon these and other advances, ",
+              "match": "the meter was redefined by international agreement in 1983",
+              "after": " as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also locked the speed of light at 299,792,458 meters per second in a vacuum. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-06",
+      "title": "Nothing is quite ordinary",
+      "claims": [
+        {
+          "id": "r-31",
+          "text": "NOAA uses 280 parts per million as a representative pre-industrial carbon dioxide level.",
+          "topic": "Climate",
+          "real": true,
+          "source": {
+            "publisher": "NOAA Global Monitoring Laboratory",
+            "title": "Trends in atmospheric carbon dioxide",
+            "url": "https://gml.noaa.gov/ccgg/trends/weekly.html"
+          },
+          "evidence": {
+            "quote": "The value of 280 ppm is chosen as representative of pre-industrial air",
+            "explanation": "The page ties this reference to dated air in an Antarctic ice core, rather than a present-day reading.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "609d4c120717add2191d444e74b35cff0fcd57c65ed433839a85d53bdef451e8",
+            "context": {
+              "before": "PNG Version of plot PDF Version of plot This figure shows the atmospheric increase of CO 2 over 280 ppm in weekly averages of CO 2 observed at Mauna Loa. ",
+              "match": "The value of 280 ppm is chosen as representative of pre-industrial air",
+              "after": " because it is close to the average of CO 2 measured and dated with high time resolution between the years 1000 and 1800 in an ice core from Law Dome, Antarctica. [Etheridge et al., 1996] . "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-35",
+          "text": "The Statue of Liberty’s copper sheeting is about an inch thick.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "Thickness of copper sheeting : 3/32 of an inch",
+            "explanation": "The thickness was exaggerated by more than tenfold. The actual copper skin is 3/32 of an inch thick.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Weight of concrete foundation : 54,000,000 lbs. ",
+              "match": "Thickness of copper sheeting : 3/32 of an inch",
+              "after": ", the thickness of two pennies placed together. Wind Sway : The statue can sway up to 3 inches and the torch up to 6 inches. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "an inch thick",
+              "replacement": "3/32 of an inch thick",
+              "kind": "number",
+              "tell": "An exaggerated measurement",
+              "reason": "The copper skin is more than ten times thinner than the claim suggests."
+            }
+          }
+        },
+        {
+          "id": "h-28",
+          "text": "Minutes and seconds were invented for mechanical clocks in medieval Europe.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "NIST",
+            "title": "Second: Introduction",
+            "url": "https://www.nist.gov/si-redefinition/second"
+          },
+          "evidence": {
+            "quote": "they originated in the realm of astronomy, not timekeeping.",
+            "explanation": "The units predate their use in clocks. NIST traces their origin to astronomy.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "ca5434cbcc19cd7e303bd784b9e5998433577d01d170ed9b724a932ccd3677c8",
+            "context": {
+              "before": "However, people continued using hours of uneven lengths until the late medieval period in Europe, when monks developed mechanical clocks to establish fixed prayer and work periods. The concepts of the minute and the second also date back to ancient times — but ",
+              "match": "they originated in the realm of astronomy, not timekeeping.",
+              "after": " Four thousand years ago, the Sumerians divided a circle into 360 degrees. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "invented for mechanical clocks in medieval Europe",
+              "replacement": "originated in ancient astronomy",
+              "kind": "attribution",
+              "tell": "Later adoption mistaken for invention",
+              "reason": "Mechanical clocks adopted units that had already been used in astronomy."
+            }
+          }
+        },
+        {
+          "id": "h-11",
+          "text": "The ocean’s average depth is just under eleven kilometres.",
+          "topic": "Nature",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How deep is the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/oceandepth.html"
+          },
+          "evidence": {
+            "quote": "The average depth of the ocean is about 3,682 meters",
+            "explanation": "A maximum was passed off as an average. Roughly eleven kilometres is the Challenger Deep; the ocean average is about 3.7 kilometres.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+            "context": {
+              "before": "Bob Embley, NOAA PMEL, Chief Scientist. ",
+              "match": "The average depth of the ocean is about 3,682 meters",
+              "after": " (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is located beneath the western Pacific Ocean in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "average depth is just under eleven kilometres",
+              "replacement": "average depth is about 3.7 kilometres",
+              "kind": "definition",
+              "tell": "A maximum passed off as an average",
+              "reason": "Nearly eleven kilometres describes the deepest point, not the ocean’s average depth."
+            }
+          }
+        },
+        {
+          "id": "r-07",
+          "text": "The Sun rotates faster at its equator than at its poles.",
+          "topic": "Space",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Sun Facts",
+            "url": "https://science.nasa.gov/sun/facts/"
+          },
+          "evidence": {
+            "quote": "At its equator, the Sun completes one rotation in 25 Earth days.",
+            "explanation": "The Sun is plasma, not a rigid ball. NASA gives 25 Earth days at the equator and 36 at the poles.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "70ccbc91222af8b1e2374b44f8ffcd1d0a16aadf00eb158eb1bf50eef7f5ea8d",
+            "context": {
+              "before": "This plasma rotates at different speeds on different parts of the Sun. ",
+              "match": "At its equator, the Sun completes one rotation in 25 Earth days.",
+              "after": " At its poles, the Sun rotates once on its axis every 36 Earth days. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-07",
+      "title": "A matter of perspective",
+      "claims": [
+        {
+          "id": "h-34",
+          "text": "A season on Neptune lasts about four Earth years.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Neptune Facts",
+            "url": "https://science.nasa.gov/neptune/facts/"
+          },
+          "evidence": {
+            "quote": "each of the four seasons lasts for over 40 years.",
+            "explanation": "A factor of ten was lost. Neptune’s long year gives it seasons lasting over forty Earth years.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "12e9cbe618bb5c633d4fa09fd6a0364727d2c3e402b026e549e1d69529bb085d",
+            "context": {
+              "before": "Neptune’s axis of rotation is tilted 28 degrees with respect to the plane of its orbit around the Sun, which is similar to the axial tilts of Mars and Earth. This means that Neptune experiences seasons just like we do on Earth; however, since its year is so long, ",
+              "match": "each of the four seasons lasts for over 40 years.",
+              "after": " Moons Neptune has 16 known moons. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "four Earth years",
+              "replacement": "over forty Earth years",
+              "kind": "number",
+              "tell": "A missing factor of ten",
+              "reason": "The long orbit makes each season last over forty Earth years, not four."
+            }
+          }
+        },
+        {
+          "id": "r-28",
+          "text": "Minutes and seconds first arose in astronomy, rather than in clockmaking.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "NIST",
+            "title": "Second: Introduction",
+            "url": "https://www.nist.gov/si-redefinition/second"
+          },
+          "evidence": {
+            "quote": "they originated in the realm of astronomy, not timekeeping.",
+            "explanation": "NIST traces these subdivisions through ancient angular measurements before their use in clocks.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "ca5434cbcc19cd7e303bd784b9e5998433577d01d170ed9b724a932ccd3677c8",
+            "context": {
+              "before": "However, people continued using hours of uneven lengths until the late medieval period in Europe, when monks developed mechanical clocks to establish fixed prayer and work periods. The concepts of the minute and the second also date back to ancient times — but ",
+              "match": "they originated in the realm of astronomy, not timekeeping.",
+              "after": " Four thousand years ago, the Sumerians divided a circle into 360 degrees. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-11",
+          "text": "The average depth of the ocean is about 3.7 kilometres.",
+          "topic": "Nature",
+          "real": true,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How deep is the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/oceandepth.html"
+          },
+          "evidence": {
+            "quote": "The average depth of the ocean is about 3,682 meters",
+            "explanation": "A rounded figure, with its unit intact. NOAA gives 3,682 metres for the average.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+            "context": {
+              "before": "Bob Embley, NOAA PMEL, Chief Scientist. ",
+              "match": "The average depth of the ocean is about 3,682 meters",
+              "after": " (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is located beneath the western Pacific Ocean in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-23",
+          "text": "The Statue of Liberty’s crown has twelve rays, one for each month.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "25 windows and seven rays make up the crown.",
+            "explanation": "A plausible symbolic story hides an invented count. The crown has seven rays, not twelve.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Direction : The statue faces southeast in symmetry with the placement of Fort Wood and how people would see the statue while entering the harbor. Crown : ",
+              "match": "25 windows and seven rays make up the crown.",
+              "after": " Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "twelve rays, one for each month",
+              "replacement": "seven rays",
+              "kind": "number",
+              "tell": "A plausible story around an invented count",
+              "reason": "The crown has seven rays. The twelve-month explanation is invented too."
+            }
+          }
+        },
+        {
+          "id": "r-08",
+          "text": "Corals are animals, even though they attach themselves to the ocean floor.",
+          "topic": "Nature",
+          "real": true,
+          "source": {
+            "publisher": "NOAA",
+            "title": "Are corals animals or plants?",
+            "url": "https://oceanservice.noaa.gov/facts/coral.html"
+          },
+          "evidence": {
+            "quote": "Corals are animals, though, because they do not make their own food, as plants do.",
+            "explanation": "Looking plant-like does not make something a plant. Check the biological classification, not the silhouette.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+            "context": {
+              "before": "Corals actually comprise an ancient and unique partnership, called symbiosis , that benefits both animal and plant life in the ocean. ",
+              "match": "Corals are animals, though, because they do not make their own food, as plants do.",
+              "after": " Corals have tiny, tentacle-like arms that they use to capture their food from the water and sweep into their inscrutable mouths. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-08",
+      "title": "Details worth doubting",
+      "claims": [
+        {
+          "id": "r-06",
+          "text": "From some places on Mercury, the morning Sun appears to rise, set, and rise again.",
+          "topic": "Space",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Mercury Facts",
+            "url": "https://science.nasa.gov/mercury/facts/"
+          },
+          "evidence": {
+            "quote": "The morning Sun appears to rise briefly, set, and rise again",
+            "explanation": "A very uneven orbital speed, combined with slow rotation, makes for an unusual sunrise.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "8bff0790fc82480d9decb8db36f753d3cb5496bc847587f7fedb75320ab106fa",
+            "context": {
+              "before": "But when Mercury is moving fastest in its elliptical orbit around the Sun (and it is closest to the Sun), each rotation is not accompanied by sunrise and sunset like it is on most other planets. ",
+              "match": "The morning Sun appears to rise briefly, set, and rise again",
+              "after": " from some parts of the planet's surface. The same thing happens in reverse at sunset for other parts of the surface. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-19",
+          "text": "A photovoltaic cell must first boil water to make electricity.",
+          "topic": "Technology",
+          "real": false,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Solar explained",
+            "url": "https://www.eia.gov/energyexplained/solar/"
+          },
+          "evidence": {
+            "quote": "convert sunlight directly into electricity.",
+            "explanation": "The explanation borrows from solar thermal generation. Photovoltaic cells convert sunlight directly to electricity.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "1d760aea6bfea2330a04988c2bcefa0da35e81b414087eadc071332d553b8659",
+            "context": {
+              "before": "Today, we use many different technologies to capture and convert solar energy into useful energy for various purposes. We use solar thermal energy systems to heat: Water for homes, buildings, or swimming pools Air inside homes, greenhouses, and other buildings Fluids in solar thermal power plants Solar photovoltaic systems Solar photovoltaic (PV) devices, or solar cells , ",
+              "match": "convert sunlight directly into electricity.",
+              "after": " Small PV cells can power calculators, watches, and other small electronic devices. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "must first boil water",
+              "replacement": "converts sunlight directly",
+              "kind": "definition",
+              "tell": "Two technologies conflated",
+              "reason": "The claim borrows a thermal process. A photovoltaic cell does not need to boil water."
+            }
+          }
+        },
+        {
+          "id": "h-25",
+          "text": "The date on the Statue of Liberty’s tablet is the year of the statue’s dedication: 1886.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "Reads in Roman numerals \"July 4, 1776\"",
+            "explanation": "Two historical dates were conflated. The tablet bears 4 July 1776, not the dedication year.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. The Tablet : ",
+              "match": "Reads in Roman numerals \"July 4, 1776\"",
+              "after": " -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: The current torch was a replacement of the original and installed in 1986. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "the year of the statue’s dedication: 1886",
+              "replacement": "4 July 1776",
+              "kind": "attribution",
+              "tell": "Two historical dates conflated",
+              "reason": "The tablet records American independence, not the statue’s dedication."
+            }
+          }
+        },
+        {
+          "id": "h-14",
+          "text": "The ocean’s twilight zone begins at a depth of about twenty metres.",
+          "topic": "Nature",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How far does light travel in the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/light_travel.html"
+          },
+          "evidence": {
+            "quote": "The zone between 200 meters and 1,000 meters",
+            "explanation": "A zero was dropped. NOAA puts the twilight zone between 200 and 1,000 metres.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+            "context": {
+              "before": "Only a small amount of light penetrates beyond this depth. ",
+              "match": "The zone between 200 meters and 1,000 meters",
+              "after": " is usually referred to as the “ twilight ” zone, but is officially the dysphotic zone. In this zone, the intensity of light rapidly dissipates as depth increases. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "twenty metres",
+              "replacement": "200 metres",
+              "kind": "number",
+              "tell": "A missing zero",
+              "reason": "The upper boundary of the twilight zone is around 200 metres, not twenty."
+            }
+          }
+        },
+        {
+          "id": "r-12",
+          "text": "The Challenger Deep is in the western Pacific Ocean.",
+          "topic": "Nature",
+          "real": true,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How deep is the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/oceandepth.html"
+          },
+          "evidence": {
+            "quote": "located beneath the western Pacific Ocean",
+            "explanation": "NOAA places it at the southern end of the Mariana Trench, southwest of Guam.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+            "context": {
+              "before": "The average depth of the ocean is about 3,682 meters (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is ",
+              "match": "located beneath the western Pacific Ocean",
+              "after": " in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. Challenger Deep is approximately 10,935 meters (35,876 feet) deep . "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-09",
+      "title": "Under the surface",
+      "claims": [
+        {
+          "id": "r-10",
+          "text": "Many corals have microscopic algae living inside their tissues.",
+          "topic": "Nature",
+          "real": true,
+          "source": {
+            "publisher": "NOAA",
+            "title": "Are corals animals or plants?",
+            "url": "https://oceanservice.noaa.gov/facts/coral.html"
+          },
+          "evidence": {
+            "quote": "Most corals contain algae called zooxanthellae",
+            "explanation": "The algae and coral exchange resources in a relationship called symbiosis.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+            "context": {
+              "before": "Because of this cycle of growth, death, and regeneration among individual polyps, many coral colonies can live for a very long time. ",
+              "match": "Most corals contain algae called zooxanthellae",
+              "after": " (pronounced zo-UH-zan-thuh-lay), which are plant-like organisms. Residing within the coral's tissues, the microscopic algae are well protected and make use of the coral's metabolic waste products for photosynthesis, the process by which plants make their own food. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-01",
+          "text": "The Moon completes one orbit around Earth in about fourteen Earth days.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Moon Facts",
+            "url": "https://science.nasa.gov/moon/facts/"
+          },
+          "evidence": {
+            "quote": "The Moon makes a complete orbit around Earth in 27 Earth days",
+            "explanation": "The orbital period was cut roughly in half. NASA gives 27 Earth days, not fourteen.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "c3bd416b576ff11180466514e671b8cf54aafe2c4663468dc7c07b6227fa9360",
+            "context": {
+              "before": "And a \"new moon\" occurs when the far side of the Moon has full sunlight, and the side facing us is having its night. ",
+              "match": "The Moon makes a complete orbit around Earth in 27 Earth days",
+              "after": " and rotates or spins at that same rate, or in that same amount of time. Because Earth is moving as well – rotating on its axis as it orbits the Sun – from our perspective, the Moon appears to orbit us every 29 days. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "fourteen Earth days",
+              "replacement": "27 Earth days",
+              "kind": "number",
+              "tell": "An altered duration",
+              "reason": "The orbit takes about 27 days. Fourteen is not the orbital period."
+            }
+          }
+        },
+        {
+          "id": "r-24",
+          "text": "There are chains and a broken shackle at the Statue of Liberty’s feet.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "Chains and a broken shackle are at the statue's feet",
+            "explanation": "The National Park Service notes that they cannot be seen from below.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Crown : 25 windows and seven rays make up the crown. Chains : ",
+              "match": "Chains and a broken shackle are at the statue's feet",
+              "after": " and cannot be seen from below. The Tablet : Reads in Roman numerals \"July 4, 1776\" -- the date of American Independence. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-33",
+          "text": "The defined speed of light in a vacuum is exactly 299,792,458 metres per second.",
+          "topic": "Science",
+          "real": true,
+          "source": {
+            "publisher": "NIST",
+            "title": "Meter: The Past",
+            "url": "https://www.nist.gov/si-redefinition/meter"
+          },
+          "evidence": {
+            "quote": "locked the speed of light at 299,792,458 meters per second in a vacuum.",
+            "explanation": "The words “in a vacuum” and “defined” do important work here.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "e0eb3dfd6e49ee36843111310e5f92839d60db7771d5913f3c1d14af2fe51a5a",
+            "context": {
+              "before": "Building upon these and other advances, the meter was redefined by international agreement in 1983 as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also ",
+              "match": "locked the speed of light at 299,792,458 meters per second in a vacuum.",
+              "after": " Length was now no longer an independent standard but rather was derived from the extremely accurate standard of time and a newly defined value for the speed of light made possible by the technology developed at NIST. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-29",
+          "text": "Ancient Egyptian daytime hours were longer in summer than nighttime hours.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "NIST",
+            "title": "Second: Introduction",
+            "url": "https://www.nist.gov/si-redefinition/second"
+          },
+          "evidence": {
+            "quote": "with daytime hours longer than nighttime hours during the summer.",
+            "explanation": "Dividing daylight and darkness into twelve parts each produces unequal hours.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "ca5434cbcc19cd7e303bd784b9e5998433577d01d170ed9b724a932ccd3677c8",
+            "context": {
+              "before": "Hanacek/NIST Humans first broke up time into day and night. Ancient Egyptians then divided day and night into 12 parts each, ",
+              "match": "with daytime hours longer than nighttime hours during the summer.",
+              "after": " Ancient Greeks later proposed splitting the day into 24 equal hours. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-10",
+      "title": "The shape of a fact",
+      "claims": [
+        {
+          "id": "h-24",
+          "text": "The Statue of Liberty faces due north across New York Harbor.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "The statue faces southeast",
+            "explanation": "The direction was changed. The monument’s own statistics say southeast.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Wind Sway : The statue can sway up to 3 inches and the torch up to 6 inches. Direction : ",
+              "match": "The statue faces southeast",
+              "after": " in symmetry with the placement of Fort Wood and how people would see the statue while entering the harbor. Crown : 25 windows and seven rays make up the crown. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "due north",
+              "replacement": "southeast",
+              "kind": "location",
+              "tell": "A substituted direction",
+              "reason": "The National Park Service specifies southeast, not north."
+            }
+          }
+        },
+        {
+          "id": "h-15",
+          "text": "Sunlight routinely penetrates to a depth of four kilometres in the ocean.",
+          "topic": "Nature",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How far does light travel in the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/light_travel.html"
+          },
+          "evidence": {
+            "quote": "The aphotic zone exists in depths below 1,000 meters . Sunlight does not penetrate to these depths",
+            "explanation": "The page says water below 1,000 metres lies in the aphotic zone. Four kilometres is much deeper than that.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+            "context": {
+              "before": "Such a minuscule amount of light penetrates beyond a depth of 200 meters that photosynthesis is no longer possible. ",
+              "match": "The aphotic zone exists in depths below 1,000 meters . Sunlight does not penetrate to these depths",
+              "after": " and the zone is bathed in darkness. The aphotic zone is further subdivided into the bathypelagic zone (or midnight zone) between 1,000 and 4,000 meters, the abyssopelagic (or the abyss ) between 4,000 and 6,000 meters , and the hadopelagic zone (or hadal zone) 6,000 meters and deeper. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "routinely penetrates to a depth of four kilometres",
+              "replacement": "does not penetrate the aphotic zone below 1,000 metres",
+              "kind": "number",
+              "tell": "An exaggerated depth",
+              "reason": "Four kilometres is far inside the dark aphotic zone. Sunlight does not reach it."
+            }
+          }
+        },
+        {
+          "id": "r-20",
+          "text": "During the day, air above land heats up faster than air above water.",
+          "topic": "Energy",
+          "real": true,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Wind explained",
+            "url": "https://www.eia.gov/energyexplained/wind/"
+          },
+          "evidence": {
+            "quote": "During the day, air above land heats up faster than air above water.",
+            "explanation": "Uneven solar heating helps create a daily wind cycle.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "6385481574b1435f379a564e09992153bf09e7861455974df5df21f6197b3ee8",
+            "context": {
+              "before": "One example of this uneven heating is the daily wind cycle. How uneven heating of water and land causes wind Source: Adapted from National Energy Education Development Project (public domain) The daily wind cycle ",
+              "match": "During the day, air above land heats up faster than air above water.",
+              "after": " Warm air above land expands and rises, and heavier, cooler air rushes in to take its place, creating wind. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-12",
+          "text": "The Challenger Deep sits beneath the North Atlantic Ocean.",
+          "topic": "Nature",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How deep is the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/oceandepth.html"
+          },
+          "evidence": {
+            "quote": "located beneath the western Pacific Ocean",
+            "explanation": "The location was moved to a different ocean. NOAA places it in the western Pacific.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+            "context": {
+              "before": "The average depth of the ocean is about 3,682 meters (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is ",
+              "match": "located beneath the western Pacific Ocean",
+              "after": " in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. Challenger Deep is approximately 10,935 meters (35,876 feet) deep . "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "North Atlantic Ocean",
+              "replacement": "western Pacific Ocean",
+              "kind": "location",
+              "tell": "A substituted location",
+              "reason": "The Challenger Deep is in the Mariana Trench in the western Pacific."
+            }
+          }
+        },
+        {
+          "id": "h-33",
+          "text": "The defined speed of light in a vacuum is exactly 300,000,000 metres per second.",
+          "topic": "Science",
+          "real": false,
+          "source": {
+            "publisher": "NIST",
+            "title": "Meter: The Past",
+            "url": "https://www.nist.gov/si-redefinition/meter"
+          },
+          "evidence": {
+            "quote": "locked the speed of light at 299,792,458 meters per second in a vacuum.",
+            "explanation": "Three hundred million is a useful approximation, but the word “exactly” makes this false. The defined value is 299,792,458.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "e0eb3dfd6e49ee36843111310e5f92839d60db7771d5913f3c1d14af2fe51a5a",
+            "context": {
+              "before": "Building upon these and other advances, the meter was redefined by international agreement in 1983 as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also ",
+              "match": "locked the speed of light at 299,792,458 meters per second in a vacuum.",
+              "after": " Length was now no longer an independent standard but rather was derived from the extremely accurate standard of time and a newly defined value for the speed of light made possible by the technology developed at NIST. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "exactly 300,000,000",
+              "replacement": "exactly 299,792,458",
+              "kind": "number",
+              "tell": "An approximation presented as exact",
+              "reason": "300 million is an approximation. The word “exactly” makes the statement false."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-11",
+      "title": "Numbers with a story",
+      "claims": [
+        {
+          "id": "r-05",
+          "text": "Neptune was located using mathematical predictions, rather than a routine sky survey.",
+          "topic": "Science",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Neptune Facts",
+            "url": "https://science.nasa.gov/neptune/facts/"
+          },
+          "evidence": {
+            "quote": "the first planet located through mathematical predictions",
+            "explanation": "Galileo had recorded it as a star, but mathematical predictions led to its identification as a planet.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "12e9cbe618bb5c633d4fa09fd6a0364727d2c3e402b026e549e1d69529bb085d",
+            "context": {
+              "before": "Discovery and Namesake Galileo recorded Neptune as a fixed star during observations with his small telescope in 1612 and 1613. More than 200 years later, the ice giant became ",
+              "match": "the first planet located through mathematical predictions",
+              "after": " rather than through regular observations of the sky. Because Uranus didn't travel exactly as astronomers expected it to, French mathematician Urbain Joseph Le Verrier proposed the position and mass of a then-unknown planet that could cause the observed changes to Uranus' orbit. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-17",
+          "text": "Wind overtook hydropower as the largest source of annual US renewable electricity generation in 2019.",
+          "topic": "Energy",
+          "real": true,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Hydropower explained",
+            "url": "https://www.eia.gov/energyexplained/hydropower/"
+          },
+          "evidence": {
+            "quote": "2019 when wind generation surpassed hydropower",
+            "explanation": "This is about annual US electricity generation, not global energy or installed capacity.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+            "context": {
+              "before": "Therefore, pumped-storage facilities have net negative electricity generation balances. Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until ",
+              "match": "2019 when wind generation surpassed hydropower",
+              "after": ", it was the largest source of total annual U.S. renewable electricity generation. Thousands of years ago, people used hydropower to turn paddle wheels on rivers to grind grain. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-10",
+          "text": "The algae living inside corals receive no benefit from the relationship.",
+          "topic": "Nature",
+          "real": false,
+          "source": {
+            "publisher": "NOAA",
+            "title": "Are corals animals or plants?",
+            "url": "https://oceanservice.noaa.gov/facts/coral.html"
+          },
+          "evidence": {
+            "quote": "the microscopic algae are well protected",
+            "explanation": "The one-way relationship was invented. NOAA explains that the algae get protection and use coral waste for photosynthesis.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+            "context": {
+              "before": "Most corals contain algae called zooxanthellae (pronounced zo-UH-zan-thuh-lay), which are plant-like organisms. Residing within the coral's tissues, ",
+              "match": "the microscopic algae are well protected",
+              "after": " and make use of the coral's metabolic waste products for photosynthesis, the process by which plants make their own food. The corals benefit, in turn, as the algae produce oxygen, remove wastes, and supply the organic products of photosynthesis that corals need to grow, thrive, and build up the reef. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "no benefit",
+              "replacement": "protection and resources for photosynthesis",
+              "kind": "definition",
+              "tell": "A relationship made one-sided",
+              "reason": "The algae benefit too. NOAA describes protection and the use of coral waste products."
+            }
+          }
+        },
+        {
+          "id": "h-31",
+          "text": "NOAA’s pre-industrial carbon dioxide reference is 380 parts per million.",
+          "topic": "Climate",
+          "real": false,
+          "source": {
+            "publisher": "NOAA Global Monitoring Laboratory",
+            "title": "Trends in atmospheric carbon dioxide",
+            "url": "https://gml.noaa.gov/ccgg/trends/weekly.html"
+          },
+          "evidence": {
+            "quote": "The value of 280 ppm is chosen as representative of pre-industrial air",
+            "explanation": "The reference was inflated by 100 ppm. The page uses 280 ppm, tied to ice-core evidence.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "609d4c120717add2191d444e74b35cff0fcd57c65ed433839a85d53bdef451e8",
+            "context": {
+              "before": "PNG Version of plot PDF Version of plot This figure shows the atmospheric increase of CO 2 over 280 ppm in weekly averages of CO 2 observed at Mauna Loa. ",
+              "match": "The value of 280 ppm is chosen as representative of pre-industrial air",
+              "after": " because it is close to the average of CO 2 measured and dated with high time resolution between the years 1000 and 1800 in an ice core from Law Dome, Antarctica. [Etheridge et al., 1996] . "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "380 parts per million",
+              "replacement": "280 parts per million",
+              "kind": "number",
+              "tell": "An inflated baseline",
+              "reason": "The reference value is 280 ppm. The claim adds 100 ppm."
+            }
+          }
+        },
+        {
+          "id": "r-21",
+          "text": "The word geothermal combines Greek words meaning earth and heat.",
+          "topic": "Energy",
+          "real": true,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Geothermal explained",
+            "url": "https://www.eia.gov/energyexplained/geothermal/"
+          },
+          "evidence": {
+            "quote": "The name comes from the Greek words geo (earth) and therme (heat).",
+            "explanation": "The name describes the energy source: heat inside the Earth.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "f347ab23abfec9f80409f7653c6853b0e99e77d85830f7ed294851171ff6aa5d",
+            "context": {
+              "before": "Geothermal energy is heat found inside the earth. ",
+              "match": "The name comes from the Greek words geo (earth) and therme (heat).",
+              "after": " Geothermal energy is a renewable energy source because the earth constantly produces this heat. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-12",
+      "title": "Stranger than fiction",
+      "claims": [
+        {
+          "id": "h-20",
+          "text": "In the daily wind cycle, air over water heats faster than air over land during the day.",
+          "topic": "Energy",
+          "real": false,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Wind explained",
+            "url": "https://www.eia.gov/energyexplained/wind/"
+          },
+          "evidence": {
+            "quote": "During the day, air above land heats up faster than air above water.",
+            "explanation": "The two surfaces were swapped. The EIA describes faster daytime heating over land.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "6385481574b1435f379a564e09992153bf09e7861455974df5df21f6197b3ee8",
+            "context": {
+              "before": "One example of this uneven heating is the daily wind cycle. How uneven heating of water and land causes wind Source: Adapted from National Energy Education Development Project (public domain) The daily wind cycle ",
+              "match": "During the day, air above land heats up faster than air above water.",
+              "after": " Warm air above land expands and rises, and heavier, cooler air rushes in to take its place, creating wind. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "air over water heats faster than air over land",
+              "replacement": "air over land heats faster than air over water",
+              "kind": "comparison",
+              "tell": "A reversed comparison",
+              "reason": "The daily cycle has faster daytime heating over land, not water."
+            }
+          }
+        },
+        {
+          "id": "r-30",
+          "text": "NOAA expresses atmospheric carbon dioxide as a mole fraction in dry air.",
+          "topic": "Climate",
+          "real": true,
+          "source": {
+            "publisher": "NOAA Global Monitoring Laboratory",
+            "title": "Trends in atmospheric carbon dioxide",
+            "url": "https://gml.noaa.gov/ccgg/trends/weekly.html"
+          },
+          "evidence": {
+            "quote": "Data are reported as a dry air mole fraction",
+            "explanation": "Removing water vapour makes the reported ratio comparable across different humidity conditions.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "609d4c120717add2191d444e74b35cff0fcd57c65ed433839a85d53bdef451e8",
+            "context": {
+              "before": "The enhancement of the CO 2 mole fraction in the atmosphere over pre-industrial is expressed both as ppm and as a percentage change since the year 1800. ",
+              "match": "Data are reported as a dry air mole fraction",
+              "after": " defined as the number of molecules of carbon dioxide divided by the number of all molecules in air, including CO 2 itself, after water vapor has been removed. The mole fraction is expressed as parts per million (ppm). "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-02",
+          "text": "Every part of Saturn’s ring system orbits the planet at the same speed.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Saturn Facts",
+            "url": "https://science.nasa.gov/saturn/facts/"
+          },
+          "evidence": {
+            "quote": "each ring orbits at a different speed around the planet.",
+            "explanation": "A rigid-disc intuition is misleading. NASA explicitly says the rings orbit at different speeds.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "1043fb085c9afc6ad43b8f2685bdedf1b66b03b72807346f9dd84b6c6bd0e8d2",
+            "context": {
+              "before": "A few particles are as large as mountains. The rings would look mostly white if you looked at them from the cloud tops of Saturn, and interestingly, ",
+              "match": "each ring orbits at a different speed around the planet.",
+              "after": " Saturn's ring system extends up to 175,000 miles (282,000 kilometers) from the planet, yet the vertical height is typically about 30 feet (10 meters) in the main rings. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "the same speed",
+              "replacement": "different speeds",
+              "kind": "comparison",
+              "tell": "A reversed comparison",
+              "reason": "The rings are not a rigid disc: each ring orbits at a different speed."
+            }
+          }
+        },
+        {
+          "id": "r-09",
+          "text": "A coral polyp builds a hard outer skeleton of limestone.",
+          "topic": "Nature",
+          "real": true,
+          "source": {
+            "publisher": "NOAA",
+            "title": "Are corals animals or plants?",
+            "url": "https://oceanservice.noaa.gov/facts/coral.html"
+          },
+          "evidence": {
+            "quote": "secretes a hard outer skeleton of limestone (calcium carbonate)",
+            "explanation": "The soft animal builds the hard structure. NOAA identifies the material as calcium carbonate.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+            "context": {
+              "before": "Most structures that we call \"coral\" are, in fact, made up of hundreds to thousands of tiny coral creatures called polyps. Each soft-bodied polyp—most no thicker than a nickel—",
+              "match": "secretes a hard outer skeleton of limestone (calcium carbonate)",
+              "after": " that attaches either to rock or the dead skeletons of other polyps. In the case of stony or hard corals , these polyp conglomerates grow, die, and endlessly repeat the cycle over time, slowly laying the limestone foundation for coral reefs and giving shape to the familiar corals that reside there. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-04",
+          "text": "A year on Mercury lasts 176 Earth days.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Mercury Facts",
+            "url": "https://science.nasa.gov/mercury/facts/"
+          },
+          "evidence": {
+            "quote": "zipping around the Sun every 88 Earth days.",
+            "explanation": "The citation is real, but 176 is Mercury’s solar day. Its year is 88 Earth days.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "8bff0790fc82480d9decb8db36f753d3cb5496bc847587f7fedb75320ab106fa",
+            "context": {
+              "before": "Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere. But Mercury is the fastest planet, ",
+              "match": "zipping around the Sun every 88 Earth days.",
+              "after": " Namesake Mercury is appropriately named for the swiftest of the ancient Roman gods. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "176 Earth days",
+              "replacement": "88 Earth days",
+              "kind": "definition",
+              "tell": "A correct number in the wrong place",
+              "reason": "176 is Mercury’s solar day, not its year. Its year is 88 Earth days."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-13",
+      "title": "Read that again",
+      "claims": [
+        {
+          "id": "h-32",
+          "text": "NOAA defines its weekly carbon dioxide average using Monday through Friday only.",
+          "topic": "Climate",
+          "real": false,
+          "source": {
+            "publisher": "NOAA Global Monitoring Laboratory",
+            "title": "Trends in atmospheric carbon dioxide",
+            "url": "https://gml.noaa.gov/ccgg/trends/weekly.html"
+          },
+          "evidence": {
+            "quote": "Sunday to Saturday",
+            "explanation": "The averaging window was changed. NOAA’s weekly mean uses available background values from Sunday to Saturday.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "609d4c120717add2191d444e74b35cff0fcd57c65ed433839a85d53bdef451e8",
+            "context": {
+              "before": "PNG Version of plot PDF Version of plot The graph, updated daily, shows as individual points daily mean CO 2 , and weekly means up to and including the week previous to today. The weekly mean ( red bar ) is simply the average of all days in the week (",
+              "match": "Sunday to Saturday",
+              "after": ") for which a background value could be defined. Note that the “ Weekly value from 1 year ago ” shown in the box above the graph is for an average of 7 days starting exactly 365 days before the current week, so it may not be a Sunday-Saturday week. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "Monday through Friday only",
+              "replacement": "Sunday to Saturday",
+              "kind": "definition",
+              "tell": "An altered measurement window",
+              "reason": "The weekly mean covers available background values across the whole Sunday–Saturday week."
+            }
+          }
+        },
+        {
+          "id": "r-13",
+          "text": "Very little sunlight reaches deeper than 200 metres into the ocean.",
+          "topic": "Nature",
+          "real": true,
+          "source": {
+            "publisher": "NOAA",
+            "title": "How far does light travel in the ocean?",
+            "url": "https://oceanservice.noaa.gov/facts/light_travel.html"
+          },
+          "evidence": {
+            "quote": "there is rarely any significant light beyond 200 meters.",
+            "explanation": "Trace light can travel farther. The claim is about significant light, not an absolute boundary.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+            "context": {
+              "before": "How far does light travel in the ocean? Light may be detected as far as 1,000 meters down in the ocean , but ",
+              "match": "there is rarely any significant light beyond 200 meters.",
+              "after": " The ocean is divided into three zones based on depth and light level. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-07",
+          "text": "The Sun takes longer to rotate at its equator than at its poles.",
+          "topic": "Space",
+          "real": false,
+          "source": {
+            "publisher": "NASA",
+            "title": "Sun Facts",
+            "url": "https://science.nasa.gov/sun/facts/"
+          },
+          "evidence": {
+            "quote": "At its poles, the Sun rotates once on its axis every 36 Earth days.",
+            "explanation": "The comparison was inverted. NASA gives 25 Earth days at the equator and 36 at the poles.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "70ccbc91222af8b1e2374b44f8ffcd1d0a16aadf00eb158eb1bf50eef7f5ea8d",
+            "context": {
+              "before": "At its equator, the Sun completes one rotation in 25 Earth days. ",
+              "match": "At its poles, the Sun rotates once on its axis every 36 Earth days.",
+              "after": " The part of the Sun we see from Earth – the part we call the surface – is the photosphere. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "longer to rotate at its equator than at its poles",
+              "replacement": "25 days at the equator; 36 at the poles",
+              "kind": "comparison",
+              "tell": "A reversed comparison",
+              "reason": "The equator rotates faster, not slower. The two rotation periods were swapped."
+            }
+          }
+        },
+        {
+          "id": "r-16",
+          "text": "The first US hydroelectric power plant to sell electricity opened in 1882.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Hydropower explained",
+            "url": "https://www.eia.gov/energyexplained/hydropower/"
+          },
+          "evidence": {
+            "quote": "The first U.S. hydroelectric power plant to sell electricity opened on the Fox River near Appleton, Wisconsin, on September 30, 1882.",
+            "explanation": "The EIA distinguishes a plant selling electricity from earlier industrial uses. That qualification matters.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+            "context": {
+              "before": "The first industrial use of hydropower to generate electricity in the United States was in 1880 to power 16 brush-arc lamps at the Wolverine Chair Factory in Grand Rapids, Michigan. ",
+              "match": "The first U.S. hydroelectric power plant to sell electricity opened on the Fox River near Appleton, Wisconsin, on September 30, 1882.",
+              "after": " Most U.S. hydroelectricity is produced at large dams on major rivers, and most of these hydroelectric dams were built before the mid-1970s by federal government agencies. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "r-23",
+          "text": "The Statue of Liberty’s crown has 25 windows and seven rays.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "25 windows and seven rays make up the crown.",
+            "explanation": "A small architectural detail, checked against the monument’s own custodian.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Direction : The statue faces southeast in symmetry with the placement of Fort Wood and how people would see the statue while entering the harbor. Crown : ",
+              "match": "25 windows and seven rays make up the crown.",
+              "after": " Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "edition-14",
+      "title": "The weight of a word",
+      "claims": [
+        {
+          "id": "r-35",
+          "text": "The Statue of Liberty’s copper skin is only about as thick as two pennies.",
+          "topic": "History",
+          "real": true,
+          "source": {
+            "publisher": "National Park Service",
+            "title": "Statue Statistics",
+            "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+          },
+          "evidence": {
+            "quote": "the thickness of two pennies placed together.",
+            "explanation": "The outer skin is just 3/32 of an inch thick. The internal framework supplies support.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "8395c007b1b27459c4d6de98da1704c57b730671482b5cebc047c67f1c781c1d",
+            "context": {
+              "before": "Weight of concrete foundation : 54,000,000 lbs. Thickness of copper sheeting : 3/32 of an inch, ",
+              "match": "the thickness of two pennies placed together.",
+              "after": " Wind Sway : The statue can sway up to 3 inches and the torch up to 6 inches. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-30",
+          "text": "NOAA’s carbon dioxide mole fraction includes water vapour in the total air measurement.",
+          "topic": "Climate",
+          "real": false,
+          "source": {
+            "publisher": "NOAA Global Monitoring Laboratory",
+            "title": "Trends in atmospheric carbon dioxide",
+            "url": "https://gml.noaa.gov/ccgg/trends/weekly.html"
+          },
+          "evidence": {
+            "quote": "after water vapor has been removed.",
+            "explanation": "The moisture convention was reversed. NOAA reports a dry-air mole fraction.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "609d4c120717add2191d444e74b35cff0fcd57c65ed433839a85d53bdef451e8",
+            "context": {
+              "before": "The enhancement of the CO 2 mole fraction in the atmosphere over pre-industrial is expressed both as ppm and as a percentage change since the year 1800. Data are reported as a dry air mole fraction defined as the number of molecules of carbon dioxide divided by the number of all molecules in air, including CO 2 itself, ",
+              "match": "after water vapor has been removed.",
+              "after": " The mole fraction is expressed as parts per million (ppm). "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "includes water vapour",
+              "replacement": "excludes water vapour",
+              "kind": "definition",
+              "tell": "A measurement convention reversed",
+              "reason": "NOAA uses dry air: water vapour is removed before calculating the mole fraction."
+            }
+          }
+        },
+        {
+          "id": "r-03",
+          "text": "Jupiter has the shortest day of any planet in our solar system.",
+          "topic": "Space",
+          "real": true,
+          "source": {
+            "publisher": "NASA",
+            "title": "Jupiter Facts",
+            "url": "https://science.nasa.gov/jupiter/facts/"
+          },
+          "evidence": {
+            "quote": "Jupiter has the shortest day in the solar system.",
+            "explanation": "Big does not mean slow. NASA gives its rotation period as just 9.9 hours.",
+            "checkedOn": "2026-11-01",
+            "method": "supporting-quote",
+            "sourceSha256": "af552e8515200306ce22a2dece29076c72ad6f8582a0ed22ae5982f2836c9e96",
+            "context": {
+              "before": "From this distance, it takes sunlight 43 minutes to travel from the Sun to Jupiter. Orbit and Rotation ",
+              "match": "Jupiter has the shortest day in the solar system.",
+              "after": " One day on Jupiter takes 9.9 hours (the time it takes for Jupiter to rotate or spin around once), and Jupiter makes a complete orbit around the Sun (a year in Jovian time) in about 12 Earth years (4,333 Earth days). "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": null
+          }
+        },
+        {
+          "id": "h-17",
+          "text": "The first US hydroelectric power plant to sell electricity opened in 1922.",
+          "topic": "History",
+          "real": false,
+          "source": {
+            "publisher": "US Energy Information Administration",
+            "title": "Hydropower explained",
+            "url": "https://www.eia.gov/energyexplained/hydropower/"
+          },
+          "evidence": {
+            "quote": "The first U.S. hydroelectric power plant to sell electricity opened on the Fox River near Appleton, Wisconsin, on September 30, 1882.",
+            "explanation": "The year was moved forward forty years. The EIA dates the first electricity-selling plant to 1882.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+            "context": {
+              "before": "The first industrial use of hydropower to generate electricity in the United States was in 1880 to power 16 brush-arc lamps at the Wolverine Chair Factory in Grand Rapids, Michigan. ",
+              "match": "The first U.S. hydroelectric power plant to sell electricity opened on the Fox River near Appleton, Wisconsin, on September 30, 1882.",
+              "after": " Most U.S. hydroelectricity is produced at large dams on major rivers, and most of these hydroelectric dams were built before the mid-1970s by federal government agencies. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "1922",
+              "replacement": "1882",
+              "kind": "date",
+              "tell": "A shifted date",
+              "reason": "The first electricity-selling US hydropower plant opened forty years earlier."
+            }
+          }
+        },
+        {
+          "id": "h-26",
+          "text": "The metre is still officially defined by a platinum-iridium bar.",
+          "topic": "Technology",
+          "real": false,
+          "source": {
+            "publisher": "NIST",
+            "title": "Meter: The Past",
+            "url": "https://www.nist.gov/si-redefinition/meter"
+          },
+          "evidence": {
+            "quote": "the meter was redefined by international agreement in 1983",
+            "explanation": "An obsolete standard was presented as current. The modern metre is defined using light travelling in a vacuum.",
+            "checkedOn": "2026-11-01",
+            "method": "direct-contradiction",
+            "sourceSha256": "e0eb3dfd6e49ee36843111310e5f92839d60db7771d5913f3c1d14af2fe51a5a",
+            "context": {
+              "before": "This value, while not determined with the low uncertainty level claimed a few months later by the Boulder group, was entirely consistent with their result. Building upon these and other advances, ",
+              "match": "the meter was redefined by international agreement in 1983",
+              "after": " as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also locked the speed of light at 299,792,458 meters per second in a vacuum. "
+            },
+            "contextCheckedOn": "2026-11-02",
+            "proof": {
+              "phrase": "still officially defined by a platinum-iridium bar",
+              "replacement": "defined using light travelling in a vacuum",
+              "kind": "definition",
+              "tell": "An obsolete standard made current",
+              "reason": "The physical bar is historical. The light-based definition was adopted in 1983."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

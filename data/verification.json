@@ -1,0 +1,992 @@
+{
+  "checkedAt": "2026-11-02T18:41:25.714Z",
+  "elapsedSeconds": 1.6,
+  "uniqueSources": 18,
+  "realClaims": 35,
+  "fabrications": 35,
+  "passed": 70,
+  "failed": 0,
+  "meaning": "Quote presence only. Supporting and contradicting meaning was assessed during original authoring. No failed fetch uses cached content.",
+  "checks": [
+    {
+      "id": "r-27",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nist.gov/si-redefinition/second",
+      "matched": true,
+      "context": {
+        "before": "The second is currently defined using cesium atoms, which absorb and emit microwave radiation with a specific frequency. ",
+        "match": "Atomic clocks count 9,192,631,770 of those microwave oscillations",
+        "after": ", and we call the elapsed time interval a second. Today, commercially available cesium clocks keep time to within 1/3,000,000 of a second per year. "
+      },
+      "sha256": "f51e1398b35e148cb1c77bc14c3e81a8fa1dc7a988a2c1a465e68e3b2423afda",
+      "error": null
+    },
+    {
+      "id": "h-13",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "matched": true,
+      "context": {
+        "before": "Challenger Deep is approximately 10,935 meters (35,876 feet) deep . It is named after the HMS Challenger , whose crew ",
+        "match": "first sounded the depths of the trench in 1875.",
+        "after": " More Information Volumes of the Earth's Oceans (NOAA National Centers for Environmental Information) Get Social Social Last updated: 09/23/26 Author: NOAA How to cite this article Contact Us Provide Feedback Contact Us Report an error Social Science. "
+      },
+      "sha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+      "error": null
+    },
+    {
+      "id": "r-32",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "matched": true,
+      "context": {
+        "before": "[Etheridge et al., 1996] . Although the time resolution of old air locked in ice cores is not enough to preserve seasonal cycles, there is no doubt that the seasonal cycle, which is ",
+        "match": "mostly caused by photosynthesis and respiration of ecosystems on land",
+        "after": ", was similar to what we observe today. Therefore, for the comparison with pre-industrial times the Mauna Loa weekly data have been first deseasonalized by subtracting the observed average seasonal cycle, and then subtracting 280 ppm. "
+      },
+      "sha256": "5f54b8d76ed3599a318e574dac5ff362d263a0ad2932bfdef08ac0a7698995b5",
+      "error": null
+    },
+    {
+      "id": "h-09",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/coral.html",
+      "matched": true,
+      "context": {
+        "before": "Corals have tiny, tentacle-like arms that they use to capture their food from the water and sweep into their inscrutable mouths. Most structures that we call \"coral\" are, in fact, ",
+        "match": "made up of hundreds to thousands of tiny coral creatures called polyps.",
+        "after": " Each soft-bodied polyp—most no thicker than a nickel—secretes a hard outer skeleton of limestone (calcium carbonate) that attaches either to rock or the dead skeletons of other polyps. "
+      },
+      "sha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+      "error": null
+    },
+    {
+      "id": "r-25",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. The Tablet : ",
+        "match": "Reads in Roman numerals \"July 4, 1776\"",
+        "after": " -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: The current torch was a replacement of the original and installed in 1986. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "h-06",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/neptune/facts/",
+      "matched": true,
+      "context": {
+        "before": "One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, ",
+        "match": "it takes sunlight 4 hours to travel from the Sun to Neptune.",
+        "after": " Orbit and Rotation One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). "
+      },
+      "sha256": "762cb1160499445b0dc20a0a914f08443e7c77e80c2b3f8877248ed79da96dbb",
+      "error": null
+    },
+    {
+      "id": "h-03",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/jupiter/facts/",
+      "matched": true,
+      "context": {
+        "before": "Orbit and Rotation Jupiter has the shortest day in the solar system. ",
+        "match": "One day on Jupiter takes 9.9 hours",
+        "after": " (the time it takes for Jupiter to rotate or spin around once), and Jupiter makes a complete orbit around the Sun (a year in Jovian time) in about 12 Earth years (4,333 Earth days). Its equator is tilted with respect to its orbital path around the Sun by just 3 degrees. "
+      },
+      "sha256": "86b293cac0097302522c88724ddf8b9e922443b417edb4bb474ba48012331a9b",
+      "error": null
+    },
+    {
+      "id": "r-19",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.eia.gov/energyexplained/solar/",
+      "matched": true,
+      "context": {
+        "before": "Today, we use many different technologies to capture and convert solar energy into useful energy for various purposes. We use solar thermal energy systems to heat: Water for homes, buildings, or swimming pools Air inside homes, greenhouses, and other buildings Fluids in solar thermal power plants Solar photovoltaic systems Solar photovoltaic (PV) devices, or solar cells , ",
+        "match": "convert sunlight directly into electricity.",
+        "after": " Small PV cells can power calculators, watches, and other small electronic devices. "
+      },
+      "sha256": "6d5b075eb1506480161399891882146f197a7d7affc03dfeb0091a645f4862ed",
+      "error": null
+    },
+    {
+      "id": "h-05",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/venus/facts/",
+      "matched": true,
+      "context": {
+        "before": "For another, because of the planet's extremely slow rotation, sunrise to sunset would take 117 Earth days. And by the way, ",
+        "match": "the Sun would rise in the west and set in the east",
+        "after": ", because Venus spins backward compared to Earth. While you’re waiting, don’t expect any seasonal relief from the unrelenting temperatures. "
+      },
+      "sha256": "68155ce05b57321c813baba856b802327caee792f220ceec6c283adcce6d6f6b",
+      "error": null
+    },
+    {
+      "id": "r-18",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.eia.gov/energyexplained/hydropower/",
+      "matched": true,
+      "context": {
+        "before": "Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until 2019 when wind generation surpassed hydropower, it was the largest source of total annual U.S. renewable electricity generation. ",
+        "match": "Thousands of years ago, people used hydropower to turn paddle wheels on rivers to grind grain.",
+        "after": " Before steam power and electricity were available in the United States, grain and lumber mills were powered directly with hydropower. "
+      },
+      "sha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+      "error": null
+    },
+    {
+      "id": "r-15",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.eia.gov/energyexplained/hydropower/",
+      "matched": true,
+      "context": {
+        "before": "They release the stored water to generate electricity during peak electricity demand periods when wholesale electricity prices are relatively high. Pumped-storage hydroelectric systems ",
+        "match": "generally use more electricity to pump water to the upper water storage reservoirs than they produce",
+        "after": " with the stored water. Therefore, pumped-storage facilities have net negative electricity generation balances. "
+      },
+      "sha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+      "error": null
+    },
+    {
+      "id": "r-02",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/saturn/facts/",
+      "matched": true,
+      "context": {
+        "before": "It is enveloped by liquid metallic hydrogen inside a layer of liquid hydrogen –similar to Jupiter's core but considerably smaller. It's hard to imagine, but ",
+        "match": "Saturn is the only planet in our solar system with an average density that is less than water.",
+        "after": " The giant gas planet could float in a bathtub if such a colossal thing existed. "
+      },
+      "sha256": "ce7f4f3275ccc352311447b1b66ab5de5bb2fa784a1c5c03d850caaf20824dd8",
+      "error": null
+    },
+    {
+      "id": "r-04",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/venus/facts/",
+      "matched": true,
+      "context": {
+        "before": "Orbit and Rotation Spending a day on Venus would be quite a disorienting experience — that is, if your spacecraft or spacesuit could protect you from the extreme heat and crushing air pressure. For one thing, your “day” would be ",
+        "match": "243 Earth days long — longer even than a Venus year",
+        "after": " (one trip around the Sun), which takes only 225 Earth days. For another, because of the planet's extremely slow rotation, sunrise to sunset would take 117 Earth days. "
+      },
+      "sha256": "68155ce05b57321c813baba856b802327caee792f220ceec6c283adcce6d6f6b",
+      "error": null
+    },
+    {
+      "id": "r-22",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "The Tablet : Reads in Roman numerals \"July 4, 1776\" -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: ",
+        "match": "The current torch was a replacement of the original and installed in 1986.",
+        "after": " At that time, the original torch was moved to the pedestal lobby and in 2018, it was relocated to the \"Torch Gallery\" in the Statue of Liberty Museum. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "h-29",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nist.gov/si-redefinition/second",
+      "matched": true,
+      "context": {
+        "before": "Hanacek/NIST Humans first broke up time into day and night. ",
+        "match": "Ancient Egyptians then divided day and night into 12 parts each",
+        "after": ", with daytime hours longer than nighttime hours during the summer. Ancient Greeks later proposed splitting the day into 24 equal hours. "
+      },
+      "sha256": "f51e1398b35e148cb1c77bc14c3e81a8fa1dc7a988a2c1a465e68e3b2423afda",
+      "error": null
+    },
+    {
+      "id": "h-27",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nist.gov/si-redefinition/second",
+      "matched": true,
+      "context": {
+        "before": "The second is currently defined using cesium atoms, which absorb and emit microwave radiation with a specific frequency. ",
+        "match": "Atomic clocks count 9,192,631,770 of those microwave oscillations",
+        "after": ", and we call the elapsed time interval a second. Today, commercially available cesium clocks keep time to within 1/3,000,000 of a second per year. "
+      },
+      "sha256": "f51e1398b35e148cb1c77bc14c3e81a8fa1dc7a988a2c1a465e68e3b2423afda",
+      "error": null
+    },
+    {
+      "id": "h-16",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.eia.gov/energyexplained/hydropower/",
+      "matched": true,
+      "context": {
+        "before": "Pumped-storage hydroelectric systems generally use more electricity to pump water to the upper water storage reservoirs than they produce with the stored water. Therefore, ",
+        "match": "pumped-storage facilities have net negative electricity generation balances.",
+        "after": " Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until 2019 when wind generation surpassed hydropower, it was the largest source of total annual U.S. renewable electricity generation. "
+      },
+      "sha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+      "error": null
+    },
+    {
+      "id": "h-08",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/coral.html",
+      "matched": true,
+      "context": {
+        "before": "Most structures that we call \"coral\" are, in fact, made up of hundreds to thousands of tiny coral creatures called polyps. Each soft-bodied polyp—most no thicker than a nickel—",
+        "match": "secretes a hard outer skeleton of limestone (calcium carbonate)",
+        "after": " that attaches either to rock or the dead skeletons of other polyps. In the case of stony or hard corals , these polyp conglomerates grow, die, and endlessly repeat the cycle over time, slowly laying the limestone foundation for coral reefs and giving shape to the familiar corals that reside there. "
+      },
+      "sha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+      "error": null
+    },
+    {
+      "id": "h-22",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "The Tablet : Reads in Roman numerals \"July 4, 1776\" -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: ",
+        "match": "The current torch was a replacement of the original and installed in 1986.",
+        "after": " At that time, the original torch was moved to the pedestal lobby and in 2018, it was relocated to the \"Torch Gallery\" in the Statue of Liberty Museum. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "r-01",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/moon/facts/",
+      "matched": true,
+      "context": {
+        "before": "That means 30 Earth-sized planets could fit in between Earth and the Moon. The Moon is slowly moving away from Earth, ",
+        "match": "getting about an inch farther away each year.",
+        "after": " NASA/Moore Boeck Orbit and Rotation The Moon is rotating at the same rate that it revolves around Earth (called synchronous rotation ), so the same hemisphere faces Earth all the time. "
+      },
+      "sha256": "5003ea345f705ecf63a6ab637f9b9214f8c87c2b68327d654cb9f6dfdd006ffd",
+      "error": null
+    },
+    {
+      "id": "r-14",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "matched": true,
+      "context": {
+        "before": "Only a small amount of light penetrates beyond this depth. ",
+        "match": "The zone between 200 meters and 1,000 meters is usually referred to as the “ twilight ” zone",
+        "after": ", but is officially the dysphotic zone. In this zone, the intensity of light rapidly dissipates as depth increases. "
+      },
+      "sha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+      "error": null
+    },
+    {
+      "id": "h-21",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.eia.gov/energyexplained/geothermal/",
+      "matched": true,
+      "context": {
+        "before": "Geothermal energy is heat found inside the earth. ",
+        "match": "The name comes from the Greek words geo (earth) and therme (heat).",
+        "after": " Geothermal energy is a renewable energy source because the earth constantly produces this heat. "
+      },
+      "sha256": "f347ab23abfec9f80409f7653c6853b0e99e77d85830f7ed294851171ff6aa5d",
+      "error": null
+    },
+    {
+      "id": "r-34",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/neptune/facts/",
+      "matched": true,
+      "context": {
+        "before": "One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, ",
+        "match": "it takes sunlight 4 hours to travel from the Sun to Neptune.",
+        "after": " Orbit and Rotation One day on Neptune takes about 16 hours (the time it takes for Neptune to rotate or spin once). "
+      },
+      "sha256": "762cb1160499445b0dc20a0a914f08443e7c77e80c2b3f8877248ed79da96dbb",
+      "error": null
+    },
+    {
+      "id": "h-18",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.eia.gov/energyexplained/hydropower/",
+      "matched": true,
+      "context": {
+        "before": "Therefore, pumped-storage facilities have net negative electricity generation balances. Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until ",
+        "match": "2019 when wind generation surpassed hydropower",
+        "after": ", it was the largest source of total annual U.S. renewable electricity generation. Thousands of years ago, people used hydropower to turn paddle wheels on rivers to grind grain. "
+      },
+      "sha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+      "error": null
+    },
+    {
+      "id": "r-26",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nist.gov/si-redefinition/meter",
+      "matched": true,
+      "context": {
+        "before": "This value, while not determined with the low uncertainty level claimed a few months later by the Boulder group, was entirely consistent with their result. Building upon these and other advances, ",
+        "match": "the meter was redefined by international agreement in 1983",
+        "after": " as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also locked the speed of light at 299,792,458 meters per second in a vacuum. "
+      },
+      "sha256": "bbfc61429a388cb94dd2ef3f448beffaf6259a3ccb1ded82cd51e19b919ce9dd",
+      "error": null
+    },
+    {
+      "id": "r-31",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "matched": true,
+      "context": {
+        "before": "PNG Version of plot PDF Version of plot This figure shows the atmospheric increase of CO 2 over 280 ppm in weekly averages of CO 2 observed at Mauna Loa. ",
+        "match": "The value of 280 ppm is chosen as representative of pre-industrial air",
+        "after": " because it is close to the average of CO 2 measured and dated with high time resolution between the years 1000 and 1800 in an ice core from Law Dome, Antarctica. [Etheridge et al., 1996] . "
+      },
+      "sha256": "5f54b8d76ed3599a318e574dac5ff362d263a0ad2932bfdef08ac0a7698995b5",
+      "error": null
+    },
+    {
+      "id": "h-35",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Weight of concrete foundation : 54,000,000 lbs. ",
+        "match": "Thickness of copper sheeting : 3/32 of an inch",
+        "after": ", the thickness of two pennies placed together. Wind Sway : The statue can sway up to 3 inches and the torch up to 6 inches. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "h-28",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nist.gov/si-redefinition/second",
+      "matched": true,
+      "context": {
+        "before": "However, people continued using hours of uneven lengths until the late medieval period in Europe, when monks developed mechanical clocks to establish fixed prayer and work periods. The concepts of the minute and the second also date back to ancient times — but ",
+        "match": "they originated in the realm of astronomy, not timekeeping.",
+        "after": " Four thousand years ago, the Sumerians divided a circle into 360 degrees. "
+      },
+      "sha256": "f51e1398b35e148cb1c77bc14c3e81a8fa1dc7a988a2c1a465e68e3b2423afda",
+      "error": null
+    },
+    {
+      "id": "h-11",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "matched": true,
+      "context": {
+        "before": "Bob Embley, NOAA PMEL, Chief Scientist. ",
+        "match": "The average depth of the ocean is about 3,682 meters",
+        "after": " (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is located beneath the western Pacific Ocean in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. "
+      },
+      "sha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+      "error": null
+    },
+    {
+      "id": "r-07",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "matched": true,
+      "context": {
+        "before": "This plasma rotates at different speeds on different parts of the Sun. ",
+        "match": "At its equator, the Sun completes one rotation in 25 Earth days.",
+        "after": " At its poles, the Sun rotates once on its axis every 36 Earth days. "
+      },
+      "sha256": "aedf0edcf41a38275a3373e1c6952b7b093bea8adea3f394389e45a5475faed6",
+      "error": null
+    },
+    {
+      "id": "h-34",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/neptune/facts/",
+      "matched": true,
+      "context": {
+        "before": "Neptune’s axis of rotation is tilted 28 degrees with respect to the plane of its orbit around the Sun, which is similar to the axial tilts of Mars and Earth. This means that Neptune experiences seasons just like we do on Earth; however, since its year is so long, ",
+        "match": "each of the four seasons lasts for over 40 years.",
+        "after": " Moons Neptune has 16 known moons. "
+      },
+      "sha256": "762cb1160499445b0dc20a0a914f08443e7c77e80c2b3f8877248ed79da96dbb",
+      "error": null
+    },
+    {
+      "id": "r-28",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nist.gov/si-redefinition/second",
+      "matched": true,
+      "context": {
+        "before": "However, people continued using hours of uneven lengths until the late medieval period in Europe, when monks developed mechanical clocks to establish fixed prayer and work periods. The concepts of the minute and the second also date back to ancient times — but ",
+        "match": "they originated in the realm of astronomy, not timekeeping.",
+        "after": " Four thousand years ago, the Sumerians divided a circle into 360 degrees. "
+      },
+      "sha256": "f51e1398b35e148cb1c77bc14c3e81a8fa1dc7a988a2c1a465e68e3b2423afda",
+      "error": null
+    },
+    {
+      "id": "r-11",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "matched": true,
+      "context": {
+        "before": "Bob Embley, NOAA PMEL, Chief Scientist. ",
+        "match": "The average depth of the ocean is about 3,682 meters",
+        "after": " (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is located beneath the western Pacific Ocean in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. "
+      },
+      "sha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+      "error": null
+    },
+    {
+      "id": "h-23",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Direction : The statue faces southeast in symmetry with the placement of Fort Wood and how people would see the statue while entering the harbor. Crown : ",
+        "match": "25 windows and seven rays make up the crown.",
+        "after": " Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "r-08",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://oceanservice.noaa.gov/facts/coral.html",
+      "matched": true,
+      "context": {
+        "before": "Corals actually comprise an ancient and unique partnership, called symbiosis , that benefits both animal and plant life in the ocean. ",
+        "match": "Corals are animals, though, because they do not make their own food, as plants do.",
+        "after": " Corals have tiny, tentacle-like arms that they use to capture their food from the water and sweep into their inscrutable mouths. "
+      },
+      "sha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+      "error": null
+    },
+    {
+      "id": "r-06",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/mercury/facts/",
+      "matched": true,
+      "context": {
+        "before": "But when Mercury is moving fastest in its elliptical orbit around the Sun (and it is closest to the Sun), each rotation is not accompanied by sunrise and sunset like it is on most other planets. ",
+        "match": "The morning Sun appears to rise briefly, set, and rise again",
+        "after": " from some parts of the planet's surface. The same thing happens in reverse at sunset for other parts of the surface. "
+      },
+      "sha256": "6bb234feaa837c03963ee2eef4ddbb959bc5fcd002facfeb0052d22e9caa4e4d",
+      "error": null
+    },
+    {
+      "id": "h-19",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.eia.gov/energyexplained/solar/",
+      "matched": true,
+      "context": {
+        "before": "Today, we use many different technologies to capture and convert solar energy into useful energy for various purposes. We use solar thermal energy systems to heat: Water for homes, buildings, or swimming pools Air inside homes, greenhouses, and other buildings Fluids in solar thermal power plants Solar photovoltaic systems Solar photovoltaic (PV) devices, or solar cells , ",
+        "match": "convert sunlight directly into electricity.",
+        "after": " Small PV cells can power calculators, watches, and other small electronic devices. "
+      },
+      "sha256": "6d5b075eb1506480161399891882146f197a7d7affc03dfeb0091a645f4862ed",
+      "error": null
+    },
+    {
+      "id": "h-25",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. The Tablet : ",
+        "match": "Reads in Roman numerals \"July 4, 1776\"",
+        "after": " -- the date of American Independence. (JULY IV MDCCLXXVI) The Torch: The current torch was a replacement of the original and installed in 1986. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "h-14",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "matched": true,
+      "context": {
+        "before": "Only a small amount of light penetrates beyond this depth. ",
+        "match": "The zone between 200 meters and 1,000 meters",
+        "after": " is usually referred to as the “ twilight ” zone, but is officially the dysphotic zone. In this zone, the intensity of light rapidly dissipates as depth increases. "
+      },
+      "sha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+      "error": null
+    },
+    {
+      "id": "r-12",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "matched": true,
+      "context": {
+        "before": "The average depth of the ocean is about 3,682 meters (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is ",
+        "match": "located beneath the western Pacific Ocean",
+        "after": " in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. Challenger Deep is approximately 10,935 meters (35,876 feet) deep . "
+      },
+      "sha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+      "error": null
+    },
+    {
+      "id": "r-10",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://oceanservice.noaa.gov/facts/coral.html",
+      "matched": true,
+      "context": {
+        "before": "Because of this cycle of growth, death, and regeneration among individual polyps, many coral colonies can live for a very long time. ",
+        "match": "Most corals contain algae called zooxanthellae",
+        "after": " (pronounced zo-UH-zan-thuh-lay), which are plant-like organisms. Residing within the coral's tissues, the microscopic algae are well protected and make use of the coral's metabolic waste products for photosynthesis, the process by which plants make their own food. "
+      },
+      "sha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+      "error": null
+    },
+    {
+      "id": "h-01",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/moon/facts/",
+      "matched": true,
+      "context": {
+        "before": "And a \"new moon\" occurs when the far side of the Moon has full sunlight, and the side facing us is having its night. ",
+        "match": "The Moon makes a complete orbit around Earth in 27 Earth days",
+        "after": " and rotates or spins at that same rate, or in that same amount of time. Because Earth is moving as well – rotating on its axis as it orbits the Sun – from our perspective, the Moon appears to orbit us every 29 days. "
+      },
+      "sha256": "5003ea345f705ecf63a6ab637f9b9214f8c87c2b68327d654cb9f6dfdd006ffd",
+      "error": null
+    },
+    {
+      "id": "r-24",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Crown : 25 windows and seven rays make up the crown. Chains : ",
+        "match": "Chains and a broken shackle are at the statue's feet",
+        "after": " and cannot be seen from below. The Tablet : Reads in Roman numerals \"July 4, 1776\" -- the date of American Independence. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "r-33",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nist.gov/si-redefinition/meter",
+      "matched": true,
+      "context": {
+        "before": "Building upon these and other advances, the meter was redefined by international agreement in 1983 as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also ",
+        "match": "locked the speed of light at 299,792,458 meters per second in a vacuum.",
+        "after": " Length was now no longer an independent standard but rather was derived from the extremely accurate standard of time and a newly defined value for the speed of light made possible by the technology developed at NIST. "
+      },
+      "sha256": "bbfc61429a388cb94dd2ef3f448beffaf6259a3ccb1ded82cd51e19b919ce9dd",
+      "error": null
+    },
+    {
+      "id": "r-29",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nist.gov/si-redefinition/second",
+      "matched": true,
+      "context": {
+        "before": "Hanacek/NIST Humans first broke up time into day and night. Ancient Egyptians then divided day and night into 12 parts each, ",
+        "match": "with daytime hours longer than nighttime hours during the summer.",
+        "after": " Ancient Greeks later proposed splitting the day into 24 equal hours. "
+      },
+      "sha256": "f51e1398b35e148cb1c77bc14c3e81a8fa1dc7a988a2c1a465e68e3b2423afda",
+      "error": null
+    },
+    {
+      "id": "h-24",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Wind Sway : The statue can sway up to 3 inches and the torch up to 6 inches. Direction : ",
+        "match": "The statue faces southeast",
+        "after": " in symmetry with the placement of Fort Wood and how people would see the statue while entering the harbor. Crown : 25 windows and seven rays make up the crown. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "h-15",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "matched": true,
+      "context": {
+        "before": "Such a minuscule amount of light penetrates beyond a depth of 200 meters that photosynthesis is no longer possible. ",
+        "match": "The aphotic zone exists in depths below 1,000 meters . Sunlight does not penetrate to these depths",
+        "after": " and the zone is bathed in darkness. The aphotic zone is further subdivided into the bathypelagic zone (or midnight zone) between 1,000 and 4,000 meters, the abyssopelagic (or the abyss ) between 4,000 and 6,000 meters , and the hadopelagic zone (or hadal zone) 6,000 meters and deeper. "
+      },
+      "sha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+      "error": null
+    },
+    {
+      "id": "r-20",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.eia.gov/energyexplained/wind/",
+      "matched": true,
+      "context": {
+        "before": "One example of this uneven heating is the daily wind cycle. How uneven heating of water and land causes wind Source: Adapted from National Energy Education Development Project (public domain) The daily wind cycle ",
+        "match": "During the day, air above land heats up faster than air above water.",
+        "after": " Warm air above land expands and rises, and heavier, cooler air rushes in to take its place, creating wind. "
+      },
+      "sha256": "6385481574b1435f379a564e09992153bf09e7861455974df5df21f6197b3ee8",
+      "error": null
+    },
+    {
+      "id": "h-12",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "matched": true,
+      "context": {
+        "before": "The average depth of the ocean is about 3,682 meters (12,080 feet). The deepest part of the ocean is called the Challenger Deep and is ",
+        "match": "located beneath the western Pacific Ocean",
+        "after": " in the southern end of the Mariana Trench, which runs several hundred kilometers southwest of the U.S. territorial island of Guam. Challenger Deep is approximately 10,935 meters (35,876 feet) deep . "
+      },
+      "sha256": "d1fba87709d1a4bb77c77f2b5d60d930a87c99618f85e4e9691fca58627c4ab3",
+      "error": null
+    },
+    {
+      "id": "h-33",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nist.gov/si-redefinition/meter",
+      "matched": true,
+      "context": {
+        "before": "Building upon these and other advances, the meter was redefined by international agreement in 1983 as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also ",
+        "match": "locked the speed of light at 299,792,458 meters per second in a vacuum.",
+        "after": " Length was now no longer an independent standard but rather was derived from the extremely accurate standard of time and a newly defined value for the speed of light made possible by the technology developed at NIST. "
+      },
+      "sha256": "bbfc61429a388cb94dd2ef3f448beffaf6259a3ccb1ded82cd51e19b919ce9dd",
+      "error": null
+    },
+    {
+      "id": "r-05",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/neptune/facts/",
+      "matched": true,
+      "context": {
+        "before": "Discovery and Namesake Galileo recorded Neptune as a fixed star during observations with his small telescope in 1612 and 1613. More than 200 years later, the ice giant became ",
+        "match": "the first planet located through mathematical predictions",
+        "after": " rather than through regular observations of the sky. Because Uranus didn't travel exactly as astronomers expected it to, French mathematician Urbain Joseph Le Verrier proposed the position and mass of a then-unknown planet that could cause the observed changes to Uranus' orbit. "
+      },
+      "sha256": "762cb1160499445b0dc20a0a914f08443e7c77e80c2b3f8877248ed79da96dbb",
+      "error": null
+    },
+    {
+      "id": "r-17",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.eia.gov/energyexplained/hydropower/",
+      "matched": true,
+      "context": {
+        "before": "Therefore, pumped-storage facilities have net negative electricity generation balances. Click to enlarge Hydropower has a long history Hydropower is one of the oldest sources of energy for producing mechanical and electrical energy, and up until ",
+        "match": "2019 when wind generation surpassed hydropower",
+        "after": ", it was the largest source of total annual U.S. renewable electricity generation. Thousands of years ago, people used hydropower to turn paddle wheels on rivers to grind grain. "
+      },
+      "sha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+      "error": null
+    },
+    {
+      "id": "h-10",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://oceanservice.noaa.gov/facts/coral.html",
+      "matched": true,
+      "context": {
+        "before": "Most corals contain algae called zooxanthellae (pronounced zo-UH-zan-thuh-lay), which are plant-like organisms. Residing within the coral's tissues, ",
+        "match": "the microscopic algae are well protected",
+        "after": " and make use of the coral's metabolic waste products for photosynthesis, the process by which plants make their own food. The corals benefit, in turn, as the algae produce oxygen, remove wastes, and supply the organic products of photosynthesis that corals need to grow, thrive, and build up the reef. "
+      },
+      "sha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+      "error": null
+    },
+    {
+      "id": "h-31",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "matched": true,
+      "context": {
+        "before": "PNG Version of plot PDF Version of plot This figure shows the atmospheric increase of CO 2 over 280 ppm in weekly averages of CO 2 observed at Mauna Loa. ",
+        "match": "The value of 280 ppm is chosen as representative of pre-industrial air",
+        "after": " because it is close to the average of CO 2 measured and dated with high time resolution between the years 1000 and 1800 in an ice core from Law Dome, Antarctica. [Etheridge et al., 1996] . "
+      },
+      "sha256": "5f54b8d76ed3599a318e574dac5ff362d263a0ad2932bfdef08ac0a7698995b5",
+      "error": null
+    },
+    {
+      "id": "r-21",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.eia.gov/energyexplained/geothermal/",
+      "matched": true,
+      "context": {
+        "before": "Geothermal energy is heat found inside the earth. ",
+        "match": "The name comes from the Greek words geo (earth) and therme (heat).",
+        "after": " Geothermal energy is a renewable energy source because the earth constantly produces this heat. "
+      },
+      "sha256": "f347ab23abfec9f80409f7653c6853b0e99e77d85830f7ed294851171ff6aa5d",
+      "error": null
+    },
+    {
+      "id": "h-20",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.eia.gov/energyexplained/wind/",
+      "matched": true,
+      "context": {
+        "before": "One example of this uneven heating is the daily wind cycle. How uneven heating of water and land causes wind Source: Adapted from National Energy Education Development Project (public domain) The daily wind cycle ",
+        "match": "During the day, air above land heats up faster than air above water.",
+        "after": " Warm air above land expands and rises, and heavier, cooler air rushes in to take its place, creating wind. "
+      },
+      "sha256": "6385481574b1435f379a564e09992153bf09e7861455974df5df21f6197b3ee8",
+      "error": null
+    },
+    {
+      "id": "r-30",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "matched": true,
+      "context": {
+        "before": "The enhancement of the CO 2 mole fraction in the atmosphere over pre-industrial is expressed both as ppm and as a percentage change since the year 1800. ",
+        "match": "Data are reported as a dry air mole fraction",
+        "after": " defined as the number of molecules of carbon dioxide divided by the number of all molecules in air, including CO 2 itself, after water vapor has been removed. The mole fraction is expressed as parts per million (ppm). "
+      },
+      "sha256": "5f54b8d76ed3599a318e574dac5ff362d263a0ad2932bfdef08ac0a7698995b5",
+      "error": null
+    },
+    {
+      "id": "h-02",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/saturn/facts/",
+      "matched": true,
+      "context": {
+        "before": "A few particles are as large as mountains. The rings would look mostly white if you looked at them from the cloud tops of Saturn, and interestingly, ",
+        "match": "each ring orbits at a different speed around the planet.",
+        "after": " Saturn's ring system extends up to 175,000 miles (282,000 kilometers) from the planet, yet the vertical height is typically about 30 feet (10 meters) in the main rings. "
+      },
+      "sha256": "ce7f4f3275ccc352311447b1b66ab5de5bb2fa784a1c5c03d850caaf20824dd8",
+      "error": null
+    },
+    {
+      "id": "r-09",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://oceanservice.noaa.gov/facts/coral.html",
+      "matched": true,
+      "context": {
+        "before": "Most structures that we call \"coral\" are, in fact, made up of hundreds to thousands of tiny coral creatures called polyps. Each soft-bodied polyp—most no thicker than a nickel—",
+        "match": "secretes a hard outer skeleton of limestone (calcium carbonate)",
+        "after": " that attaches either to rock or the dead skeletons of other polyps. In the case of stony or hard corals , these polyp conglomerates grow, die, and endlessly repeat the cycle over time, slowly laying the limestone foundation for coral reefs and giving shape to the familiar corals that reside there. "
+      },
+      "sha256": "a395ea4ece2875dee7912c489a7245a83596e34ff1c51c0165e4019051097d54",
+      "error": null
+    },
+    {
+      "id": "h-04",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/mercury/facts/",
+      "matched": true,
+      "context": {
+        "before": "Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere. But Mercury is the fastest planet, ",
+        "match": "zipping around the Sun every 88 Earth days.",
+        "after": " Namesake Mercury is appropriately named for the swiftest of the ancient Roman gods. "
+      },
+      "sha256": "6bb234feaa837c03963ee2eef4ddbb959bc5fcd002facfeb0052d22e9caa4e4d",
+      "error": null
+    },
+    {
+      "id": "h-32",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "matched": true,
+      "context": {
+        "before": "PNG Version of plot PDF Version of plot The graph, updated daily, shows as individual points daily mean CO 2 , and weekly means up to and including the week previous to today. The weekly mean ( red bar ) is simply the average of all days in the week (",
+        "match": "Sunday to Saturday",
+        "after": ") for which a background value could be defined. Note that the “ Weekly value from 1 year ago ” shown in the box above the graph is for an average of 7 days starting exactly 365 days before the current week, so it may not be a Sunday-Saturday week. "
+      },
+      "sha256": "5f54b8d76ed3599a318e574dac5ff362d263a0ad2932bfdef08ac0a7698995b5",
+      "error": null
+    },
+    {
+      "id": "r-13",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "matched": true,
+      "context": {
+        "before": "How far does light travel in the ocean? Light may be detected as far as 1,000 meters down in the ocean , but ",
+        "match": "there is rarely any significant light beyond 200 meters.",
+        "after": " The ocean is divided into three zones based on depth and light level. "
+      },
+      "sha256": "eddf1a909fdeaa715f8024194e15240cc0fa3c0459c90a62bc979cec770e7cec",
+      "error": null
+    },
+    {
+      "id": "h-07",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "matched": true,
+      "context": {
+        "before": "At its equator, the Sun completes one rotation in 25 Earth days. ",
+        "match": "At its poles, the Sun rotates once on its axis every 36 Earth days.",
+        "after": " The part of the Sun we see from Earth – the part we call the surface – is the photosphere. "
+      },
+      "sha256": "aedf0edcf41a38275a3373e1c6952b7b093bea8adea3f394389e45a5475faed6",
+      "error": null
+    },
+    {
+      "id": "r-16",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.eia.gov/energyexplained/hydropower/",
+      "matched": true,
+      "context": {
+        "before": "The first industrial use of hydropower to generate electricity in the United States was in 1880 to power 16 brush-arc lamps at the Wolverine Chair Factory in Grand Rapids, Michigan. ",
+        "match": "The first U.S. hydroelectric power plant to sell electricity opened on the Fox River near Appleton, Wisconsin, on September 30, 1882.",
+        "after": " Most U.S. hydroelectricity is produced at large dams on major rivers, and most of these hydroelectric dams were built before the mid-1970s by federal government agencies. "
+      },
+      "sha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+      "error": null
+    },
+    {
+      "id": "r-23",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Direction : The statue faces southeast in symmetry with the placement of Fort Wood and how people would see the statue while entering the harbor. Crown : ",
+        "match": "25 windows and seven rays make up the crown.",
+        "after": " Chains : Chains and a broken shackle are at the statue's feet and cannot be seen from below. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "r-35",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "matched": true,
+      "context": {
+        "before": "Weight of concrete foundation : 54,000,000 lbs. Thickness of copper sheeting : 3/32 of an inch, ",
+        "match": "the thickness of two pennies placed together.",
+        "after": " Wind Sway : The statue can sway up to 3 inches and the torch up to 6 inches. "
+      },
+      "sha256": "470bd7def5fe73450d583e05bc866fe92a20fe4dc73e8a9e1ba5930c8d47bd21",
+      "error": null
+    },
+    {
+      "id": "h-30",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "matched": true,
+      "context": {
+        "before": "The enhancement of the CO 2 mole fraction in the atmosphere over pre-industrial is expressed both as ppm and as a percentage change since the year 1800. Data are reported as a dry air mole fraction defined as the number of molecules of carbon dioxide divided by the number of all molecules in air, including CO 2 itself, ",
+        "match": "after water vapor has been removed.",
+        "after": " The mole fraction is expressed as parts per million (ppm). "
+      },
+      "sha256": "5f54b8d76ed3599a318e574dac5ff362d263a0ad2932bfdef08ac0a7698995b5",
+      "error": null
+    },
+    {
+      "id": "r-03",
+      "real": true,
+      "method": "supporting-quote",
+      "url": "https://science.nasa.gov/jupiter/facts/",
+      "matched": true,
+      "context": {
+        "before": "From this distance, it takes sunlight 43 minutes to travel from the Sun to Jupiter. Orbit and Rotation ",
+        "match": "Jupiter has the shortest day in the solar system.",
+        "after": " One day on Jupiter takes 9.9 hours (the time it takes for Jupiter to rotate or spin around once), and Jupiter makes a complete orbit around the Sun (a year in Jovian time) in about 12 Earth years (4,333 Earth days). "
+      },
+      "sha256": "86b293cac0097302522c88724ddf8b9e922443b417edb4bb474ba48012331a9b",
+      "error": null
+    },
+    {
+      "id": "h-17",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.eia.gov/energyexplained/hydropower/",
+      "matched": true,
+      "context": {
+        "before": "The first industrial use of hydropower to generate electricity in the United States was in 1880 to power 16 brush-arc lamps at the Wolverine Chair Factory in Grand Rapids, Michigan. ",
+        "match": "The first U.S. hydroelectric power plant to sell electricity opened on the Fox River near Appleton, Wisconsin, on September 30, 1882.",
+        "after": " Most U.S. hydroelectricity is produced at large dams on major rivers, and most of these hydroelectric dams were built before the mid-1970s by federal government agencies. "
+      },
+      "sha256": "2b627ee32466b876bf369afc8c308c957d67cba1c4ce30474139338aed521322",
+      "error": null
+    },
+    {
+      "id": "h-26",
+      "real": false,
+      "method": "direct-contradiction",
+      "url": "https://www.nist.gov/si-redefinition/meter",
+      "matched": true,
+      "context": {
+        "before": "This value, while not determined with the low uncertainty level claimed a few months later by the Boulder group, was entirely consistent with their result. Building upon these and other advances, ",
+        "match": "the meter was redefined by international agreement in 1983",
+        "after": " as the length of the path traveled by light in a vacuum in 1/299,792,458 of a second. This definition also locked the speed of light at 299,792,458 meters per second in a vacuum. "
+      },
+      "sha256": "bbfc61429a388cb94dd2ef3f448beffaf6259a3ccb1ded82cd51e19b919ce9dd",
+      "error": null
+    }
+  ]
+}

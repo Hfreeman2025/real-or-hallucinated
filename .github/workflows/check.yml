@@ -1,0 +1,33 @@
+name: App checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      PLAYWRIGHT_BROWSERS_PATH: .cache/browsers
+      PREVIEW_URL: http://127.0.0.1:4184
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run audit
+      - run: npx --no-install playwright install --with-deps chromium webkit firefox
+      - name: Test all three engines against the static build
+        shell: bash
+        run: |
+          mkdir -p .cache
+          node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4184 --strictPort > .cache/ci-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          node scripts/browser/wait-for-preview.mjs "$preview_pid"
+          npm run test:browser
+          node --import tsx scripts/browser/v3-check.mjs

@@ -1,0 +1,46 @@
+{
+  "name": "real-or-hallucinated",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5177 --strictPort",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4184 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check src scripts tests package.json tsconfig.json index.html vite.config.ts",
+    "format": "biome check --write src scripts tests package.json tsconfig.json index.html vite.config.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "verify": "tsx scripts/verify.ts",
+    "licenses": "node scripts/licenses.mjs",
+    "check": "npm run typecheck && npm run lint && npm test && npm run recording:check && npm run build && npm run licenses",
+    "audit": "npm audit --audit-level=low",
+    "test:browser": "node --import tsx scripts/browser-check.mjs",
+    "test:detector": "node --import tsx scripts/browser/v3-check.mjs",
+    "shots:v3": "node scripts/browser/v3-capture.mjs",
+    "test:perf:v3": "node scripts/browser/v3-performance.mjs",
+    "shots:v2": "node scripts/browser/capture.mjs",
+    "shots:contacts": "node scripts/browser/contact-sheet.mjs",
+    "test:perf": "node scripts/browser/performance.mjs",
+    "models:fetch": "node scripts/fetch-models.mjs",
+    "models:record": "PREVIEW_URL=http://127.0.0.1:5177 node --import tsx scripts/browser/record-models.mjs",
+    "recording:check": "node --import tsx scripts/check-recording.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.4",
+    "@types/node": "22.19.1",
+    "playwright": "1.63.0",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "7.3.7"
+  },
+  "license": "MIT",
+  "author": "Harry Freeman",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "onnxruntime-common": "1.31.0-dev.20260911-2a43ec07e",
+    "onnxruntime-web": "1.31.0-dev.20260914-8d85527a0"
+  }
+}

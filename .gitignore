@@ -1,0 +1,43 @@
+node_modules/
+dist/
+.cache/
+.env*
+*.log
+.DS_Store
+
+# Temporary tools, browser profiles and authentication state
+tmp/
+temp/
+.tmp/
+.playwright/
+browser-profiles/
+playwright/.auth/
+playwright-report/
+test-results/
+.claude/
+.codex/
+*session-transcript*
+*.har
+
+# Keys and secrets
+keys/
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+
+# Shared model weights belong outside this repository
+.models/
+models/
+weights/
+*.onnx
+*.onnx_data
+*.onnx.data
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.ckpt
+*.bin

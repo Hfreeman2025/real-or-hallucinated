@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171918" />
+    <meta name="description" content="Watch five browser-model answers gather by meaning. Inspect semantic entropy, token probabilities, and the primary source that settles the claim." />
+    <meta property="og:title" content="Real or Hallucinated?" />
+    <meta property="og:description" content="Five answers, inferred meanings, one checked source. Semantic entropy running in your browser." />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://huggingface.co https://*.huggingface.co https://*.hf.co; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/detector.css" />
+    <title>Real or Hallucinated?</title>
+  </head>
+  <body>
+    <button type="button" class="skip-link" id="skip-game">Skip to the claim</button>
+    <header class="topbar"><div class="topbar-inner"><h1><a href="/">Real or Hallucinated?</a></h1><nav aria-label="Main navigation"><button type="button" id="detector-open" class="view-current" aria-current="page">Lie detector</button><button type="button" id="daily-open">Daily game</button><button type="button" id="archive-open">Archive</button><button type="button" id="about-open">How it works</button></nav></div></header>
+    <main class="workspace"><section id="detector" tabindex="-1" aria-label="Lie detector"><div class="detector-unavailable"><h2>Lie detector</h2><p>Opening the recorded browser experiment…</p><p>No model download has started.</p></div></section><div id="daily-view" hidden><p class="standfirst">Decide whether five cited claims are real or fabricated. Then inspect the evidence.</p><div class="edition-line"><span id="edition-date">Loading edition…</span><span id="streak">Daily streak: —</span></div><div id="notices" aria-live="polite"></div><section id="game" aria-label="Daily claim checking desk" tabindex="-1" aria-busy="true"><div class="loading-desk"><p>Loading bundled edition…</p><div class="loading-lines" aria-hidden="true"><span></span><span></span><span></span></div><p class="checked">No model or external source is being contacted.</p></div></section></div></main>
+    <footer class="footer"><span>Harry Freeman</span><span id="connection-status">Bundled evidence. No live feed.</span><button type="button" id="sources-open">Sources &amp; verification</button></footer>
+    <dialog id="info-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><h2 id="dialog-title"></h2><button type="button" id="dialog-close">Close</button></div><div id="dialog-content"></div></dialog>
+    <div class="sr-only" id="announcement" role="status" aria-live="polite"></div>
+    <noscript><link rel="stylesheet" href="/no-js.css"/><p class="no-script">Enable JavaScript to play. This puzzle checks answers locally in your browser; it does not send them to a server.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

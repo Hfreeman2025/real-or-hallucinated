@@ -1,0 +1,568 @@
+{
+  "reviewedAt": "2026-11-02T17:02:04.893070+00:00",
+  "reviewer": "AI-assisted source-backed editorial review; not independently human reviewed.",
+  "method": "For all 70 questions, compare the first generated answer with the requested fact and the checked primary-source quote/context. Accept accurate paraphrases and broad descriptions that answer the question. Reject wrong units, dates, directions, exact values, non-answers and ambiguous responses; truncation alone does not fail a correct requested fact. Labels evaluate the requested fact, not every off-topic assertion in the full response; reasons explicitly identify unassessed asides. h-30 is an ambiguous either-or response, conservatively labelled incorrect. Labels are bound to exact unedited answer text and source-quote hashes. No independent human acceptance is claimed.",
+  "labels": [
+    {
+      "id": "r-01",
+      "answerSha256": "debacf9a6522b39b51b75f8acf6963a73361d682d1ef60b01e26da7e6ac158dc",
+      "correct": false,
+      "reason": "NASA says about an inch farther each year; 38,000 miles annually is the wrong rate and unit scale.",
+      "sourceUrl": "https://science.nasa.gov/moon/facts/",
+      "sourceQuoteSha256": "8e8de972c488b05f8739740284da3eabf2576f0d835a8a2eb9a4bf1dc0d81245"
+    },
+    {
+      "id": "r-02",
+      "answerSha256": "521c65e4c1cef841c3d4fba0d058affdaa3788576684c30945eea319af94754c",
+      "correct": true,
+      "reason": "Correctly answers the requested Saturn-versus-water comparison: Saturn is less dense. The vague solids aside is outside the target-fact accuracy label.",
+      "sourceUrl": "https://science.nasa.gov/saturn/facts/",
+      "sourceQuoteSha256": "20c6592316f6599953844556c6dbef78c94047cbe50ee4883b919413cf911862"
+    },
+    {
+      "id": "r-03",
+      "answerSha256": "6a7367ef7970d165bf9a60a16ef4365b2b7670f5064a35438e2ea0049dbdb1dd",
+      "correct": false,
+      "reason": "The checked NASA source names Jupiter, not Mercury, as the planet with the shortest day.",
+      "sourceUrl": "https://science.nasa.gov/jupiter/facts/",
+      "sourceQuoteSha256": "34423e7322462f0f2554bf97b42beadd6ed2af27e5d7af59dfae05084d9f9ca8"
+    },
+    {
+      "id": "r-04",
+      "answerSha256": "b5fee24194bd9aa8e3ab9185b3f3a8825efcd0762318b29661bfd75689e70754",
+      "correct": true,
+      "reason": "Correctly states that one Venus axial rotation takes longer than one orbit, matching the checked source.",
+      "sourceUrl": "https://science.nasa.gov/venus/facts/",
+      "sourceQuoteSha256": "f13d0908d4bef416cdaf22096fef12c2e8e37c98ec35b53c41a54837deaa5fcb"
+    },
+    {
+      "id": "r-05",
+      "answerSha256": "46f67b11c45c2caf5f2f20a909e6b1d6b1094ae6e5e781be78692159a7fc71a5",
+      "correct": true,
+      "reason": "Astronomical calculations/models before observation correctly describe the requested mathematical-prediction method.",
+      "sourceUrl": "https://science.nasa.gov/neptune/facts/",
+      "sourceQuoteSha256": "bef3e26f4309dd53406a27ed87c6bc5716d70b7f1e2f59f3cb66fb9a2e818958"
+    },
+    {
+      "id": "r-06",
+      "answerSha256": "06e9afe39433224c751c19fa7ad10292411c7f30025b469c0639dcfd06ff9b7d",
+      "correct": false,
+      "reason": "Does not describe Mercury’s rise-set-rise sunrise; the eclipse contrast does not answer the question.",
+      "sourceUrl": "https://science.nasa.gov/mercury/facts/",
+      "sourceQuoteSha256": "6a9d6f6e64052c90d78c2ac2917d2f1c9d586ef407dfffb5b8be31756c09ea0a"
+    },
+    {
+      "id": "r-07",
+      "answerSha256": "27ddcc4f15edf7f8e8d3c53adb9d601a9637328068c38ee77cd068dbc4aabd69",
+      "correct": true,
+      "reason": "Slower at the poles is equivalent to the checked faster-at-equator fact.",
+      "sourceUrl": "https://science.nasa.gov/sun/facts/",
+      "sourceQuoteSha256": "e8e21e766a668d33016606e6c2511cfa768db13c50335caa35de12828b5f481d"
+    },
+    {
+      "id": "r-08",
+      "answerSha256": "85c3f9fa6f300eea6f1e388a6f988f52e2cc968d344ea763e92e4bce9c7292f0",
+      "correct": true,
+      "reason": "Animals matches the checked NOAA classification.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/coral.html",
+      "sourceQuoteSha256": "e823a53ebdfbaa0d597c609c227fc291bf4d134f4bd44059b0c1072726fc9d59"
+    },
+    {
+      "id": "r-09",
+      "answerSha256": "9e51f828316a737befadbe6c25ce30554e14712541aaff47e5c6e873d628fc44",
+      "correct": false,
+      "reason": "The checked material is limestone/calcium carbonate, not sandstone.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/coral.html",
+      "sourceQuoteSha256": "cebd3db006d2a0f190bff8b171ecfcf8b12a65b703a4257203c78a0e50b8c7a5"
+    },
+    {
+      "id": "r-10",
+      "answerSha256": "8cebeeee2b86df29dec8c22b1a40175d43e6c40e69a81ede8c92f9d236aeb425",
+      "correct": false,
+      "reason": "The checked symbiotic organisms are algae/zooxanthellae, not mold fungi.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/coral.html",
+      "sourceQuoteSha256": "17174d35b449bc63e41b171b82a8143ee6af090e96ca3a5ea4304171dde42e80"
+    },
+    {
+      "id": "r-11",
+      "answerSha256": "7affc17b6f768b2df34b0c70f5febdae8f9c228a52d9496f24bda600693c87b6",
+      "correct": false,
+      "reason": "The answer explicitly gives thousands of kilometres; NOAA gives 3,682 metres, approximately 3.7 kilometres.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "sourceQuoteSha256": "28b93e5cdcc1670b970e71f430a95fac1fcf4c4e9adce2dc3a12432c8fcc9998"
+    },
+    {
+      "id": "r-12",
+      "answerSha256": "8945cc8f4e757e93a3e29d967bed79f2357ab5d367a724ea55b248540d28f0dd",
+      "correct": false,
+      "reason": "Does not name the Pacific Ocean; the truncated depth description fails to answer which ocean.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "sourceQuoteSha256": "cfd0814eeccebd8f87e60178a99c5f79851ed3839b6ec5671eb8789abec5ff8b"
+    },
+    {
+      "id": "r-13",
+      "answerSha256": "8321a275baa75ea4388cf615dd1928dace16f06c661a559acd028d40c9b0b012",
+      "correct": false,
+      "reason": "Does not give the checked 200-metre depth threshold.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "sourceQuoteSha256": "490ed59c51772231e878dc3f848a3eadef9f9dcede8a61c303d225d49f35b8a5"
+    },
+    {
+      "id": "r-14",
+      "answerSha256": "0784fcffbe5fa6e2b35afe67ad6493b3b984ad12fe6af5ede768ba0d27756197",
+      "correct": false,
+      "reason": "An angle above the horizon is not the checked 200–1,000-metre ocean depth range.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "sourceQuoteSha256": "6b8b9e3a7e766911c1f4d85d62aac0e638d3927bb4f4b22c7b504e25ee6b6ebb"
+    },
+    {
+      "id": "r-15",
+      "answerSha256": "4c2be43e25fa8a1f3b99fa2eca6c67341500cadff8c0ca68064fe70b122207c6",
+      "correct": false,
+      "reason": "Does not answer that generation is less than pumping consumption; the unfinished depends-on-storage answer misses the requested round-trip comparison.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/hydropower/",
+      "sourceQuoteSha256": "44a2d477fbeb52449b44afe036458d5865561c8123dce9d304e78bdf27739a92"
+    },
+    {
+      "id": "r-16",
+      "answerSha256": "3f46bdea034f311a14efe877f5592d84a7a6c97d9b917be3f55573311e6cdda7",
+      "correct": false,
+      "reason": "The checked EIA date is 1882, not 1936.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/hydropower/",
+      "sourceQuoteSha256": "a4dacbcb4dd2a28c4a5f858753cf48a6ae1df784f986b92a18b82bf9d484702e"
+    },
+    {
+      "id": "r-17",
+      "answerSha256": "023e33504ab909cf87a6f4e4e545090e40bdc0a2153e5b68b19f7fad2b737904",
+      "correct": true,
+      "reason": "2019 matches the checked EIA crossover year.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/hydropower/",
+      "sourceQuoteSha256": "902f1861d41779e86892c0a9e549e591a266328d3509b29b6133251725acd30a"
+    },
+    {
+      "id": "r-18",
+      "answerSha256": "b5f2aab1244a060ef8209c50aaa61d03997db0d2d951191a8c7ab3b1278e40f4",
+      "correct": true,
+      "reason": "Powering water mills is a valid broad description of the requested historical hydropower use, with grain grinding the source’s specific example. The goods aside is outside the target-fact label.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/hydropower/",
+      "sourceQuoteSha256": "28b0b1cc77db61de1b4ca4f0c285ed2fbf3c75a7f3a9172e9a57ce3d25cb1436"
+    },
+    {
+      "id": "r-19",
+      "answerSha256": "381cfb6e1e428419d5d6b5d113be06a9023d6407ebe388791ec3d59100d87ec5",
+      "correct": false,
+      "reason": "Energy is too vague: sunlight is already energy; the requested output is specifically electricity.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/solar/",
+      "sourceQuoteSha256": "bfac95654ad3bcba8405964284544d779ae041e7bf99475e36d3e1225834705a"
+    },
+    {
+      "id": "r-20",
+      "answerSha256": "cdfa05701343b2a0a11354da49fa383d4eeac65a4ed6f58f02b8a79a6001b070",
+      "correct": true,
+      "reason": "Above ground answers the requested land-versus-water choice as land, matching the checked EIA statement.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/wind/",
+      "sourceQuoteSha256": "cb456aecb06e175363d8572f9ab16d5aa8f5e1742bcb724c4e2a5296c09ea027"
+    },
+    {
+      "id": "r-21",
+      "answerSha256": "b023ebef4539848e43eb2f75862d7945ab354595f68bb501dc806e5e6010f18b",
+      "correct": true,
+      "reason": "Earth and heat are the requested meanings of the two roots.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/geothermal/",
+      "sourceQuoteSha256": "ee71a16cff5a4198c4d1fe7ef8cb995defda1a8c780df2564b75f94ca60f155a"
+    },
+    {
+      "id": "r-22",
+      "answerSha256": "a85e9db4851f7cd3efb8db7bf69a07cfb97bc528b72785a9cff7bdfef7e2279d",
+      "correct": false,
+      "reason": "The checked installation year is 1986, not 2015.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "2b5a0aa4af50c7b7bc22bc8255a26d94bbe9054d047e77bcd36838aede98dde9"
+    },
+    {
+      "id": "r-23",
+      "answerSha256": "13fbfd6cad228af51f810f21b9b7496ceb08f46a6d440276deeae0044380b9ad",
+      "correct": false,
+      "reason": "The source specifies 25 windows and seven rays; 578.0 supplies neither count.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "2912a2aef8c2bd449afa76d49e27d1aa0db9ef087f3ea7790847996691a73492"
+    },
+    {
+      "id": "r-24",
+      "answerSha256": "e45d9833bd0a4460ef40e45d13dca34285b6c3cfd3720a2f6f2d6176fc23746e",
+      "correct": false,
+      "reason": "Does not identify the chains and broken shackle at the statue’s feet.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "f52be42498c3b3f89048d7ae7cea06cf93e2c46deedb0efb61c61342fd854881"
+    },
+    {
+      "id": "r-25",
+      "answerSha256": "ee232efb0a46720ca112e1969049ecc1fec6aef4bf91fa09b37e5e1c609503ac",
+      "correct": false,
+      "reason": "The checked tablet date is July 4, 1776, not December 12, 1924.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "f5be2c98900d9d1fe6aa64568cb379e76cd24fd4bde5f6e96cbbd92584fc38b2"
+    },
+    {
+      "id": "r-26",
+      "answerSha256": "6606753e5a126d7068012a526d44c3eb2f7fcd09d5faeb30c77dbfd87ca7e758",
+      "correct": false,
+      "reason": "The speed-of-light redefinition was in 1983; 1960 was a different metre definition.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/meter",
+      "sourceQuoteSha256": "4cf92861b773947eb8ab4e36d1ce6337750ea96aa687c473e38fb7730a3c1d1f"
+    },
+    {
+      "id": "r-27",
+      "answerSha256": "311e7482dbc28641017a0c6b99d5b1278ca985b48ed4ab3634234b1ea876a27f",
+      "correct": false,
+      "reason": "Does not match the exact 9,192,631,770 oscillations in the checked SI-second definition.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/second",
+      "sourceQuoteSha256": "ae8dae5732364f283fffe1438c74a2057c900d5b23900981fab4c280c32bd7e2"
+    },
+    {
+      "id": "r-28",
+      "answerSha256": "603354159847d671cd7c8e67b726829ebc19101932e2dbafd8da87ebd41cd1b6",
+      "correct": true,
+      "reason": "Astronomy matches the checked origin of minutes and seconds.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/second",
+      "sourceQuoteSha256": "fde0f8a310d0fcad37fb0c6efff1ad5ad16a0d3e43ab771900a3f63f984983a9"
+    },
+    {
+      "id": "r-29",
+      "answerSha256": "13602ce54433df2bee54be0836c90a0adc931b85abc047f786e1a6c39670adb8",
+      "correct": false,
+      "reason": "The checked daytime hours were longer in summer, not shorter.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/second",
+      "sourceQuoteSha256": "f5cc570abf16856584d5d57657d7a3b70c241f12b310a84e165f5aa9d330cc4c"
+    },
+    {
+      "id": "r-30",
+      "answerSha256": "e8d6fdaf0a61892a0657a82b6dd657cb3996e38a6fe57187e690cb07f03eecce",
+      "correct": true,
+      "reason": "Dry-air correctly answers the requested dry-versus-wet choice, despite the unfinished extra explanation.",
+      "sourceUrl": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "sourceQuoteSha256": "100403494ff4f06e75b6a0abefa6950e3aabc88598b95213a3c959273a68cf11"
+    },
+    {
+      "id": "r-31",
+      "answerSha256": "dabff6e89af6382220e049edd5287f7b58154490ebe16182fcc7e9012821e5ac",
+      "correct": false,
+      "reason": "The checked reference is 280 ppm, not 0.15 ppm.",
+      "sourceUrl": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "sourceQuoteSha256": "b11d48f5ea61a0e6849b1da4cb2421d896c541722e8de7366fe32ad9f503be35"
+    },
+    {
+      "id": "r-32",
+      "answerSha256": "3970ba46eed30defd1a5af9eb4d9574f9c819de75f98ececd4e3ba97109c2e1e",
+      "correct": false,
+      "reason": "Describes the long-term human-driven rise instead of the requested seasonal photosynthesis/respiration cycle.",
+      "sourceUrl": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "sourceQuoteSha256": "0d8620f53606527bb8b7fea2d31e788dfe04e5647bea8daaf182302a54a8163e"
+    },
+    {
+      "id": "r-33",
+      "answerSha256": "474c787c0e3dbd686da369f55ec48332aa3fe71499b04c73cc47753d6550e4c1",
+      "correct": false,
+      "reason": "The question asks the exact defined value, 299,792,458 m/s; the rounded 300,000,000 does not satisfy it.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/meter",
+      "sourceQuoteSha256": "d2302b425578ba16652746e78b84935a756b4e4b24e3f3b90f400fab96212280"
+    },
+    {
+      "id": "r-34",
+      "answerSha256": "ffaddf31cda3afd6ce9956b981ffabfe885367b1d5a65b6e547850ca9810f8fb",
+      "correct": false,
+      "reason": "The checked sunlight travel time is about four hours, not 27 Earth hours.",
+      "sourceUrl": "https://science.nasa.gov/neptune/facts/",
+      "sourceQuoteSha256": "4ba0ae5ef7c5fa1e6437c8ecb2590ff30acbf2eb0e0c857db6d8b7115b1d1a43"
+    },
+    {
+      "id": "r-35",
+      "answerSha256": "04bf97168c211a6edb4e1e812977a519d17effbcbf4e17732cbab97441dbd549",
+      "correct": false,
+      "reason": "Twelve inches contradicts the checked thin copper sheeting, about two pennies thick.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "51d15951f0b2116cba9192d9987ca568bb1004a8d474a627ff2549bb5cf9df61"
+    },
+    {
+      "id": "h-01",
+      "answerSha256": "7cfe8259d731535506e71fd3631b1fd4ac0a9533b1b77e64e2cd71acbe632fe0",
+      "correct": true,
+      "reason": "27 days matches the checked approximate orbital period.",
+      "sourceUrl": "https://science.nasa.gov/moon/facts/",
+      "sourceQuoteSha256": "4fa197a77a3a6756adf354647a09371c1d090f5a485b2af8c812d94299a2420f"
+    },
+    {
+      "id": "h-02",
+      "answerSha256": "f02b4bc9965c12630bcc512654fb003f680e1801ea4a38e7cc561ca6e95c3263",
+      "correct": true,
+      "reason": "Correctly says ring components orbit at different speeds.",
+      "sourceUrl": "https://science.nasa.gov/saturn/facts/",
+      "sourceQuoteSha256": "9d9ce455e1b5729038b446dc9def901330f79600634feaf9f12f943357162c0c"
+    },
+    {
+      "id": "h-03",
+      "answerSha256": "2b0d905c4c53f6c561fa1aa113c3827e122beae8aee7290546bd43dd2e674a95",
+      "correct": false,
+      "reason": "Does not give the requested approximately 9.9 hours; an unqualified day is not the requested hour count.",
+      "sourceUrl": "https://science.nasa.gov/jupiter/facts/",
+      "sourceQuoteSha256": "c0fd25ea49bc572f400de28648c9df0163d3c4c9eded2fbfacf04a9e4d3961fb"
+    },
+    {
+      "id": "h-04",
+      "answerSha256": "eadf4bc88c347bad4a37382468f2f2a3b9cb4b3ad8085ceebe0159b2c6204c1c",
+      "correct": false,
+      "reason": "Mercury’s checked orbital period is 88 Earth days, not 19.58.",
+      "sourceUrl": "https://science.nasa.gov/mercury/facts/",
+      "sourceQuoteSha256": "81463629840988cc0d961a569e849be96deb135beb5af1b02c843efc1eddb3bd"
+    },
+    {
+      "id": "h-05",
+      "answerSha256": "e5848b080d1a5ef5efe2bf21677952fc4d9a72475be0103396f5e44951c45304",
+      "correct": false,
+      "reason": "NASA says the Sun rises in the west on Venus; east is the wrong direction. The reference’s Earth comparison also needs editorial correction before delivery.",
+      "sourceUrl": "https://science.nasa.gov/venus/facts/",
+      "sourceQuoteSha256": "5c37f5d5a1b03c58badb59ce1c99eda33b3efdc87d354fafa36f3f63b1a45dc9"
+    },
+    {
+      "id": "h-06",
+      "answerSha256": "f0514e8df84107f48f494271bdb02c616740729edfcfbc10fda4d5bad173a777",
+      "correct": false,
+      "reason": "The checked sunlight travel time is about four hours, not 24.",
+      "sourceUrl": "https://science.nasa.gov/neptune/facts/",
+      "sourceQuoteSha256": "4ba0ae5ef7c5fa1e6437c8ecb2590ff30acbf2eb0e0c857db6d8b7115b1d1a43"
+    },
+    {
+      "id": "h-07",
+      "answerSha256": "c3d1d6eea020b0ee224395dd62be7a21e46911a0d1e64b5d238ebbc765efcac4",
+      "correct": true,
+      "reason": "Correct requested comparison: faster at the equator than at the poles.",
+      "sourceUrl": "https://science.nasa.gov/sun/facts/",
+      "sourceQuoteSha256": "4ff707f28fe127ad2daeb3ef2ef433455a8f37b7acce760975bdfb41264239bc"
+    },
+    {
+      "id": "h-08",
+      "answerSha256": "207700f252938aa7e7e41e2f5851dfdb26fff1708b1a889839359f8ff488d3ad",
+      "correct": false,
+      "reason": "Does not answer limestone/calcium carbonate; a description of another organism’s exoskeleton misses the requested material.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/coral.html",
+      "sourceQuoteSha256": "cebd3db006d2a0f190bff8b171ecfcf8b12a65b703a4257203c78a0e50b8c7a5"
+    },
+    {
+      "id": "h-09",
+      "answerSha256": "48bf83055a62019fe739652a15e6c104c5637d0f07d26062d5d56b891f54f628",
+      "correct": false,
+      "reason": "A colony contains many small animals/polyps, rather than one large animal.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/coral.html",
+      "sourceQuoteSha256": "b9af010422f8777dba3044b606446d37ed202cca836734ad4fdcd98569afe12f"
+    },
+    {
+      "id": "h-10",
+      "answerSha256": "aa2cd284038ca09dead4789f4c5ad071d36a3efb7a3a21a87573be3e9fcd3ffa",
+      "correct": false,
+      "reason": "Does not answer how the algae benefit: the checked source identifies protection/resources; the response instead discusses algae’s effects on other organisms.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/coral.html",
+      "sourceQuoteSha256": "879790cfc910d8d71bc66b63ce68477d9eaf673de4fa5ed28650b38d327fbac5"
+    },
+    {
+      "id": "h-11",
+      "answerSha256": "7d58f1ac27ae487dd22f157fcbb05a91451b14f8856cc6dcf188ac292b39d3d4",
+      "correct": false,
+      "reason": "Five kilometres does not match the checked approximate 3.7-kilometre average.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "sourceQuoteSha256": "28b93e5cdcc1670b970e71f430a95fac1fcf4c4e9adce2dc3a12432c8fcc9998"
+    },
+    {
+      "id": "h-12",
+      "answerSha256": "0f15c9f7db2929fdd3580f5dd467e6b6cf44b5d47625988760f07d034ff7fe1e",
+      "correct": true,
+      "reason": "Western Pacific Ocean correctly answers the requested ocean. Extra geographic wording is outside the target-fact label.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "sourceQuoteSha256": "cfd0814eeccebd8f87e60178a99c5f79851ed3839b6ec5671eb8789abec5ff8b"
+    },
+    {
+      "id": "h-13",
+      "answerSha256": "1421ff611c93756cbc675b827ea48e8f3ef11c922b0046364c3953d936ef9394",
+      "correct": false,
+      "reason": "The checked first sounding was in 1875, not 1876.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/oceandepth.html",
+      "sourceQuoteSha256": "65bccd4801894144e3e2b75fae279d18cc73262bf9a70c05b1d4428c5887a620"
+    },
+    {
+      "id": "h-14",
+      "answerSha256": "920a8c8558e9a94e870958c1b2f116d63a41aeecc02d2f33411bcef1f4dc5511",
+      "correct": false,
+      "reason": "The checked twilight-zone boundary is approximately 200 metres, not 50.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "sourceQuoteSha256": "cfbf5ccbb9789bbeddd0997d460b744619f320beae85a29bae6ece6297612104"
+    },
+    {
+      "id": "h-15",
+      "answerSha256": "7a5ab90aad26412e2f280b7cda1282c45e059e289230916b075b2f247b69bd84",
+      "correct": true,
+      "reason": "No correctly answers whether sunlight reaches four kilometres. The unsupported pressure/gases explanation is not validated by this target-fact label.",
+      "sourceUrl": "https://oceanservice.noaa.gov/facts/light_travel.html",
+      "sourceQuoteSha256": "3ef987da920eaae8cad75d2bcba10771f679e2be65f31dca1efa1b4b39f9e99f"
+    },
+    {
+      "id": "h-16",
+      "answerSha256": "187897ce0afcf20b50ba2b37dca84a951b7046f29ed5ab94f010619f69d6e189",
+      "correct": false,
+      "reason": "The requested generation-versus-pumping comparison is less, not more.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/hydropower/",
+      "sourceQuoteSha256": "0c6c2450832746b3d14fb55d03776df18e2716389b22c0bbcdc329502ab9ebde"
+    },
+    {
+      "id": "h-17",
+      "answerSha256": "d42ed19c0d9c80706b6b1484a97cf8634285d753ac079717aee8c651d54caef3",
+      "correct": false,
+      "reason": "The checked year is 1882, not 1923.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/hydropower/",
+      "sourceQuoteSha256": "a4dacbcb4dd2a28c4a5f858753cf48a6ae1df784f986b92a18b82bf9d484702e"
+    },
+    {
+      "id": "h-18",
+      "answerSha256": "46e67c525617663b392a53c0e94ba79e62db62a851fb175ae87756d4e73c9718",
+      "correct": false,
+      "reason": "The checked wind/hydropower crossover year is 2019, not 2017.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/hydropower/",
+      "sourceQuoteSha256": "902f1861d41779e86892c0a9e549e591a266328d3509b29b6133251725acd30a"
+    },
+    {
+      "id": "h-19",
+      "answerSha256": "670545f6e1c38a072d2ec0674f10862242b5c49148963d18f5a3c7a5ced8c30e",
+      "correct": true,
+      "reason": "No matches direct photovoltaic conversion without first boiling water.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/solar/",
+      "sourceQuoteSha256": "bfac95654ad3bcba8405964284544d779ae041e7bf99475e36d3e1225834705a"
+    },
+    {
+      "id": "h-20",
+      "answerSha256": "fe7d675dc24e5af4310f0615f3ba5c508558734d0dfe63ff7045a871890b223a",
+      "correct": false,
+      "reason": "The checked faster-heating air is above land, not above water.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/wind/",
+      "sourceQuoteSha256": "cb456aecb06e175363d8572f9ab16d5aa8f5e1742bcb724c4e2a5296c09ea027"
+    },
+    {
+      "id": "h-21",
+      "answerSha256": "0aaabbb2c011ed2a7682b7883170954561d68bfb13a798ec6fa4f3f9203cf2a4",
+      "correct": false,
+      "reason": "The first root means earth, not high; only the heat root is correct.",
+      "sourceUrl": "https://www.eia.gov/energyexplained/geothermal/",
+      "sourceQuoteSha256": "ee71a16cff5a4198c4d1fe7ef8cb995defda1a8c780df2564b75f94ca60f155a"
+    },
+    {
+      "id": "h-22",
+      "answerSha256": "8f8472a2f6ec348bfc7577a035c7f34a04c62f0c757b54687e1175236dcf393b",
+      "correct": true,
+      "reason": "1986 matches the checked installation year.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "2b5a0aa4af50c7b7bc22bc8255a26d94bbe9054d047e77bcd36838aede98dde9"
+    },
+    {
+      "id": "h-23",
+      "answerSha256": "2e38af6e99629f60f89e52a1094a4f8312b5dd8fee03eeebcc5d700197d73546",
+      "correct": false,
+      "reason": "The checked crown has seven rays, not 257.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "2912a2aef8c2bd449afa76d49e27d1aa0db9ef087f3ea7790847996691a73492"
+    },
+    {
+      "id": "h-24",
+      "answerSha256": "26bb28e234cd9b97437088019a0634905ddc4b45338092f14dd5907ed6b5086d",
+      "correct": false,
+      "reason": "The checked direction is southeast, not east.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "cbf8bfa3928792a4c5a27c31d62295b9a07aeff3913c52fe4727a7e3096c5c88"
+    },
+    {
+      "id": "h-25",
+      "answerSha256": "89aeca7fdda9d2131524cb4bc7f22c6a25e3c0a5c0a54b99d6d54196c4e88f37",
+      "correct": false,
+      "reason": "The tablet date is July 4,1776, not July 2,1924.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "f5be2c98900d9d1fe6aa64568cb379e76cd24fd4bde5f6e96cbbd92584fc38b2"
+    },
+    {
+      "id": "h-26",
+      "answerSha256": "0aba0896f2dc990fad9312d44c29dc89064ca4f52b3f7eba2aeeb301689d0a13",
+      "correct": true,
+      "reason": "Speed of light correctly identifies the current definition rather than a physical bar.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/meter",
+      "sourceQuoteSha256": "4cf92861b773947eb8ab4e36d1ce6337750ea96aa687c473e38fb7730a3c1d1f"
+    },
+    {
+      "id": "h-27",
+      "answerSha256": "e992e29988b080d149fb7aab09c67491ddc8b770ed9fd42c60cd45b47e7c3709",
+      "correct": false,
+      "reason": "The checked exact count is 9,192,631,770; the supplied much larger integer is wrong.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/second",
+      "sourceQuoteSha256": "ae8dae5732364f283fffe1438c74a2057c900d5b23900981fab4c280c32bd7e2"
+    },
+    {
+      "id": "h-28",
+      "answerSha256": "603354159847d671cd7c8e67b726829ebc19101932e2dbafd8da87ebd41cd1b6",
+      "correct": true,
+      "reason": "Astronomy matches the checked origin.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/second",
+      "sourceQuoteSha256": "fde0f8a310d0fcad37fb0c6efff1ad5ad16a0d3e43ab771900a3f63f984983a9"
+    },
+    {
+      "id": "h-29",
+      "answerSha256": "deb6397af8c5facd8098ce62197fcb0be4f644be30d50234825d4ef54e09daf3",
+      "correct": false,
+      "reason": "The source gives twelve parts of daylight and twelve of night, rather than 24 daylight plus 12 darkness.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/second",
+      "sourceQuoteSha256": "dad6adaa4ae7a3eb7c8722802e1a92fca3fbd57bc198d02d46f1bb99ae30c87f"
+    },
+    {
+      "id": "h-30",
+      "answerSha256": "8e845788e375092c5e294a111e4211f9e7f0502a40dede912b953d581c89ccc7",
+      "correct": false,
+      "reason": "Ambiguous: the question asks include or exclude, but the answer only says No,it does not, without unambiguously selecting one. Conservatively scored as unanswered.",
+      "sourceUrl": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "sourceQuoteSha256": "06bf211ce41dbd7545ca77967c84fb43bf60fb13266bf86b6014e678cfaefd2a",
+      "ambiguous": true
+    },
+    {
+      "id": "h-31",
+      "answerSha256": "a4d1a040587197861dc8210b1ca7cf07a9da7f9c05a7c5e9fe77052c40491472",
+      "correct": false,
+      "reason": "The checked representative reference is 280 ppm, not 1.0689.",
+      "sourceUrl": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "sourceQuoteSha256": "b11d48f5ea61a0e6849b1da4cb2421d896c541722e8de7366fe32ad9f503be35"
+    },
+    {
+      "id": "h-32",
+      "answerSha256": "ba884b07d22842fc6e26fd7c7ee0ec65646a20c8af6c53340ed29bcc0a2456a1",
+      "correct": false,
+      "reason": "NOAA’s weekly interval is Sunday to Saturday, not two September dates.",
+      "sourceUrl": "https://gml.noaa.gov/ccgg/trends/weekly.html",
+      "sourceQuoteSha256": "6913ee7b5921d623966a4c9276d9eb14deb6b964e4d5fa433a312a87301405fe"
+    },
+    {
+      "id": "h-33",
+      "answerSha256": "42bd4961971a39e70848b85706579714270df0a552a7a3a9f314e9f2790b4ea5",
+      "correct": false,
+      "reason": "The exact requested value is 299,792,458 m/s;300,000,000 is only a rounded approximation.",
+      "sourceUrl": "https://www.nist.gov/si-redefinition/meter",
+      "sourceQuoteSha256": "d2302b425578ba16652746e78b84935a756b4e4b24e3f3b90f400fab96212280"
+    },
+    {
+      "id": "h-34",
+      "answerSha256": "abae17df5934cea35963ea493e1a48a26ef4992d431c52fb8ecfac67594ac506",
+      "correct": false,
+      "reason": "Does not provide the requested roughly forty Earth years;24,150 days is about 66 years.",
+      "sourceUrl": "https://science.nasa.gov/neptune/facts/",
+      "sourceQuoteSha256": "b71767aaa27c33c4b984947a8196fbcf5a994cb423d5b0c4a698166b7597cfa0"
+    },
+    {
+      "id": "h-35",
+      "answerSha256": "341b475a238f2ba5deaf328ce55d4ab86016a24b89b72b20a74c9f6e6cbe4b43",
+      "correct": false,
+      "reason": "Thirteen feet contradicts the checked 3/32-inch copper sheeting.",
+      "sourceUrl": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm",
+      "sourceQuoteSha256": "8fafc4068ac0937e7d8377a5824e2cd77b3558a3fb8b39c5f4fff8411c60c20b"
+    }
+  ]
+}
