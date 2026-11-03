@@ -1,0 +1,107 @@
+/* Reserve the shell while validated local content arrives. */
+html[data-view="daily"] #detector,
+html[data-view="detector"] #daily-view {
+  display: none;
+}
+html[data-view="daily"] #daily-view {
+  display: block;
+}
+html .workspace {
+  display: flow-root;
+  width: 100%;
+  min-height: calc(100svh - 184px);
+}
+html[data-view="detector"] .workspace {
+  min-height: calc(100svh - 96px);
+}
+html .footer > * {
+  flex: 1;
+}
+html #connection-status {
+  text-align: left;
+}
+html .footer button {
+  flex: 0 0 148px;
+  text-align: left;
+}
+html #streak {
+  min-inline-size: 15ch;
+}
+html .replay-status {
+  min-height: 33px;
+}
+html .edition-line {
+  min-height: 35px;
+}
+@media (min-width: 761px) {
+  html .cluster-stage {
+    min-height: 350px;
+  }
+}
+@media (max-width: 760px) {
+  html .workspace {
+    min-height: calc(100svh - 199px);
+  }
+  html[data-view="detector"] .workspace {
+    min-height: calc(100svh - 93px);
+  }
+  html .footer > :nth-child(2) {
+    text-align: left;
+  }
+  html .edition-line {
+    min-height: 44px;
+  }
+}
+
+/* Content-sized controls and right-hand records keep their position through a font swap. */
+html .topbar nav {
+  display: grid;
+  grid-template-columns: 75px 70px 50px 85px;
+}
+html .topbar nav button {
+  text-align: left;
+}
+html #detector-replay {
+  inline-size: 144px;
+  flex-shrink: 0;
+}
+html .entropy-readout .meaning-count {
+  text-align: left;
+  inline-size: 150px;
+  flex-shrink: 0;
+}
+html .case-heading > span:last-child {
+  inline-size: 12em;
+  max-inline-size: 50%;
+  text-align: left;
+}
+@media (max-width: 760px) {
+  html .topbar nav {
+    grid-template-columns: 62px 58px 42px 70px;
+  }
+  html #detector-replay {
+    inline-size: 90px;
+  }
+  html .entropy-readout .meaning-count {
+    inline-size: 130px;
+  }
+}
+
+@media (max-width: 360px) {
+  html .topbar nav {
+    gap: 14px;
+  }
+}
+
+html .entropy-readout .meaning-count strong {
+  text-align: right;
+}
+@media (min-width: 901px) {
+  html .round-bar > span:first-child {
+    inline-size: 110px;
+    flex-shrink: 0;
+  }
+  html .progress li {
+    inline-size: 72px;
+  }
+}

@@ -1,0 +1,130 @@
+/* Reading, records and signs. The newsroom palette, spacing and motion stay intact. */
+:root {
+  --font-reading: "IBM Plex Sans", "Plex Sans metrics", Arial, sans-serif;
+  --font-record: "IBM Plex Mono", "Plex Mono metrics", "Courier New", monospace;
+  --font-sign: "IBM Plex Sans Condensed", "Plex Sign metrics", "Arial Narrow", Arial, sans-serif;
+  font-family: var(--font-reading);
+  line-height: 1.35;
+}
+button,
+input,
+textarea,
+select,
+.detector-controls select {
+  font-family: var(--font-reading);
+}
+button {
+  font-weight: 500;
+}
+strong,
+b {
+  font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sign);
+  font-weight: 600;
+}
+label,
+summary,
+th,
+.case-heading,
+.section-label,
+.note-label,
+.publisher,
+.claim-status,
+.sample-label,
+.result-label,
+.tell-type,
+.citation-details,
+.token-legend,
+.review-result,
+.source-link-label,
+.review-claim small,
+.judgement-grid span,
+.entropy-readout span,
+.evaluation-numbers span {
+  font-family: var(--font-sign);
+}
+label,
+summary,
+th,
+.case-heading,
+.section-label {
+  font-weight: 500;
+}
+.source-title {
+  font-family: var(--font-sign);
+  font-weight: 500;
+}
+.claim-text,
+.detector-claim,
+.meaning-question {
+  font-family: var(--font-reading);
+  font-weight: 600;
+}
+.sample-text,
+.citation-details .checked {
+  font-family: var(--font-reading);
+  font-weight: 400;
+}
+code,
+pre,
+kbd,
+samp,
+#result-text,
+.token,
+.token-probability,
+.source-link,
+.edition-line,
+.round-count,
+.score,
+.score span,
+.progress li > span:first-child,
+.entropy-readout strong,
+.meaning-segment,
+.meaning-group h4 span,
+.record-value,
+.matrix-cell,
+.matrix-self,
+#threshold-value,
+.evaluation-numbers strong,
+.evaluation-table-wrap td:not(:first-child),
+.judgement-grid strong {
+  font-family: var(--font-record);
+  font-variant-numeric: tabular-nums;
+}
+.source-link-label {
+  font-family: var(--font-sign);
+}
+.meaning-segment {
+  letter-spacing: -0.25px;
+}
+.meaning-group h4 span,
+.record-value,
+.token-probability,
+.source-link,
+.edition-line,
+.round-count,
+.token,
+.matrix-cell,
+.matrix-self {
+  font-weight: 400;
+}
+
+/* Preserve the compact label rhythm while prose keeps its reading line-height. */
+.topbar nav button,
+.detector-mode-links,
+.detector-controls label,
+.sample-label {
+  line-height: 1.15;
+}
+
+/* Keep numeric records intact in the deliberately scrollable phone table. */
+.evaluation-table-wrap td:not(:first-child) {
+  white-space: nowrap;
+}

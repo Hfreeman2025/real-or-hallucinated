@@ -231,6 +231,13 @@ try {
     const page = await context.newPage();
     await page.goto(base);
     await page.waitForSelector(".no-script");
+    assert.ok(await page.locator(".workspace").isHidden(), "No-JS shell is hidden");
+    assert.ok(await page.locator(".topbar nav").isHidden(), "No-JS navigation is hidden");
+    const noScript = await page.locator(".no-script").boundingBox();
+    assert.ok(
+      noScript && noScript.y + noScript.height <= size.height,
+      "No-JS instruction fits the viewport",
+    );
     await page.screenshot({ path: `${out}/${size.name}-javascript-disabled.png` });
     captures.push({
       name: "javascript-disabled",

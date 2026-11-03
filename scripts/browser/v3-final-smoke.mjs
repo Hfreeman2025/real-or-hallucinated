@@ -8,6 +8,7 @@ for (const engine of ["chromium", "webkit", "firefox"]) {
   try {
     for (const origin of [new URL(base).origin, "http://127.0.0.1:5177"])
       for (const size of sizes) {
+        console.log(`Smoke ${engine} ${origin} ${size.name}`);
         const f = await pageFor(browser, { size });
         const checks = [];
         const check = (name, value) => {
@@ -68,9 +69,26 @@ for (const engine of ["chromium", "webkit", "firefox"]) {
             );
             await f.page.locator(".evaluation-table-wrap").focus();
             await f.page.keyboard.press("ArrowRight");
-            await f.page.waitForFunction(
-              () => document.querySelector(".evaluation-table-wrap").scrollLeft > 0,
-            );
+            await f.page
+              .waitForFunction(
+                () => document.querySelector(".evaluation-table-wrap").scrollLeft > 0,
+                null,
+                { timeout: 3000 },
+              )
+              .catch(async (error) => {
+                console.log(
+                  await f.page.locator(".evaluation-table-wrap").evaluate((el) => ({
+                    active: document.activeElement?.outerHTML.slice(0, 160),
+                    width: el.clientWidth,
+                    scrollWidth: el.scrollWidth,
+                    scrollLeft: el.scrollLeft,
+                    overflow: getComputedStyle(el).overflowX,
+                    tableWidth: el.querySelector("table").getBoundingClientRect().width,
+                    view: document.documentElement.dataset.view,
+                  })),
+                );
+                throw error;
+              });
             check("keyboard can reveal the remaining table columns", true);
           }
           const image = await f.page.evaluate(async () => {
@@ -113,7 +131,7 @@ for (const origin of [new URL(base).origin, "http://127.0.0.1:5177"]) {
   assert.equal((await fetch(`${origin}/__models/unlisted/file.onnx`)).status, 404);
 }
 await writeFile(
-  "shots/v3/final-smoke-report.json",
+  `${process.env.EVIDENCE_DIR ?? "shots/v3"}/final-smoke-report.json`,
   JSON.stringify(
     {
       checkedAt: new Date().toISOString(),

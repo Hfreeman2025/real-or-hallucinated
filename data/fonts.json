@@ -1,0 +1,138 @@
+{
+  "license": "OFL-1.1",
+  "licenses": [
+    {
+      "package": "@fontsource/ibm-plex-sans",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "file": "OFL-ibm-plex-sans.txt",
+      "bytes": 4429,
+      "sha256": "d0283623ef57e722fd0eb688a8041589670c608ab780cd3612d06ba6f153d3fd",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.3.0/LICENSE"
+    },
+    {
+      "package": "@fontsource/ibm-plex-mono",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "file": "OFL-ibm-plex-mono.txt",
+      "bytes": 5299,
+      "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.3.0/LICENSE"
+    },
+    {
+      "package": "@fontsource/ibm-plex-sans-condensed",
+      "version": "5.3.0",
+      "license": "OFL-1.1",
+      "file": "OFL-ibm-plex-sans-condensed.txt",
+      "bytes": 5416,
+      "sha256": "251faa58c24c53a1855818116292bf449d591937cf5143fafc23e0be5e26ddc6",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans-condensed@5.3.0/LICENSE"
+    }
+  ],
+  "files": [
+    {
+      "file": "ibm-plex-sans-latin-400-normal.woff2",
+      "package": "@fontsource/ibm-plex-sans",
+      "version": "5.3.0",
+      "weight": 400,
+      "style": "normal",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-sans.txt",
+      "bytes": 22588,
+      "sha256": "3b646991d30055a93a4ecc499713d4347953a74a947ecab435ab72070cbdab0e",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.3.0/files/ibm-plex-sans-latin-400-normal.woff2"
+    },
+    {
+      "file": "ibm-plex-sans-latin-400-italic.woff2",
+      "package": "@fontsource/ibm-plex-sans",
+      "version": "5.3.0",
+      "weight": 400,
+      "style": "italic",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-sans.txt",
+      "bytes": 24356,
+      "sha256": "6de912e531b6c98084f1b2d5e5a91bad77be4e68bc4e396e43c46fc435e5f3d9",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.3.0/files/ibm-plex-sans-latin-400-italic.woff2"
+    },
+    {
+      "file": "ibm-plex-sans-latin-500-normal.woff2",
+      "package": "@fontsource/ibm-plex-sans",
+      "version": "5.3.0",
+      "weight": 500,
+      "style": "normal",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-sans.txt",
+      "bytes": 24184,
+      "sha256": "0717336fb31fcdcde4b8deb3675bb4a0f7f6d484864afcd6751ac29975962203",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.3.0/files/ibm-plex-sans-latin-500-normal.woff2"
+    },
+    {
+      "file": "ibm-plex-sans-latin-600-normal.woff2",
+      "package": "@fontsource/ibm-plex-sans",
+      "version": "5.3.0",
+      "weight": 600,
+      "style": "normal",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-sans.txt",
+      "bytes": 24252,
+      "sha256": "8960851d691c054ed38e259bdcf1a6190d157b4203ed5bb32c632a863fb8ec2f",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.3.0/files/ibm-plex-sans-latin-600-normal.woff2"
+    },
+    {
+      "file": "ibm-plex-mono-latin-400-normal.woff2",
+      "package": "@fontsource/ibm-plex-mono",
+      "version": "5.3.0",
+      "weight": 400,
+      "style": "normal",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-mono.txt",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.3.0/files/ibm-plex-mono-latin-400-normal.woff2"
+    },
+    {
+      "file": "ibm-plex-mono-latin-600-normal.woff2",
+      "package": "@fontsource/ibm-plex-mono",
+      "version": "5.3.0",
+      "weight": 600,
+      "style": "normal",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-mono.txt",
+      "bytes": 15620,
+      "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.3.0/files/ibm-plex-mono-latin-600-normal.woff2"
+    },
+    {
+      "file": "ibm-plex-sans-condensed-latin-500-normal.woff2",
+      "package": "@fontsource/ibm-plex-sans-condensed",
+      "version": "5.3.0",
+      "weight": 500,
+      "style": "normal",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-sans-condensed.txt",
+      "bytes": 19952,
+      "sha256": "e3b4fd97fd20bc70fda66d8d5f0745d8d6958068a024cb4724bbc1ffb6cbc183",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans-condensed@5.3.0/files/ibm-plex-sans-condensed-latin-500-normal.woff2"
+    },
+    {
+      "file": "ibm-plex-sans-condensed-latin-600-normal.woff2",
+      "package": "@fontsource/ibm-plex-sans-condensed",
+      "version": "5.3.0",
+      "weight": 600,
+      "style": "normal",
+      "subset": "latin",
+      "license": "OFL-1.1",
+      "licenseFile": "OFL-ibm-plex-sans-condensed.txt",
+      "bytes": 19816,
+      "sha256": "3d72a0923c5830358b0a8e25b258aecadbecbf542b6ee9a25f387803e37d56b9",
+      "sourceUrl": "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans-condensed@5.3.0/files/ibm-plex-sans-condensed-latin-600-normal.woff2"
+    }
+  ]
+}

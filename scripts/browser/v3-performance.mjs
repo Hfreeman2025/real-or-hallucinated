@@ -107,6 +107,15 @@ for (const dir of ["assets", "runtime"])
         ),
       });
     }
+const bootstrap = await readFile("dist/bootstrap.js");
+javascript.push({
+  file: "bootstrap.js",
+  bytes: bootstrap.length,
+  gzipBytes: gzipSync(bootstrap).length,
+  fetchedByOpener: results[0].samples[0].resources.some((u) =>
+    new URL(u).pathname.endsWith("/bootstrap.js"),
+  ),
+});
 const wasmFiles = [];
 for (const name of (await readdir("dist/runtime")).filter((n) => n.endsWith(".wasm"))) {
   const bytes = await readFile(`dist/runtime/${name}`);
@@ -117,6 +126,6 @@ for (const name of (await readdir("dist/runtime")).filter((n) => n.endsWith(".wa
   });
 }
 await writeFile(
-  "shots/v3/performance-report.json",
+  `${process.env.EVIDENCE_DIR ?? "shots/v3"}/performance-report.json`,
   `${JSON.stringify({ measuredAt: new Date().toISOString(), testedUrl: base, method: "Three fresh contexts per engine, one browser at a time; no simultaneous model/build/capture tasks. Native Performance and rAF with foreground pages and Date-only fixture. Meaningful paint is initial detector content after two rAF callbacks; the separately measured cluster start follows real recorded-answer arrival. Frame intervals cover the five-card FLIP gather for the longest total recorded answer text, with the stage in view and its real replay handler invoked and are not GPU timings or guarantees for physical phones. Initial JS includes dynamic modules actually fetched by the opener; model runtime is lazy.", results, heaviestRecordedCase: heavy.input.id, heaviestAnswerCharacters: heavy.samples.reduce((s, x) => s + x.text.length, 0), wasmFiles, javascript, openerJavascriptGzipBytes: javascript.filter((f) => f.fetchedByOpener).reduce((s, f) => s + f.gzipBytes, 0), optionalJavascriptGzipBytes: javascript.filter((f) => !f.fetchedByOpener).reduce((s, f) => s + f.gzipBytes, 0) }, null, 2)}\n`,
 );

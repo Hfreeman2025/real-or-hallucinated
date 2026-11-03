@@ -1,1 +1,22 @@
-.workspace,.topbar nav,.footer,.skip-link{display:none}.no-script{max-width:800px;margin:40px 48px;padding:32px;background:#fff;border:1px solid #181b19;font-size:20px;line-height:1.6}@media(max-width:760px){.no-script{margin:24px 18px;padding:24px;font-size:18px}}
+html body .workspace,
+html body .topbar nav,
+html body .footer,
+html body .skip-link {
+  display: none;
+}
+.no-script {
+  max-width: 800px;
+  margin: 40px 48px;
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #181b19;
+  font-size: 20px;
+  line-height: 1.6;
+}
+@media (max-width: 760px) {
+  .no-script {
+    margin: 24px 18px;
+    padding: 24px;
+    font-size: 18px;
+  }
+}

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import { readFile, stat, statfs } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { resolve } from "node:path";
@@ -38,6 +39,14 @@ export function savedRound(date, answers = [], reviewed = 0) {
 }
 export async function launch(engine) {
   if (!process.env.CI && process.platform === "darwin") {
+    const occupied = execFileSync("ps", ["-axo", "pid,ppid,comm"], { encoding: "utf8" })
+      .split("\n")
+      .filter((line) =>
+        /Google Chrome for Testing\.app|chrome-headless-shell|Playwright\.app|\/MiniBrowser|\/firefox(?:\s|$)/.test(
+          line,
+        ),
+      );
+    assert.deepEqual(occupied, [], "Browser slot occupied; wait for the current builder's handoff");
     const disk = await statfs("/");
     if (disk.bavail * disk.bsize < 10 * 1024 ** 3)
       throw new Error("Browser launch held: less than 10 GiB free");

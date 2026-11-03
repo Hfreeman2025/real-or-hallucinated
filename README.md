@@ -22,7 +22,7 @@ npm run preview
 
 Open **http://127.0.0.1:4184**. The preview uses the isolated QA port; the development port remains 5177. Nothing has been published.
 
-![Five real model answers grouped into two inferred meanings, beside a source-checked claim](shots/v3/pass-2/desktop-viewport.png)
+![Five real model answers grouped into two inferred meanings, beside a source-checked claim](shots/typography/after/desktop-detector.png)
 
 ## Inspect the technique in ten seconds
 
@@ -88,15 +88,15 @@ Matching normalises entities, case, whitespace, and typographic punctuation whil
 
 ## Checks and screenshots
 
-The final local measurement uses three fresh contexts per engine, one browser at a time. First meaningful paint is the initial detector after two native animation frames; the five-answer gather begins at about 1.3 seconds. The heaviest case is chosen by total recorded answer length.
+The current IBM Plex build was measured with three fresh contexts per engine, one browser at a time. Both routes at both requested sizes record zero total startup CLS, including controlled delayed-font and warm-reload checks. Detailed evidence and browser API limits are recorded in `docs/TYPOGRAPHY.md`. First meaningful paint is the initial detector after two native animation frames; the five-answer gather begins at about 1.3 seconds. The heaviest case is chosen by total recorded answer length.
 
 | Browser | Median meaningful paint | Median frame | P95 frame |
 |---|---:|---:|---:|
-| Chromium 153 | 59.9 ms | 16.7 ms | 16.8 ms |
-| WebKit 26.6 | 57.0 ms | 17.0 ms | 18.0 ms |
-| Firefox 155 | 47.0 ms | 8.3 ms | 9.1 ms |
+| Chromium 153 | 61.5 ms | 16.7 ms | 16.7 ms |
+| WebKit 26.6 | 65.0 ms | 17.0 ms | 18.0 ms |
+| Firefox 155 | 57.0 ms | 8.3 ms | 9.1 ms |
 
-Opener JavaScript/data modules total **168,533 bytes gzipped**. All optional JavaScript build chunks across both runtime profiles total 374,527 bytes gzipped; a browser loads its selected profile lazily. WASM is 26.86 MB raw / 6.68 MB gzipped for WebGPU, plus 14.26 MB raw / 3.68 MB gzipped for WebKit's CPU-only checker. The optional selected weights total 889.1 MB. These are asset gzip sizes, not a claim that Vite's loopback preview compresses HTTP traffic. Local timings and headless frame intervals are not network or physical-phone guarantees. See the [raw measurements](shots/v3/performance-report.json).
+Opener JavaScript/data modules total **169,487 bytes gzipped**. All optional JavaScript build chunks across both runtime profiles total 374,527 bytes gzipped; a browser loads its selected profile lazily. WASM is 26.86 MB raw / 6.68 MB gzipped for WebGPU, plus 14.26 MB raw / 3.68 MB gzipped for WebKit's CPU-only checker. The optional selected weights total 889.1 MB. These are asset gzip sizes, not a claim that Vite's loopback preview compresses HTTP traffic. Local timings and headless frame intervals are not network or physical-phone guarantees. See the [raw measurements](shots/typography/after/performance-report.json).
 
 ```sh
 npm run check
@@ -136,17 +136,17 @@ The browser suite exercises all 70 claims and reveals in Chromium, WebKit, and F
 - `shots/v3/before/` and `shots/v2/`: earlier states, retained as historical evidence.
 - `public/og.png`: 1200×630 capture of the real running interface, not an illustration.
 
-`IDENTITY.md` records the newsroom direction: ordinary sans-serif type, white and near-black surfaces, red correction marks, green source highlights, and motion that explains meaning groups. No decorative illustrations or downloaded fonts.
+`IDENTITY.md` records the newsroom direction: IBM Plex Sans for reading and interface text, Plex Mono for data/code/records, and Plex Sans Condensed for the wordmark, headings and labels. The white and near-black surfaces, red corrections, green source highlights and meaning-group motion remain. Eight Latin WOFF2 faces from @fontsource 5.3.0 are self-hosted with `font-display: swap`; the two main reading/wordmark faces are preloaded on cold navigation. No runtime font request goes to Google or another origin.
 
 ## Credits and licences
 
-Original code, prose, and artwork: **Copyright (c) 2026 Harry Freeman**, MIT (`LICENSE`). Attributed source excerpts retain their publishers' material and reuse terms; they are not relicensed by the code licence. No agency logos, third-party photographs, or font files are bundled. No endorsement is implied.
+Original code, prose, and artwork: **Copyright (c) 2026 Harry Freeman**, MIT (`LICENSE`). Attributed source excerpts retain their publishers' material and reuse terms; they are not relicensed by the code licence. No agency logos or third-party photographs are bundled. Self-hosted IBM Plex fonts retain their SIL Open Font License 1.1 notices beside the files in `public/fonts/`. No endorsement is implied.
 
 Primary sources: [NASA Science](https://science.nasa.gov/), [NOAA National Ocean Service](https://oceanservice.noaa.gov/), [NOAA Global Monitoring Laboratory](https://gml.noaa.gov/ccgg/trends/weekly.html), [US Energy Information Administration](https://www.eia.gov/energyexplained/), [US National Park Service](https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm), and [NIST](https://www.nist.gov/si-redefinition/second).
 
 Reuse guidance checked: [NASA](https://www.nasa.gov/nasa-brand-center/images-and-media/), [NOAA NOS](https://oceanservice.noaa.gov/disclaimer.html), [EIA](https://www.eia.gov/about/copyrights_reuse.php), [NPS](https://www.nps.gov/aboutus/disclaimer.htm), and [NIST](https://www.nist.gov/copyrights-disclaimers). The app uses attributed educational text excerpts under those policies, with no agency branding or third-party media. NOAA's climate page credits underlying research; the game quotes the agency's explanatory prose, not the referenced paper.
 
-ONNX Runtime is MIT; the vendored Transformers.js browser SDK and both selected models are Apache-2.0. npm dependencies are exactly pinned with one lockfile and checked against the MIT / Apache-2.0 / BSD / ISC allowlist. The generated inventory includes optional platform packages. Playwright is Apache-2.0; system fonts are not redistributed. See `docs/dependency-licenses.json` for the complete inventory.
+ONNX Runtime is MIT; the vendored Transformers.js browser SDK and both selected models are Apache-2.0. npm dependencies are exactly pinned with one lockfile and checked against the MIT / Apache-2.0 / BSD / ISC allowlist. The generated inventory includes optional platform packages. Playwright is Apache-2.0. Harry separately approved OFL-1.1 for the self-hosted Plex fonts; their versions, source URLs, byte sizes, SHA-256 digests and original notices are checked by `npm run licenses`. See `docs/dependency-licenses.json` and `docs/font-licenses.json`.
 
 ## Limits
 

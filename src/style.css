@@ -1,5 +1,5 @@
 :root {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", "Plex Sans metrics", Arial, sans-serif;
   color: #181b19;
   background: #f0f1ef;
   font-synthesis: none;
@@ -69,7 +69,7 @@ button:hover {
 .topbar h1 {
   font-size: 28px;
   line-height: 1.1;
-  font-weight: 750;
+  font-weight: 600;
   letter-spacing: -1.2px;
   margin: 0;
 }
@@ -201,7 +201,7 @@ button:hover {
 }
 .case-heading > h3 {
   font: inherit;
-  font-weight: 650;
+  font-weight: 600;
   margin: 0;
 }
 .case-heading > span:last-child {
@@ -217,7 +217,7 @@ button:hover {
   font-size: clamp(31px, 3.1vw, 48px);
   line-height: 1.14;
   letter-spacing: -1.5px;
-  font-weight: 650;
+  font-weight: 600;
   margin: 0;
   text-wrap: pretty;
 }
@@ -265,13 +265,13 @@ button:hover {
 .publisher {
   font-size: 12px;
   line-height: 1.4;
-  font-weight: 650;
+  font-weight: 600;
   margin: 0 0 8px;
 }
 .source-title {
   font-size: 23px;
   line-height: 1.15;
-  font-weight: 550;
+  font-weight: 500;
   letter-spacing: -0.6px;
   margin: 0 0 12px;
   text-wrap: pretty;
@@ -298,7 +298,7 @@ button:hover {
 .sealed-evidence h4 {
   font-size: 25px;
   line-height: 1.18;
-  font-weight: 550;
+  font-weight: 500;
   letter-spacing: -0.6px;
   margin: 15px 0 13px;
 }
@@ -325,7 +325,7 @@ button:hover {
 }
 .section-label {
   font-size: 11px;
-  font-weight: 650;
+  font-weight: 600;
   line-height: 1.5;
   margin: 0 0 14px;
 }
@@ -381,7 +381,7 @@ mark {
   font-size: 25px;
   line-height: 1.1;
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.8px;
   color: var(--green-ink);
   outline: 0;
@@ -404,7 +404,7 @@ mark {
   color: var(--ink);
   padding: 16px 20px;
   font-size: 14px;
-  font-weight: 650;
+  font-weight: 600;
   text-align: left;
 }
 .next-button:hover {
@@ -448,7 +448,7 @@ mark {
 .note-label {
   display: block;
   font-size: 10px;
-  font-weight: 650;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   margin-bottom: 7px;
@@ -456,7 +456,7 @@ mark {
 .editor-note > strong {
   font-size: 17px;
   line-height: 1.2;
-  font-weight: 650;
+  font-weight: 600;
   display: block;
   letter-spacing: -0.4px;
 }
@@ -507,7 +507,7 @@ mark {
 .score {
   font-size: 120px;
   letter-spacing: -7px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   margin: 15px 0 5px;
   outline: 0;
@@ -521,7 +521,7 @@ mark {
 }
 .result-label {
   font-size: 15px;
-  font-weight: 550;
+  font-weight: 500;
   margin: 12px 0 24px;
 }
 .result-description {
@@ -557,7 +557,7 @@ mark {
   font-size: 10px;
   line-height: 1.5;
   color: var(--red);
-  font-weight: 650;
+  font-weight: 600;
   margin: 0 0 9px;
 }
 .missed-tell h4,
@@ -792,14 +792,14 @@ dialog::backdrop {
   font-size: 11px;
 }
 .archive-list button[aria-current] {
-  font-weight: 700;
+  font-weight: 600;
 }
 .archive-list button:hover {
   color: var(--red);
   text-decoration: none;
 }
 .archive-list button strong {
-  font-weight: 550;
+  font-weight: 500;
 }
 .date-picker {
   display: flex;

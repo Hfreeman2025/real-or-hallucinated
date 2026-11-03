@@ -166,7 +166,7 @@ export async function mountDetector(root: HTMLElement, bank: Bank): Promise<void
     card.className = "sample-card";
     card.dataset.sample = String(index);
     card.setAttribute("aria-label", `Inspect confidence for model-generated answer ${index + 1}`);
-    card.innerHTML = `<span class="sample-label">Model-generated · ${index + 1}</span><span class="sample-text">${e(sample?.text ?? "")}</span><span class="sample-confidence">${Math.round(Math.exp(sample?.meanLogProbability ?? -Infinity) * 100)}% token predictability${sample?.truncated ? " · token limit reached" : ""}</span>`;
+    card.innerHTML = `<span class="sample-label">Model-generated · ${index + 1}</span><span class="sample-text">${e(sample?.text ?? "")}</span><span class="sample-confidence"><span class="record-value">${Math.round(Math.exp(sample?.meanLogProbability ?? -Infinity) * 100)}%</span> token predictability${sample?.truncated ? " · token limit reached" : ""}</span>`;
     card.addEventListener("click", () => {
       selectedSample = index;
       inspectTokens();
@@ -541,6 +541,21 @@ export async function mountDetector(root: HTMLElement, bank: Bank): Promise<void
       state("Cache storage is unavailable. No shared disk files were changed.");
     }
     controls();
+  });
+  const verdictTable = query(".evaluation-table-wrap");
+  verdictTable.addEventListener("keydown", (event) => {
+    if (
+      event.target !== verdictTable ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      (event.key !== "ArrowLeft" && event.key !== "ArrowRight")
+    )
+      return;
+    // WebKit does not consistently scroll a focused overflow region with arrow keys.
+    event.preventDefault();
+    verdictTable.scrollBy({ left: event.key === "ArrowRight" ? 120 : -120, behavior: "instant" });
   });
   select(active);
   requestAnimationFrame(() =>
