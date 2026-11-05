@@ -1,5 +1,5 @@
 # Real or Hallucinated?
-<!-- hf-badge -->
+[![Harry Freeman](docs/brand/hf-badge.svg)](https://harryfreeman.dev)
 
 A fact-checking game and an inspectable browser experiment. Decide whether five cited claims are real or fabricated, then open the original evidence. The companion lie detector asks a small model the same question five times and shows whether its answers agree in meaning. The point is to make uncertainty and verification visible: a confident model never gets the final word over a checked source.
 
@@ -85,7 +85,7 @@ The [visual identity](IDENTITY.md) records those design choices. [Development no
 
 ## Licence
 
-Original code, interface and artwork: **MIT, Copyright (c) 2026 Harry Freeman**. See [LICENSE](LICENSE).
+Original code, interface and artwork: **MIT, Copyright (c) 2026 Harry Freeman**. See [LICENSE](LICENSE). The HF badge identifies Harry's work and is excluded from the code licence; see its [mark and lettering notes](docs/brand/LICENSE.md).
 
 The vendored Transformers.js SDK and selected model weights are Apache-2.0; ONNX Runtime is MIT. Self-hosted IBM Plex fonts retain their SIL OFL 1.1 notices. The [dependency](docs/dependency-licenses.json), [model/runtime](docs/model-licenses.json) and [font](docs/font-licenses.json) inventories record versions, sources and licences.
 
