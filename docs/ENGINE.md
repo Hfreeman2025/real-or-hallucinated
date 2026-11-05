@@ -1,6 +1,6 @@
 # Browser lie-detector engine
 
-The engine is MIT code in `src/detector/engine.ts`, with UI-independent types in `types.ts`, pure information theory and grouping in `math.ts`, and a cancelable worker transport in `client.ts` / `worker.ts`. The shared weights are outside this repository, in `~/Personal/.models/`; `README.md` and `manifest.json` there list licences, byte sizes, immutable revisions and hashes. Wave 2 may reuse this code and those same files after authorisation; no wave-2 project has been changed.
+The engine is MIT code in `src/detector/engine.ts`, with UI-independent types in `types.ts`, information theory/grouping in `math.ts`, and a cancellable worker transport in `client.ts` / `worker.ts`. Model files live in the configurable `MODEL_DIR` cache (default `.cache/models/`), with pinned revisions, sizes, hashes and licences in `data/models.json`. They are not bundled in the repository.
 
 ## Method and scope
 
@@ -38,7 +38,7 @@ The UI terminates an unfinished downloader immediately. Once loaded, it cancels 
 
 ## Files, cache and limits
 
-`npm run models:fetch` downloads only the selected ONNX variants and tokenizer/config files, in sequence, into the shared directory. It checks free disk before every large file, refuses to cross a 10 GiB reserve, checks expected size and LFS SHA-256, and renames atomically. `data/models.json` is the small public manifest, not weights. The Vite middleware allows only manifest-listed paths; traversal and unknown files cannot expose arbitrary local data. Runtime WASM/modules are same-origin static assets. The shipped build contains no weights.
+`npm run models:fetch` downloads only the selected ONNX variants and tokenizer/config files, in sequence, into the configured model directory. It checks free disk before every large file, refuses to cross a 10 GiB reserve, checks expected size and LFS SHA-256, and renames atomically. `data/models.json` is the small public manifest, not weights. The Vite middleware allows only manifest-listed paths; traversal and unknown files cannot expose arbitrary local data. Runtime WASM/modules are same-origin static assets. The shipped build contains no weights.
 
 The live browser uses an application-specific Cache API store, `lie-detector-models-v3`. Clearing it touches that origin's cache only; shared disk files are untouched. Failed/partial downloads do not become valid cached weights. Cache-denied sessions report memory-only operation. Headless evaluation explicitly disables the browser weight cache and streams the one shared disk copy; temporary browser profiles close after each owned launch.
 
@@ -62,4 +62,4 @@ The old SDK3.8.1/ORT1.22 combination failed an identical-prompt greedy control o
 
 The final seed generator uses Mulberry32, with reproducibility and known-vector tests. Nearby linear seeds in the earlier xorshift design produced a correlated first-draw ramp; nonlinearly mixed streams avoid that artefact. Each sampled answer uses its recorded seed plus its fixed sample offset. The local heap-based sampler is checked against a full-sort oracle over changing vocabularies. Original model probabilities are retained before every transformation. A 32-token cap is reported only if generation reaches it without an end-of-answer token.
 
-Recording preflight verifies every selected shared model file against its exact manifest size and SHA-256 digest. The recording engine digest includes the actual vendored SDK bytes, its provenance, the lockfile, model manifest and engine modules. This prevents accepting checkpoints after a runtime or algorithm change. Browser profiles use a project-owned temporary directory, cache is disabled for evaluation, and each question is checkpointed before continuing.
+Recording preflight verifies every selected cached model file against its exact manifest size and SHA-256 digest. The recording engine digest includes the actual vendored SDK bytes, its provenance, the lockfile, model manifest and engine modules. This prevents accepting checkpoints after a runtime or algorithm change. Browser profiles use a project-owned temporary directory, cache is disabled for evaluation, and each question is checkpointed before continuing.

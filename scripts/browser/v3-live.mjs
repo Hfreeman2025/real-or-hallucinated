@@ -21,7 +21,13 @@ async function liveBrowser(engine) {
     reducedMotion: "reduce",
     timezoneId: "America/Los_Angeles",
     ...(engine === "chromium"
-      ? { args: ["--mute-audio", "--enable-unsafe-webgpu", "--use-gl=angle", "--use-angle=metal"] }
+      ? {
+          args: [
+            "--mute-audio",
+            "--enable-unsafe-webgpu",
+            ...(process.platform === "darwin" ? ["--use-gl=angle", "--use-angle=metal"] : []),
+          ],
+        }
       : {}),
   });
   for (const page of context.pages()) await page.close();

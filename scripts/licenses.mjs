@@ -92,10 +92,10 @@ await writeFile(
   `${JSON.stringify({ vendor, models: modelManifest.models, runtimeLibraries, runtimeFiles, runtimeNoticeSource: "https://raw.githubusercontent.com/microsoft/onnxruntime/8d85527a010e294a26b274749f74294b2a32cec5/ThirdPartyNotices.txt" }, null, 2)}\n`,
 );
 console.log(
-  `Vendored Transformers.js ${vendor.version} and ${modelManifest.models.length} shared model variants: all licences allowed.`,
+  `Vendored Transformers.js ${vendor.version} and ${modelManifest.models.length} pinned model variants: all licences allowed.`,
 );
 
-// Harry explicitly approved OFL 1.1 for these self-hosted Plex font assets.
+// Font assets retain their OFL notices independently of the application licence.
 const fonts = JSON.parse(await readFile("data/fonts.json", "utf8"));
 const expectedFonts = new Set([
   "ibm-plex-sans-latin-400-normal.woff2",

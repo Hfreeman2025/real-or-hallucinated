@@ -1,12 +1,11 @@
 import { createHash } from "node:crypto";
 import { createWriteStream } from "node:fs";
 import { mkdir, readFile, rename, statfs, writeFile } from "node:fs/promises";
-import { homedir } from "node:os";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import { Readable } from "node:stream";
 import { pipeline } from "node:stream/promises";
 
-const root = join(homedir(), "Personal/.models");
+const root = resolve(process.env.MODEL_DIR ?? ".cache/models");
 const models = [
   {
     id: "onnx-community/Qwen2.5-0.5B-Instruct",
@@ -31,7 +30,9 @@ try {
   }));
 } catch {}
 for (const model of models) {
-  const infoResponse = await fetch(`https://huggingface.co/api/models/${model.id}?blobs=true`);
+  const infoResponse = await fetch(
+    `https://huggingface.co/api/models/${model.id}/revision/${model.revision}?blobs=true`,
+  );
   if (!infoResponse.ok) throw new Error(`Model metadata failed: ${infoResponse.status}`);
   const info = await infoResponse.json();
   if (info.sha !== model.revision)
@@ -109,9 +110,15 @@ for (const model of models) {
 }
 const manifest = { fetchedAt: new Date().toISOString(), models: inventory };
 await writeFile(join(root, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
-await writeFile("data/models.json", `${JSON.stringify(manifest, null, 2)}\n`);
 await writeFile(
   join(root, "README.md"),
-  `# Shared browser models\n\nDownloaded for Real or Hallucinated? v3; reusable by ask-the-record in wave 2. No inference API, key or private data. These are public ONNX conversions of Apache-2.0 upstream weights. Conversion model cards identify their upstream models; upstream model cards declare Apache-2.0.\n\n${inventory.map((m) => `- **${m.id}**, revision \`${m.revision}\`, ${m.dtype}, ${m.status}, **${m.bytes.toLocaleString()} bytes**. License: Apache-2.0 ([upstream declaration](${m.licenseSource})); [conversion source](https://huggingface.co/${m.id}).`).join("\n")}\n\nExact files, sizes, immutable source URLs and SHA-256 values: [manifest.json](manifest.json). Files are laid out as \`<model-id>/<revision>/<file>\`; do not duplicate weights into repositories.\n\n## Reuse\n\nThe MIT TypeScript engine is in \`~/Personal/lab/real-or-hallucinated/src/detector/engine.ts\`. Its \`loadEngine\` and \`runDetector\` APIs have no UI dependency. The Vite model middleware serves only the manifest's allowlisted paths from this directory; inference runs in a browser worker. See that project's \`docs/ENGINE.md\` for the protocol and cache strategy. Do not start wave 2 until authorised.\n\nCheck \`df -h /\` before downloads. Preserve at least 10 GiB free. Fetches are sequential, size-checked and hash-checked, with atomic rename after success. Temporary partial files are never model inputs. Browser caches are per-origin; headless evaluation streams this shared copy without caching another weight copy.\n`,
+  `# Local model files
+
+Pinned ONNX conversions of Apache-2.0 upstream weights. Inference runs in the browser, without a hosted model API.
+
+${inventory.map((m) => `- **${m.id}**, revision \`${m.revision}\`, ${m.dtype}, **${m.bytes.toLocaleString()} bytes**. Apache-2.0 ([upstream](${m.licenseSource})); [conversion](https://huggingface.co/${m.id}).`).join("\n")}
+
+The manifest records exact files, sizes, immutable URLs and SHA-256 digests. Files are laid out as \`<model-id>/<revision>/<file>\`. Configure MODEL_DIR to reuse this directory across projects. Partial files are never model inputs. The fetcher preserves at least 10 GiB free and commits each verified file by atomic rename.
+`,
 );
-console.log("Shared model manifest and README complete.");
+console.log("Model cache manifest and README complete.");

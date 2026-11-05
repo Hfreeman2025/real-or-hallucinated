@@ -1,4 +1,4 @@
-// Based on the authorised device-free pattern from listen-to-the-grid.
+// OfflineAudioContext prevents automated checks from opening an audio device.
 // OfflineAudioContext never opens a physical audio device.
 export function silenceLiveAudio() {
   const Offline = window.OfflineAudioContext;

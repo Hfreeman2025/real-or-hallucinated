@@ -1,0 +1,285 @@
+/* A newsroom experiment: live samples become inferred meaning groups. */
+[hidden][hidden] {
+  display: none;
+}
+.topbar nav .view-current {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+.detector-heading {
+  padding-top: 28px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 24px;
+}
+.detector-heading h2 {
+  font-size: 34px;
+  letter-spacing: -1.2px;
+  line-height: 1;
+  margin: 0 0 12px;
+}
+.detector-heading p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.detector-heading > a {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.detector-controls {
+  display: flex;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.detector-controls label {
+  display: block;
+  flex: 1;
+  font-size: 12px;
+  font-weight: 600;
+}
+.detector-controls select {
+  width: 100%;
+  display: block;
+  margin-top: 8px;
+  padding: 13px 40px 13px 14px;
+  border: 1px solid var(--ink);
+  background: white;
+  border-radius: 0;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+}
+#detector-replay {
+  padding: 14px 18px;
+  min-height: 47px;
+  border: 1px solid var(--ink);
+  font-size: 13px;
+  background: white;
+}
+.detector-desk {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.65fr);
+  border: 1px solid var(--ink);
+  background: white;
+}
+.detector-copy {
+  padding: 25px 27px 28px;
+  border-right: 1px solid var(--line);
+  min-width: 0;
+}
+.detector-copy .claim-status {
+  margin-top: 25px;
+}
+.detector-claim {
+  font-size: clamp(26px, 2.25vw, 34px);
+  line-height: 1.13;
+  letter-spacing: -1px;
+  margin: 0 0 25px;
+  font-weight: 600;
+  text-wrap: pretty;
+}
+.detector-claim del {
+  color: var(--red);
+  background: #fff0f1;
+  text-decoration-thickness: 2px;
+}
+.detector-copy .answer-buttons {
+  gap: 8px;
+}
+.inference-caption button {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-left: 4px;
+}
+.detector-copy .answer-buttons button {
+  font-size: 13px;
+  padding: 11px 12px;
+  min-height: 47px;
+}
+.detector-hint {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 13px 0 23px;
+}
+.detector-citation {
+  margin-top: 24px;
+  padding-top: 2px;
+  border-top: 1px solid var(--line);
+}
+.detector-citation .source-title {
+  font-size: 18px;
+}
+.detector-citation .source-link-label {
+  display: block;
+  margin-left: 0;
+}
+.detector-citation .checked {
+  margin-top: 12px;
+}
+.meaning-desk {
+  padding: 25px 27px 22px;
+  min-width: 0;
+  background: #fcfdfa;
+}
+.entropy-readout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 23px 0 18px;
+}
+.entropy-readout > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.entropy-readout strong {
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: -2px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.entropy-readout span {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+.entropy-readout .meaning-count {
+  text-align: right;
+}
+.entropy-readout .meaning-count strong {
+  font-size: 36px;
+  margin-top: 9px;
+  letter-spacing: -1px;
+}
+.meaning-distribution {
+  height: 24px;
+  display: flex;
+  gap: 3px;
+  background: #edf0e9;
+}
+.meaning-segment {
+  min-width: 0;
+  background: var(--green);
+  padding: 5px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 14px;
+}
+.meaning-segment.group-1 {
+  background: #e1e7b9;
+}
+.meaning-segment.group-2 {
+  background: #e8ceae;
+}
+.meaning-segment.group-3 {
+  background: #e9b3b8;
+}
+.meaning-segment.group-4 {
+  background: #cfccdf;
+}
+.replay-status {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 13px 0 18px;
+  min-height: 17px;
+}
+.cluster-stage {
+  min-height: 310px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  align-content: start;
+}
+.answer-pool {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  align-content: start;
+}
+.meaning-group {
+  min-width: 0;
+  border-top: 3px solid var(--ink);
+  padding: 11px 0 0;
+}
+.meaning-group:first-child {
+  border-color: #63820b;
+}
+.meaning-group h4 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1.3;
+  margin: 0 0 11px;
+  font-weight: 600;
+}
+.meaning-group h4 span {
+  font-weight: 400;
+  color: var(--muted);
+}
+.sample-card {
+  width: 100%;
+  display: block;
+  text-align: left;
+  padding: 12px 13px 11px;
+  border: 1px solid #c6cdbf;
+  border-left: 3px solid #8a9781;
+  margin: 0 0 9px;
+  background: white;
+  overflow-wrap: anywhere;
+}
+.sample-card:hover {
+  background: #f3f6ed;
+  text-decoration: none;
+  border-color: var(--ink);
+}
+.sample-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #525c4a;
+  margin-bottom: 7px;
+}
+.sample-text {
+  display: block;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.sample-confidence {
+  display: block;
+  margin-top: 8px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+.sample-arriving {
+  animation: sample-arrive 0.18s ease-out;
+}
+@keyframes sample-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(9px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.inference-caption {
+  border-top: 1px solid var(--line);
+  margin: 14px 0 0;
+  padding-top: 14px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}

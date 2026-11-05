@@ -15,8 +15,8 @@
     "licenses": "node scripts/licenses.mjs",
     "check": "npm run typecheck && npm run lint && npm test && npm run recording:check && npm run build && npm run licenses",
     "audit": "npm audit --audit-level=low",
-    "test:browser": "node --import tsx scripts/browser-check.mjs",
-    "test:detector": "node --import tsx scripts/browser/v3-check.mjs",
+    "test:browser": "node --import tsx scripts/browser/run.mjs",
+    "test:detector": "node --import tsx scripts/browser/run.mjs --detector-only",
     "shots:v3": "node scripts/browser/v3-capture.mjs",
     "test:perf:v3": "node scripts/browser/v3-performance.mjs",
     "shots:v2": "node scripts/browser/capture.mjs",
@@ -42,5 +42,6 @@
   "dependencies": {
     "onnxruntime-common": "1.31.0-dev.20260911-2a43ec07e",
     "onnxruntime-web": "1.31.0-dev.20260914-8d85527a0"
-  }
+  },
+  "repository": "https://github.com/Hfreeman2025/real-or-hallucinated"
 }

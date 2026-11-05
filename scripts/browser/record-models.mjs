@@ -2,8 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { createReadStream } from "node:fs";
 import { mkdir, readFile, statfs, writeFile } from "node:fs/promises";
-import { homedir } from "node:os";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import { auroc } from "../../src/detector/math.ts";
 import {
   MAX_TOKENS,
@@ -17,7 +16,7 @@ import {
 import { parseDetectorResult } from "../../src/detector/validation.ts";
 import { bank, base, launch, pageFor } from "./runtime.mjs";
 
-assert.equal(new URL(base).port, "5177", "Record from the unchanged local development port");
+// Recording requires the development server to expose the TypeScript worker entry.
 const sources = [
   "engine.ts",
   "models.ts",
@@ -51,19 +50,19 @@ for (const name of sources)
     .digest("hex");
 const engineHash = createHash("sha256").update(JSON.stringify(sourceDigests)).digest("hex");
 const modelManifest = JSON.parse(await readFile("data/models.json", "utf8"));
-const sharedRoot = join(homedir(), "Personal/.models");
-const sharedManifest = JSON.parse(await readFile(join(sharedRoot, "manifest.json"), "utf8"));
+const modelDirectory = resolve(process.env.MODEL_DIR ?? ".cache/models");
+const cachedManifest = JSON.parse(await readFile(join(modelDirectory, "manifest.json"), "utf8"));
 for (const model of modelManifest.models) {
   assert.deepEqual(
-    sharedManifest.models.find((m) => m.id === model.id && m.dtype === model.dtype),
+    cachedManifest.models.find((m) => m.id === model.id && m.dtype === model.dtype),
     model,
-    "Shared model manifest must match the evaluated files",
+    "Cached model manifest must match the evaluated files",
   );
   for (const file of model.files) {
     const hash = createHash("sha256");
     let size = 0;
     for await (const chunk of createReadStream(
-      join(sharedRoot, model.id, model.revision, file.file),
+      join(modelDirectory, model.id, model.revision, file.file),
     )) {
       hash.update(chunk);
       size += chunk.length;
@@ -73,7 +72,7 @@ for (const model of modelManifest.models) {
   }
 }
 const weightsVerifiedAt = new Date().toISOString();
-console.log("Shared model files: exact sizes and SHA-256 hashes verified, no download.");
+console.log("Cached model files: exact sizes and SHA-256 hashes verified, no download.");
 const questions = JSON.parse(await readFile("data/questions.json", "utf8")).questions;
 const claims = new Map(bank.puzzles.flatMap((p) => p.claims).map((c) => [c.id, c]));
 const records = [];

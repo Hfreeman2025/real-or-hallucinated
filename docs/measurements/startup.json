@@ -1,0 +1,99 @@
+{
+  "phase": "after",
+  "results": [
+    {
+      "view": "detector",
+      "size": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "preloads": 2,
+      "cls": 0,
+      "shifts": [],
+      "fonts": "loaded",
+      "body": "\"IBM Plex Sans\", \"Plex Sans metrics\", Arial, sans-serif",
+      "wordmark": "\"IBM Plex Sans Condensed\", \"Plex Sign metrics\", \"Arial Narrow\", Arial, sans-serif",
+      "overflow": false,
+      "fontResources": [
+        "/fonts/ibm-plex-sans-latin-400-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-600-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-500-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-600-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-500-normal.woff2",
+        "/fonts/ibm-plex-mono-latin-600-normal.woff2",
+        "/fonts/ibm-plex-mono-latin-400-normal.woff2"
+      ]
+    },
+    {
+      "view": "daily",
+      "size": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "preloads": 2,
+      "cls": 0,
+      "shifts": [],
+      "fonts": "loaded",
+      "body": "\"IBM Plex Sans\", \"Plex Sans metrics\", Arial, sans-serif",
+      "wordmark": "\"IBM Plex Sans Condensed\", \"Plex Sign metrics\", \"Arial Narrow\", Arial, sans-serif",
+      "overflow": false,
+      "fontResources": [
+        "/fonts/ibm-plex-sans-latin-400-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-600-normal.woff2",
+        "/fonts/ibm-plex-mono-latin-400-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-500-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-600-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-500-normal.woff2"
+      ]
+    },
+    {
+      "view": "detector",
+      "size": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "preloads": 2,
+      "cls": 0,
+      "shifts": [],
+      "fonts": "loaded",
+      "body": "\"IBM Plex Sans\", \"Plex Sans metrics\", Arial, sans-serif",
+      "wordmark": "\"IBM Plex Sans Condensed\", \"Plex Sign metrics\", \"Arial Narrow\", Arial, sans-serif",
+      "overflow": false,
+      "fontResources": [
+        "/fonts/ibm-plex-sans-latin-400-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-600-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-500-normal.woff2",
+        "/fonts/ibm-plex-mono-latin-400-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-600-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-500-normal.woff2",
+        "/fonts/ibm-plex-mono-latin-600-normal.woff2"
+      ]
+    },
+    {
+      "view": "daily",
+      "size": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "preloads": 2,
+      "cls": 0,
+      "shifts": [],
+      "fonts": "loaded",
+      "body": "\"IBM Plex Sans\", \"Plex Sans metrics\", Arial, sans-serif",
+      "wordmark": "\"IBM Plex Sans Condensed\", \"Plex Sign metrics\", \"Arial Narrow\", Arial, sans-serif",
+      "overflow": false,
+      "fontResources": [
+        "/fonts/ibm-plex-sans-latin-400-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-600-normal.woff2",
+        "/fonts/ibm-plex-mono-latin-400-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-500-normal.woff2",
+        "/fonts/ibm-plex-sans-latin-600-normal.woff2",
+        "/fonts/ibm-plex-sans-condensed-latin-500-normal.woff2"
+      ]
+    }
+  ]
+}

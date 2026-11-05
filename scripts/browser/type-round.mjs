@@ -7,7 +7,7 @@ const run = (script, extra = {}) =>
     env: { ...process.env, EVIDENCE_DIR: "shots/typography/after", CRITIQUE_PASS: pass, ...extra },
     stdio: "inherit",
   });
-// Only one child/browser at a time. Engine/model code is unchanged: no weight recording here.
+// Each child closes its browser before the next visual suite starts.
 run("v3-check", { CAPTURE: "1", ...(pass === "pass-2" ? { BROWSER_ENGINE: "chromium" } : {}) });
 run("v3-extra-states");
 run("v3-download-states");

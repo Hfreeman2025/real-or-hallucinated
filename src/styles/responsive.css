@@ -1,0 +1,332 @@
+@media (min-width: 1200px) {
+  .proof-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 164px;
+    gap: 23px;
+  }
+  .proof-layout .claim-text {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .editor-note {
+    margin-top: 5px;
+  }
+  .has-correction .editor-note > strong {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1100px) {
+  .topbar-inner,
+  .workspace {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .progress {
+    gap: 12px;
+  }
+  .progress li > span:last-child {
+    display: none;
+  }
+  .checking-desk {
+    grid-template-columns: 1fr 1fr;
+  }
+  .copy-desk,
+  .evidence-desk {
+    padding: 25px;
+  }
+  /* biome-ignore lint/style/noDescendingSpecificity: This viewport excludes the wider proof rule above. */
+  .claim-text {
+    font-size: 35px;
+  }
+  .summary-layout {
+    grid-template-columns: 0.75fr 1.25fr;
+  }
+}
+@media (max-width: 760px) {
+  .topbar-inner {
+    min-height: 108px;
+    display: block;
+    padding: 18px 22px 10px;
+  }
+  .topbar h1 {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  .topbar nav {
+    gap: 25px;
+    margin-top: 8px;
+  }
+  .topbar button {
+    font-size: 11px;
+    padding: 6px 0;
+    min-height: 30px;
+  }
+  .workspace {
+    padding: 0 18px;
+  }
+  .standfirst {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 18px 0 17px;
+    max-width: 330px;
+  }
+  .edition-line {
+    font-size: 10px;
+    line-height: 1.5;
+    gap: 12px;
+    align-items: start;
+    padding-bottom: 14px;
+  }
+  .edition-line > :first-child {
+    max-width: 245px;
+  }
+  .round-bar {
+    padding: 12px 17px;
+    min-height: 56px;
+    gap: 17px;
+  }
+  .round-bar > span:first-child {
+    font-size: 11px;
+  }
+  .round-count {
+    display: none;
+  }
+  .progress {
+    gap: 13px;
+    margin-left: auto;
+  }
+  .progress li > span:first-child {
+    font-size: 11px;
+    min-width: 17px;
+  }
+  .checking-desk {
+    display: block;
+    min-height: 0;
+  }
+  .copy-desk {
+    padding: 21px 22px 22px;
+    border-right: 0;
+  }
+  .case-heading {
+    font-size: 11px;
+    padding-bottom: 12px;
+  }
+  .claim-status {
+    margin: 22px 0 16px;
+    font-size: 10px;
+  }
+  /* biome-ignore lint/style/noDescendingSpecificity: This viewport excludes the wider proof rule above. */
+  .claim-text {
+    font-size: 31px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+  }
+  .proof-layout {
+    min-height: 205px;
+    padding-bottom: 25px;
+  }
+  .answer-buttons {
+    gap: 8px;
+  }
+  .answer-buttons button {
+    font-size: 12px;
+    min-height: 53px;
+    padding: 13px 15px;
+  }
+  .input-hint {
+    font-size: 10px;
+    margin-top: 12px;
+  }
+  .evidence-desk {
+    padding: 22px;
+    border-top: 1px solid var(--ink);
+  }
+  .source-record {
+    margin-top: 18px;
+  }
+  .source-title {
+    font-size: 21px;
+  }
+  .publisher {
+    font-size: 11px;
+  }
+  .source-link {
+    font-size: 11px;
+  }
+  .source-link-label {
+    display: block;
+    margin-left: 0;
+    margin-top: 3px;
+  }
+  .sealed-evidence {
+    padding: 19px 0 21px;
+    margin-top: 22px;
+  }
+  .sealed-evidence h4 {
+    font-size: 23px;
+  }
+  .sealed-evidence > p:not(.section-label) {
+    font-size: 12px;
+  }
+  .sealed-evidence > p.checked {
+    margin: 18px 0 0;
+    font-size: 10px;
+  }
+  .source-passage blockquote {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .source-passage {
+    margin-top: 23px;
+    padding-top: 22px;
+  }
+  .editor-note {
+    margin-top: 22px;
+  }
+  /* biome-ignore lint/style/noDescendingSpecificity: The wider correction rule is inactive on phones. */
+  .editor-note > strong {
+    font-size: 18px;
+  }
+  .editor-note > p {
+    font-size: 12px;
+  }
+  .verdict-line {
+    margin: 0 0 17px;
+    gap: 7px 12px;
+  }
+  .verdict-line h3 {
+    font-size: 24px;
+  }
+  .verdict-line > span {
+    font-size: 10px;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 20px;
+    padding: 23px 19px;
+    font-size: 10px;
+  }
+  .footer > :nth-child(2) {
+    order: 3;
+    flex-basis: 100%;
+  }
+  .footer button {
+    font-size: 10px;
+    padding: 0;
+  }
+  .summary-layout {
+    display: block;
+  }
+  .result-panel {
+    padding: 24px;
+    border-right: 0;
+    border-bottom: 1px solid var(--ink);
+  }
+  .score {
+    font-size: 98px;
+  }
+  .score > span {
+    font-size: 45px;
+  }
+  .result-label {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .result-description {
+    font-size: 12px;
+  }
+  .result-panel .checked {
+    font-size: 10px;
+  }
+  .tells-panel {
+    padding: 24px;
+  }
+  .tells-panel > .case-heading {
+    gap: 10px;
+  }
+  .tells-panel > .case-heading h3 {
+    font-size: 15px;
+  }
+  .tells-panel > .case-heading > span {
+    font-size: 10px;
+  }
+  .missed-tell h4 {
+    font-size: 21px;
+  }
+  .missed-tell > p:not(.tell-type) {
+    font-size: 12px;
+  }
+  .missed-tell > .tell-claim {
+    font-size: 11px;
+  }
+  .review-body {
+    padding-left: 0;
+  }
+  summary {
+    gap: 9px;
+    font-size: 12px;
+  }
+  .review-result {
+    font-size: 9px;
+    min-width: 33px;
+  }
+  .review-claim small {
+    font-size: 9px;
+  }
+  .loading-desk,
+  .unavailable-desk {
+    padding: 25px;
+    min-height: 660px;
+  }
+  .loading-lines > span {
+    height: 28px;
+  }
+  .unavailable-desk h2 {
+    font-size: 30px;
+  }
+  .unavailable-desk > p {
+    font-size: 13px;
+  }
+  dialog {
+    padding: 22px;
+    max-height: calc(100dvh - 32px);
+  }
+  .dialog-header h2 {
+    font-size: 24px;
+  }
+  .dialog-header {
+    margin-bottom: 20px;
+  }
+  .archive-list button > span:first-child {
+    display: block;
+  }
+  .archive-list button small {
+    display: block;
+    margin-top: 3px;
+  }
+  .archive-list button {
+    padding: 13px 0;
+  }
+  .date-picker button {
+    font-size: 11px;
+    padding: 10px;
+  }
+  #dialog-content {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .proof-phrase,
+  .is-revealed .source-passage {
+    animation: none;
+  }
+  .answer-buttons button {
+    transition: none;
+  }
+}

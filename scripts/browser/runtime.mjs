@@ -1,16 +1,10 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { readFile, stat, statfs } from "node:fs/promises";
-import { createRequire } from "node:module";
-import { resolve } from "node:path";
+import { readFile, statfs } from "node:fs/promises";
+import { chromium, firefox, webkit } from "playwright";
 import { silenceLiveAudio } from "./silent.mjs";
 
-const require = createRequire(
-  process.env.CI
-    ? new URL("../../package.json", import.meta.url)
-    : "<local path>",
-);
-export const playwright = require("playwright");
+export const playwright = { chromium, firefox, webkit };
 export const bank = JSON.parse(await readFile("data/puzzles.json", "utf8"));
 export const base = process.env.PREVIEW_URL ?? "http://127.0.0.1:4184";
 assert.ok(
@@ -55,25 +49,11 @@ export async function launch(engine) {
   const options = { headless: true, timeout: 30000 };
   if (engine === "chromium") {
     options.executablePath = type.executablePath();
-    options.args = [
-      "--mute-audio",
-      "--enable-unsafe-webgpu",
-      "--use-gl=angle",
-      "--use-angle=metal",
-    ];
+    options.args = ["--mute-audio", "--enable-unsafe-webgpu"];
   }
+  if (engine === "chromium" && process.platform === "darwin")
+    options.args.push("--use-gl=angle", "--use-angle=metal");
   if (engine === "firefox") options.firefoxUserPrefs = { "media.volume_scale": "0.0" };
-  if (!process.env.CI && engine !== "chromium") {
-    let available = false;
-    try {
-      available = (await stat(type.executablePath())).isFile();
-    } catch {}
-    if (!available)
-      options.executablePath = resolve(
-        ".cache/browsers",
-        type.executablePath().split("/ms-playwright/")[1],
-      );
-  }
   return type.launch(options);
 }
 export async function pageFor(

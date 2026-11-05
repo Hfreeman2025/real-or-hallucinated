@@ -1,0 +1,609 @@
+{
+  "results": {
+    "device": "wasm",
+    "prompt": "<|im_start|>system\nAnswer the factual question directly with only a short answer. Do not repeat the question. No explanation.<|im_end|>\n<|im_start|>user\nHow quickly is the Moon moving away from Earth each year?<|im_end|>\n<|im_start|>assistant\n",
+    "rows": [
+      {
+        "mode": "SDK greedy with KV",
+        "text": "about 38,000 miles per year"
+      },
+      {
+        "mode": "SDK greedy with KV",
+        "text": "about 38,000 miles per year"
+      },
+      {
+        "mode": "SDK greedy with KV",
+        "text": "about 38,000 miles per year"
+      },
+      {
+        "mode": "Production seeded sample",
+        "sampled": {
+          "input": {
+            "id": "r-01",
+            "question": "How quickly is the Moon moving away from Earth each year?",
+            "claim": "The Moon is slowly moving away from Earth, by about an inch a year.",
+            "seed": 20261102
+          },
+          "samples": [
+            {
+              "truncated": false,
+              "text": "about 38 km/year",
+              "tokens": [
+                {
+                  "id": 9096,
+                  "probability": 0.169434176982959,
+                  "text": "about"
+                },
+                {
+                  "id": 220,
+                  "probability": 0.8820853332976586,
+                  "text": " "
+                },
+                {
+                  "id": 18,
+                  "probability": 0.9668089592828114,
+                  "text": "3"
+                },
+                {
+                  "id": 23,
+                  "probability": 0.8847645010898734,
+                  "text": "8"
+                },
+                {
+                  "id": 13136,
+                  "probability": 0.06614589128190577,
+                  "text": " km"
+                },
+                {
+                  "id": 84900,
+                  "probability": 0.8351387792855853,
+                  "text": "/year"
+                }
+              ],
+              "meanLogProbability": -0.825499207107678,
+              "milliseconds": 4253.099999904633
+            },
+            {
+              "truncated": false,
+              "text": "about 38 million kilometers/year",
+              "tokens": [
+                {
+                  "id": 9096,
+                  "probability": 0.169434176982959,
+                  "text": "about"
+                },
+                {
+                  "id": 220,
+                  "probability": 0.8820853332976586,
+                  "text": " "
+                },
+                {
+                  "id": 18,
+                  "probability": 0.9668089592828114,
+                  "text": "3"
+                },
+                {
+                  "id": 23,
+                  "probability": 0.8847645010898734,
+                  "text": "8"
+                },
+                {
+                  "id": 3526,
+                  "probability": 0.08676498543451593,
+                  "text": " million"
+                },
+                {
+                  "id": 40568,
+                  "probability": 0.20585280017101534,
+                  "text": " kilometers"
+                },
+                {
+                  "id": 84900,
+                  "probability": 0.21283394194998576,
+                  "text": "/year"
+                }
+              ],
+              "meanLogProbability": -1.0899049239633067,
+              "milliseconds": 7565.599999904633
+            },
+            {
+              "truncated": true,
+              "text": "Earth rotates on its axis every 24 hours, which results in equal amounts",
+              "tokens": [
+                {
+                  "id": 43824,
+                  "probability": 0.14265189519782887,
+                  "text": "Earth"
+                },
+                {
+                  "id": 89059,
+                  "probability": 0.27724683055616034,
+                  "text": " rotates"
+                },
+                {
+                  "id": 389,
+                  "probability": 0.8791944942299486,
+                  "text": " on"
+                },
+                {
+                  "id": 1181,
+                  "probability": 0.9790894216272208,
+                  "text": " its"
+                },
+                {
+                  "id": 8024,
+                  "probability": 0.9654242246565056,
+                  "text": " axis"
+                },
+                {
+                  "id": 1449,
+                  "probability": 0.11822556511697145,
+                  "text": " every"
+                },
+                {
+                  "id": 220,
+                  "probability": 0.9688929826845688,
+                  "text": " "
+                },
+                {
+                  "id": 17,
+                  "probability": 0.9998126549598655,
+                  "text": "2"
+                },
+                {
+                  "id": 19,
+                  "probability": 0.9970938820112641,
+                  "text": "4"
+                },
+                {
+                  "id": 4115,
+                  "probability": 0.9992589908717928,
+                  "text": " hours"
+                },
+                {
+                  "id": 11,
+                  "probability": 0.6862111055261794,
+                  "text": ","
+                },
+                {
+                  "id": 892,
+                  "probability": 0.284752960683218,
+                  "text": " which"
+                },
+                {
+                  "id": 3059,
+                  "probability": 0.09766507797660015,
+                  "text": " results"
+                },
+                {
+                  "id": 304,
+                  "probability": 0.9920012570704811,
+                  "text": " in"
+                },
+                {
+                  "id": 6144,
+                  "probability": 0.010871746270033,
+                  "text": " equal"
+                },
+                {
+                  "id": 14713,
+                  "probability": 0.04791770944186111,
+                  "text": " amounts"
+                }
+              ],
+              "meanLogProbability": -1.0695417851440736,
+              "milliseconds": 13738.300000190735
+            },
+            {
+              "truncated": true,
+              "text": "Earth rotates on its axis, while moon orbits around the Earth which rotates on its",
+              "tokens": [
+                {
+                  "id": 43824,
+                  "probability": 0.14265189519782887,
+                  "text": "Earth"
+                },
+                {
+                  "id": 89059,
+                  "probability": 0.27724683055616034,
+                  "text": " rotates"
+                },
+                {
+                  "id": 389,
+                  "probability": 0.8791944942299486,
+                  "text": " on"
+                },
+                {
+                  "id": 1181,
+                  "probability": 0.9790894216272208,
+                  "text": " its"
+                },
+                {
+                  "id": 8024,
+                  "probability": 0.9654242246565056,
+                  "text": " axis"
+                },
+                {
+                  "id": 11,
+                  "probability": 0.056994639669978975,
+                  "text": ","
+                },
+                {
+                  "id": 1393,
+                  "probability": 0.15318655353051325,
+                  "text": " while"
+                },
+                {
+                  "id": 17788,
+                  "probability": 0.02298674648318823,
+                  "text": " moon"
+                },
+                {
+                  "id": 85128,
+                  "probability": 0.1775093550256151,
+                  "text": " orbits"
+                },
+                {
+                  "id": 2163,
+                  "probability": 0.5443285801265657,
+                  "text": " around"
+                },
+                {
+                  "id": 279,
+                  "probability": 0.6190611255361641,
+                  "text": " the"
+                },
+                {
+                  "id": 9237,
+                  "probability": 0.9665431744420856,
+                  "text": " Earth"
+                },
+                {
+                  "id": 892,
+                  "probability": 0.012304598248421518,
+                  "text": " which"
+                },
+                {
+                  "id": 89059,
+                  "probability": 0.6761954503464169,
+                  "text": " rotates"
+                },
+                {
+                  "id": 389,
+                  "probability": 0.6520205966048935,
+                  "text": " on"
+                },
+                {
+                  "id": 1181,
+                  "probability": 0.988471194492317,
+                  "text": " its"
+                }
+              ],
+              "meanLogProbability": -1.2504902148819632,
+              "milliseconds": 12265.800000190735
+            },
+            {
+              "truncated": true,
+              "text": "Earth's orbit is elliptical, so its speed around the Sun varies each year",
+              "tokens": [
+                {
+                  "id": 43824,
+                  "probability": 0.14265189519782887,
+                  "text": "Earth"
+                },
+                {
+                  "id": 594,
+                  "probability": 0.20498655431800206,
+                  "text": "'s"
+                },
+                {
+                  "id": 26507,
+                  "probability": 0.32631948301815494,
+                  "text": " orbit"
+                },
+                {
+                  "id": 374,
+                  "probability": 0.572118459981283,
+                  "text": " is"
+                },
+                {
+                  "id": 77783,
+                  "probability": 0.19943300273375306,
+                  "text": " ellipt"
+                },
+                {
+                  "id": 938,
+                  "probability": 0.9972017366353512,
+                  "text": "ical"
+                },
+                {
+                  "id": 11,
+                  "probability": 0.7395548377033622,
+                  "text": ","
+                },
+                {
+                  "id": 773,
+                  "probability": 0.11014314997819655,
+                  "text": " so"
+                },
+                {
+                  "id": 1181,
+                  "probability": 0.3457274448935753,
+                  "text": " its"
+                },
+                {
+                  "id": 4628,
+                  "probability": 0.6586601653129166,
+                  "text": " speed"
+                },
+                {
+                  "id": 2163,
+                  "probability": 0.06539607131356853,
+                  "text": " around"
+                },
+                {
+                  "id": 279,
+                  "probability": 0.9986788568681257,
+                  "text": " the"
+                },
+                {
+                  "id": 8059,
+                  "probability": 0.9251687853144774,
+                  "text": " Sun"
+                },
+                {
+                  "id": 34227,
+                  "probability": 0.2269290251819532,
+                  "text": " varies"
+                },
+                {
+                  "id": 1817,
+                  "probability": 0.3915470896588747,
+                  "text": " each"
+                },
+                {
+                  "id": 1042,
+                  "probability": 0.6892315436510275,
+                  "text": " year"
+                }
+              ],
+              "meanLogProbability": -1.025762407068327,
+              "milliseconds": 11494.099999904633
+            }
+          ],
+          "pairs": [
+            {
+              "a": 0,
+              "b": 1,
+              "forward": {
+                "entailment": 0.0015514162654582603,
+                "contradiction": 0.6203928738460257,
+                "neutral": 0.37805570988851606
+              },
+              "backward": {
+                "entailment": 0.013868410419586785,
+                "contradiction": 0.953823708270303,
+                "neutral": 0.03230788131011024
+              }
+            },
+            {
+              "a": 0,
+              "b": 2,
+              "forward": {
+                "entailment": 0.0007465077938197493,
+                "contradiction": 0.00455377155834412,
+                "neutral": 0.9946997206478362
+              },
+              "backward": {
+                "entailment": 0.000348565030018863,
+                "contradiction": 0.0017645367569198852,
+                "neutral": 0.9978868982130612
+              }
+            },
+            {
+              "a": 0,
+              "b": 3,
+              "forward": {
+                "entailment": 0.01071897042814132,
+                "contradiction": 0.008029347681042067,
+                "neutral": 0.9812516818908166
+              },
+              "backward": {
+                "entailment": 0.00035585924381615393,
+                "contradiction": 0.001199663204460138,
+                "neutral": 0.9984444775517237
+              }
+            },
+            {
+              "a": 0,
+              "b": 4,
+              "forward": {
+                "entailment": 0.001845586551843623,
+                "contradiction": 0.007242176754810657,
+                "neutral": 0.9909122366933458
+              },
+              "backward": {
+                "entailment": 0.0003287588120263728,
+                "contradiction": 0.0014763303954746093,
+                "neutral": 0.998194910792499
+              }
+            },
+            {
+              "a": 1,
+              "b": 2,
+              "forward": {
+                "entailment": 0.0006558093970167585,
+                "contradiction": 0.004861868036840239,
+                "neutral": 0.994482322566143
+              },
+              "backward": {
+                "entailment": 0.0002324894733801511,
+                "contradiction": 0.0017118367476993699,
+                "neutral": 0.9980556737789206
+              }
+            },
+            {
+              "a": 1,
+              "b": 3,
+              "forward": {
+                "entailment": 0.01700845601793131,
+                "contradiction": 0.008335677144189275,
+                "neutral": 0.9746558668378794
+              },
+              "backward": {
+                "entailment": 0.0002478025457026444,
+                "contradiction": 0.0016924063416216444,
+                "neutral": 0.9980597911126756
+              }
+            },
+            {
+              "a": 1,
+              "b": 4,
+              "forward": {
+                "entailment": 0.002010998948183459,
+                "contradiction": 0.008226227486212575,
+                "neutral": 0.9897627735656038
+              },
+              "backward": {
+                "entailment": 0.00024675838048411576,
+                "contradiction": 0.0019548996607171264,
+                "neutral": 0.9977983419587988
+              }
+            },
+            {
+              "a": 2,
+              "b": 3,
+              "forward": {
+                "entailment": 0.016569658906404994,
+                "contradiction": 0.0054933085054169615,
+                "neutral": 0.9779370325881781
+              },
+              "backward": {
+                "entailment": 0.00043180703355184775,
+                "contradiction": 0.0029583279148591934,
+                "neutral": 0.9966098650515889
+              }
+            },
+            {
+              "a": 2,
+              "b": 4,
+              "forward": {
+                "entailment": 0.0057782294599013646,
+                "contradiction": 0.8054720584715898,
+                "neutral": 0.18874971206850868
+              },
+              "backward": {
+                "entailment": 0.0006668682433485461,
+                "contradiction": 0.8429502842541049,
+                "neutral": 0.15638284750254672
+              }
+            },
+            {
+              "a": 3,
+              "b": 4,
+              "forward": {
+                "entailment": 0.011147262348656404,
+                "contradiction": 0.7290940148919981,
+                "neutral": 0.2597587227593455
+              },
+              "backward": {
+                "entailment": 0.2042071698215348,
+                "contradiction": 0.41773943452808643,
+                "neutral": 0.37805339565037865
+              }
+            }
+          ],
+          "claimRelations": [
+            {
+              "entailment": 0.00417631523107064,
+              "contradiction": 0.9038294367418264,
+              "neutral": 0.09199424802710311
+            },
+            {
+              "entailment": 0.0024525187675296435,
+              "contradiction": 0.7002899445803514,
+              "neutral": 0.29725753665211885
+            },
+            {
+              "entailment": 0.0013801494933423715,
+              "contradiction": 0.13297863850097422,
+              "neutral": 0.8656412120056836
+            },
+            {
+              "entailment": 0.0008604815854184765,
+              "contradiction": 0.032503769396639764,
+              "neutral": 0.9666357490179417
+            },
+            {
+              "entailment": 0.0006264020899151038,
+              "contradiction": 0.015015396032771805,
+              "neutral": 0.9843582018773132
+            }
+          ],
+          "clusters": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ]
+          ],
+          "entropyBits": 2.321928094887362,
+          "normalizedEntropy": 1,
+          "support": 0.32248786819147124,
+          "predictedReal": false,
+          "threshold": 0.6,
+          "milliseconds": 51431.800000190735,
+          "backend": "Qwen2.5 0.5B wasm q4 \u00b7 DeBERTa WASM q8, one thread"
+        }
+      }
+    ]
+  },
+  "adapter": {
+    "available": true,
+    "features": [
+      "depth32float-stencil8",
+      "chromium-experimental-subgroup-matrix",
+      "rg11b10ufloat-renderable",
+      "bgra8unorm-storage",
+      "texture-formats-tier1",
+      "texture-compression-bc",
+      "dual-source-blending",
+      "core-features-and-limits",
+      "float32-filterable",
+      "indirect-first-instance",
+      "texture-compression-astc-sliced-3d",
+      "float32-blendable",
+      "subgroup-size-control",
+      "texture-compression-unaligned",
+      "texture-compression-astc",
+      "texture-compression-etc2",
+      "depth-clip-control",
+      "texture-compression-bc-sliced-3d",
+      "shader-f16",
+      "timestamp-query",
+      "clip-distances",
+      "texture-formats-tier2",
+      "primitive-index",
+      "texture-component-swizzle",
+      "subgroups"
+    ],
+    "info": {
+      "vendor": "apple",
+      "architecture": "metal-3",
+      "device": "",
+      "description": ""
+    }
+  },
+  "issues": [],
+  "browser": "153.0.8010.12"
+}

@@ -45,7 +45,7 @@ for (const engine of engines) {
         (await page.locator("#edition-date").textContent()).includes("1 November 2026"),
       );
       check(
-        "New identity and external CSS load under CSP",
+        "External stylesheets load under the strict CSP",
         (await page.locator(".topbar").evaluate((el) => getComputedStyle(el).backgroundColor)) ===
           "rgb(24, 27, 25)",
       );

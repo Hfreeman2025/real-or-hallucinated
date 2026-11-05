@@ -1,0 +1,57 @@
+{
+  "method": "Hold font WOFF2 requests until source data and recorded grouping are stable, then measure all shifts from BEFORE releasing the font responses through fonts.ready plus600ms. Startup shifts are retained separately; none are filtered from the raw entries.",
+  "results": [
+    {
+      "size": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "view": "detector",
+      "fontBoundaryMs": 568.2999997138977,
+      "fontSwapCls": 0,
+      "startupCls": 0,
+      "entries": [],
+      "fonts": "loaded"
+    },
+    {
+      "size": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900
+      },
+      "view": "daily",
+      "fontBoundaryMs": 544.1000003814697,
+      "fontSwapCls": 0,
+      "startupCls": 0,
+      "entries": [],
+      "fonts": "loaded"
+    },
+    {
+      "size": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "view": "detector",
+      "fontBoundaryMs": 560.1999998092651,
+      "fontSwapCls": 0,
+      "startupCls": 0,
+      "entries": [],
+      "fonts": "loaded"
+    },
+    {
+      "size": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844
+      },
+      "view": "daily",
+      "fontBoundaryMs": 540.9000000953674,
+      "fontSwapCls": 0,
+      "startupCls": 0,
+      "entries": [],
+      "fonts": "loaded"
+    }
+  ]
+}

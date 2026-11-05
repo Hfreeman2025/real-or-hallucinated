@@ -1,17 +1,16 @@
 import { createReadStream } from "node:fs";
 import { readdir, readFile, stat } from "node:fs/promises";
-import { homedir } from "node:os";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import type { Connect, Plugin } from "vite";
 
-const shared = join(homedir(), "Personal/.models");
+const modelDirectory = resolve(process.env.MODEL_DIR ?? ".cache/models");
 const runtime = join(process.cwd(), "node_modules/onnxruntime-web/dist");
 async function allowedModel(path: string): Promise<string | null> {
-  const manifest = JSON.parse(await readFile(join(shared, "manifest.json"), "utf8"));
+  const manifest = JSON.parse(await readFile(join(modelDirectory, "manifest.json"), "utf8"));
   for (const model of manifest.models)
     for (const file of model.files) {
       if (path === `/__models/${model.id}/resolve/${model.revision}/${file.file}`)
-        return join(shared, model.id, model.revision, file.file);
+        return join(modelDirectory, model.id, model.revision, file.file);
     }
   return null;
 }
@@ -58,7 +57,7 @@ const serve: Connect.NextHandleFunction = async (req, res, next) => {
     stream.pipe(res);
   } catch {
     res.statusCode = 503;
-    res.end("Shared model files are not ready. Run npm run models:fetch.");
+    res.end("Model files are not ready. Run npm run models:fetch.");
   }
 };
 export function modelFiles(): Plugin {

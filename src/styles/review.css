@@ -1,0 +1,85 @@
+/* Keep explanations optional after the evidence; the correction itself stays visible. */
+.source-analysis {
+  margin-top: 22px;
+  border-top: 1px solid var(--line);
+  border-bottom: 0;
+}
+.source-analysis > summary {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 16px 0 2px;
+  display: list-item;
+  list-style: disclosure-closed;
+}
+.source-analysis[open] > summary {
+  list-style: disclosure-open;
+}
+.source-analysis > p {
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 15px 0 0;
+}
+.editor-note:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 7px;
+}
+.state-notice {
+  margin: 0 0 16px;
+}
+.offline-notice {
+  border-color: var(--green-ink);
+}
+.result-panel {
+  position: sticky;
+  top: 24px;
+  border-right: 0;
+}
+.tells-panel {
+  border-left: 1px solid var(--line);
+}
+.dialog-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.dialog-header > h2 {
+  min-width: 0;
+}
+.dialog-header > button {
+  min-height: 44px;
+}
+@media (max-width: 760px) {
+  .result-panel {
+    position: static;
+  }
+  .tells-panel {
+    border-left: 0;
+  }
+  .evidence-desk {
+    scroll-margin-top: 16px;
+  }
+  .case-heading > h3 {
+    outline: 0;
+  }
+  .evidence-desk .case-heading > span {
+    font-size: 10px;
+  }
+}
+
+.proof-waiting {
+  margin: 5px 0 0;
+  border-left: 1px solid var(--line);
+  padding-left: 14px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.proof-waiting > p {
+  margin: 8px 0 0;
+}
+@media (max-width: 1199px) {
+  .proof-waiting {
+    display: none;
+  }
+}

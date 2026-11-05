@@ -1,0 +1,66 @@
+{
+  "results": {
+    "device": "webgpu",
+    "prompt": "<|im_start|>system\nAnswer the factual question directly with only a short answer. Do not repeat the question. No explanation.<|im_end|>\n<|im_start|>user\nHow quickly is the Moon moving away from Earth each year?<|im_end|>\n<|im_start|>assistant\n",
+    "rows": [
+      {
+        "mode": "SDK greedy with KV",
+        "text": "about 38,000 miles per year"
+      },
+      {
+        "mode": "SDK greedy with KV",
+        "text": "about 38,000 miles per year"
+      },
+      {
+        "mode": "SDK greedy with KV",
+        "text": "about 38,000 miles per year"
+      },
+      {
+        "mode": "Full-prefix greedy without KV reuse",
+        "text": "about 38,000 miles per year"
+      },
+      {
+        "mode": "Full-prefix greedy without KV reuse",
+        "text": "about 38,000 miles per year"
+      }
+    ]
+  },
+  "adapter": {
+    "available": true,
+    "features": [
+      "depth32float-stencil8",
+      "chromium-experimental-subgroup-matrix",
+      "rg11b10ufloat-renderable",
+      "bgra8unorm-storage",
+      "texture-formats-tier1",
+      "texture-compression-bc",
+      "dual-source-blending",
+      "core-features-and-limits",
+      "float32-filterable",
+      "indirect-first-instance",
+      "texture-compression-astc-sliced-3d",
+      "float32-blendable",
+      "subgroup-size-control",
+      "texture-compression-unaligned",
+      "texture-compression-astc",
+      "texture-compression-etc2",
+      "depth-clip-control",
+      "texture-compression-bc-sliced-3d",
+      "shader-f16",
+      "timestamp-query",
+      "clip-distances",
+      "texture-formats-tier2",
+      "primitive-index",
+      "texture-component-swizzle",
+      "subgroups"
+    ],
+    "info": {
+      "vendor": "apple",
+      "architecture": "metal-3",
+      "device": "",
+      "description": ""
+    }
+  },
+  "issues": [],
+  "browser": "153.0.8010.12"
+}

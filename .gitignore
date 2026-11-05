@@ -41,3 +41,8 @@ weights/
 *.pth
 *.ckpt
 *.bin
+
+# Generated visual tests; curated documentation images live under docs/images
+shots/
+coverage/
+*.tsbuildinfo
